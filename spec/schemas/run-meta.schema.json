@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dev-env.local/schemas/run-meta.schema.json",
+  "title": "ResearchRunMetadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["runId", "workflowId", "startedAt", "slug"],
+  "properties": {
+    "runId": { "type": "string", "minLength": 1 },
+    "workflowId": { "type": "string", "minLength": 1 },
+    "startedAt": { "type": "string", "format": "date-time" },
+    "slug": { "type": "string", "minLength": 1 },
+    "parentSessionId": { "type": "string", "minLength": 1 }
+  }
+}

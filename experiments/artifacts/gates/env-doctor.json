@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "generated_at": "2026-08-20T15:27:42.529224+00:00",
+  "python": "3.12.7",
+  "node": "v26.5.0",
+  "npm": "11.17.0",
+  "bun": "1.3.14",
+  "opencode": "1.18.19",
+  "embedder": "hash-default; set MEMMASTER_EMBEDDER=bge-m3 to enable BGE-M3"
+}

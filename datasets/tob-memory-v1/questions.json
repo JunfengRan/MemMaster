@@ -1,0 +1,248 @@
+{
+  "name": "tob-memory-v1",
+  "disclaimer": "Synthetic LumenGrid Xinghe-7 data. Not Huawei production.",
+  "items": [
+    {
+      "id": "Q01",
+      "source": "mail",
+      "type": "exact",
+      "question": "星河-7 OceanStor Dorado 8000 有效采购订单号是什么？不要给出已作废的草稿单号。",
+      "answers": ["PO-XH7-20260318-044"],
+      "forbidden": ["PO-XH7-20260301-009", "DEMO-0001"],
+      "evidence_docs": ["mail:2026-03-18-po"],
+      "must_cite": true
+    },
+    {
+      "id": "Q02",
+      "source": "mail",
+      "type": "update",
+      "question": "GaussDB 主集群当前生效的生产切换日期是哪一天？如果存在被作废的旧日期请不要当作答案。",
+      "answers": ["2026-05-06"],
+      "forbidden": ["2026-04-12"],
+      "evidence_docs": ["mail:2026-03-28-gaussdb-amend"],
+      "must_cite": true
+    },
+    {
+      "id": "Q03",
+      "source": "mail",
+      "type": "alias",
+      "question": "现场微信群里的“老陈”对应哪位华为侧项目经理？给出姓名。",
+      "answers": ["陈启明"],
+      "forbidden": ["李娜"],
+      "evidence_docs": ["mail:2026-03-22-alias"],
+      "must_cite": true
+    },
+    {
+      "id": "Q04",
+      "source": "mail",
+      "type": "combo",
+      "question": "OceanStor 相对有效 PO 延误时，宽限期几天，从第几天开始按日计罚？",
+      "answers": ["3", "4"],
+      "forbidden": [],
+      "evidence_docs": ["mail:2026-03-20-penalty"],
+      "must_cite": true
+    },
+    {
+      "id": "Q05",
+      "source": "mail",
+      "type": "distractor",
+      "question": "OceanStor 选型中被否决、不得再推销的型号是什么？",
+      "answers": ["Dorado 5000"],
+      "forbidden": [],
+      "evidence_docs": ["mail:2026-03-05-sku"],
+      "must_cite": true
+    },
+    {
+      "id": "Q06",
+      "source": "meeting",
+      "type": "exact",
+      "question": "星河-7 生产 GaussDB 容灾演练确定的 RTO 目标是多久？",
+      "answers": ["15分钟"],
+      "forbidden": ["1小时", "1 小时"],
+      "evidence_docs": ["meeting:2026-03-11-dr"],
+      "must_cite": true
+    },
+    {
+      "id": "Q07",
+      "source": "meeting",
+      "type": "update",
+      "question": "星河-7 承载网 iMaster NCE-IP 当前终审版本是什么？",
+      "answers": ["V100R024C10"],
+      "forbidden": ["V100R024C00"],
+      "evidence_docs": ["meeting:2026-04-09-nce-new"],
+      "must_cite": true
+    },
+    {
+      "id": "Q08",
+      "source": "meeting",
+      "type": "multihop",
+      "question": "Kunpeng 服务器配额由谁申请？Ascend 推理节点配额由谁提出？",
+      "answers": ["赵宇", "王磊"],
+      "forbidden": ["刘芳"],
+      "evidence_docs": ["meeting:2026-03-25-compute"],
+      "must_cite": true
+    },
+    {
+      "id": "Q09",
+      "source": "meeting",
+      "type": "alias",
+      "question": "LumenGrid 总部会议室 A 用于星河-7 日站会的 IdeaHub 资产编号是什么？",
+      "answers": ["IH-LG-A-0881"],
+      "forbidden": ["IH-LG-B-0012"],
+      "evidence_docs": ["meeting:2026-03-08-ideahub"],
+      "must_cite": true
+    },
+    {
+      "id": "Q10",
+      "source": "meeting",
+      "type": "distractor",
+      "question": "SQL 慢查询监控走哪套系统，而不是 eSight？",
+      "answers": ["GaussDB"],
+      "forbidden": [],
+      "evidence_docs": ["meeting:2026-03-19-monitor"],
+      "must_cite": true
+    },
+    {
+      "id": "Q11",
+      "source": "im",
+      "type": "exact",
+      "question": "生产 OceanStor 缓存池扩容对应的变更单号是什么？",
+      "answers": ["CHG-8821"],
+      "forbidden": ["CHG-0000"],
+      "evidence_docs": ["im:im-002"],
+      "must_cite": true
+    },
+    {
+      "id": "Q12",
+      "source": "im",
+      "type": "update",
+      "question": "生产缓存池最终容量是多少 TB？不要回答测试池容量。",
+      "answers": ["64TB"],
+      "forbidden": ["40TB", "40 TB"],
+      "evidence_docs": ["im:im-002"],
+      "must_cite": true
+    },
+    {
+      "id": "Q13",
+      "source": "im",
+      "type": "exact",
+      "question": "GaussDB 账户密码轮换在每周几的几点执行？",
+      "answers": ["周二", "23:30"],
+      "forbidden": ["周六"],
+      "evidence_docs": ["im:im-003"],
+      "must_cite": true
+    },
+    {
+      "id": "Q14",
+      "source": "im",
+      "type": "alias",
+      "question": "群里的“小刘”是谁？请给出姓名。",
+      "answers": ["刘芳"],
+      "forbidden": [],
+      "evidence_docs": ["im:im-001", "im:im-002"],
+      "must_cite": true
+    },
+    {
+      "id": "Q15",
+      "source": "im",
+      "type": "combo",
+      "question": "核心交换机正式维护窗口是哪一天几点？不要把玩笑话当承诺。",
+      "answers": ["2026-05-09", "01:00"],
+      "forbidden": [],
+      "evidence_docs": ["im:im-006"],
+      "must_cite": true
+    },
+    {
+      "id": "Q16",
+      "source": "web",
+      "type": "exact",
+      "question": "星河-7 在 Huawei Cloud Stack 管理面的租户 ID 是什么？",
+      "answers": ["tn-lg-xh7-20481"],
+      "forbidden": ["tn-demo-000"],
+      "evidence_docs": ["web:tenant"],
+      "must_cite": true
+    },
+    {
+      "id": "Q17",
+      "source": "web",
+      "type": "update",
+      "question": "当前生产 GaussDB 内核版本是什么？",
+      "answers": ["505.2.0.B023"],
+      "forbidden": ["505.1.0.B010"],
+      "evidence_docs": ["web:gaussdb"],
+      "must_cite": true
+    },
+    {
+      "id": "Q18",
+      "source": "web",
+      "type": "multihop",
+      "question": "序列号 2102350BHB10XH7001 的 OceanStor 对应的 CMDB CI 编号是什么？",
+      "answers": ["CI-STOR-77821"],
+      "forbidden": ["CI-STOR-00011"],
+      "evidence_docs": ["web:cmdb"],
+      "must_cite": true
+    },
+    {
+      "id": "Q19",
+      "source": "web",
+      "type": "alias",
+      "question": "对外名称星河-7 对应的内部项目编码是什么？",
+      "answers": ["XH-7"],
+      "forbidden": [],
+      "evidence_docs": ["web:project"],
+      "must_cite": true
+    },
+    {
+      "id": "Q20",
+      "source": "web",
+      "type": "combo",
+      "question": "谁可以看见 GaussDB 备份控制台？给出授权组名。",
+      "answers": ["grp-xh7-dba"],
+      "forbidden": ["grp-xh7-guest"],
+      "evidence_docs": ["web:acl"],
+      "must_cite": true
+    }
+  ],
+  "dev_items": [
+    {
+      "id": "D01",
+      "source": "mail",
+      "type": "exact",
+      "question": "作废的草稿采购单号是什么？",
+      "answers": ["PO-XH7-20260301-009"],
+      "forbidden": [],
+      "evidence_docs": ["mail:2026-03-18-po"],
+      "must_cite": true
+    },
+    {
+      "id": "D02",
+      "source": "meeting",
+      "type": "exact",
+      "question": "RPO 目标是多久？",
+      "answers": ["2分钟"],
+      "forbidden": [],
+      "evidence_docs": ["meeting:2026-03-11-dr"],
+      "must_cite": true
+    },
+    {
+      "id": "D03",
+      "source": "im",
+      "type": "exact",
+      "question": "测试池缓存容量是多少？",
+      "answers": ["40TB"],
+      "forbidden": [],
+      "evidence_docs": ["im:im-002"],
+      "must_cite": true
+    },
+    {
+      "id": "D04",
+      "source": "web",
+      "type": "exact",
+      "question": "HCS 管理面 region 路径是什么？",
+      "answers": ["/console/regions/cn-xh7-1"],
+      "forbidden": [],
+      "evidence_docs": ["web:tenant"],
+      "must_cite": true
+    }
+  ]
+}

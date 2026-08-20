@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "adapterIds": [
+    "mail",
+    "meeting",
+    "im",
+    "web"
+  ]
+}

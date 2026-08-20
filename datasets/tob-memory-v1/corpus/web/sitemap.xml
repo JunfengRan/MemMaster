@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<urlset>
+  <url><loc>https://hcs.lumengrid.example/portal/tenant.html</loc></url>
+  <url><loc>https://hcs.lumengrid.example/portal/gaussdb.html</loc></url>
+  <url><loc>https://hcs.lumengrid.example/portal/cmdb.html</loc></url>
+  <url><loc>https://hcs.lumengrid.example/portal/project.html</loc></url>
+  <url><loc>https://hcs.lumengrid.example/portal/acl.html</loc></url>
+  <url><loc>https://hcs.lumengrid.example/portal/old-wiki.html</loc></url>
+</urlset>

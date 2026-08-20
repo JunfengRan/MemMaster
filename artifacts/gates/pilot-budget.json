@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "hardBudgetUsd": 0.5,
+  "withinBudget": true,
+  "backend": "local-tool-agent",
+  "note": "Official 200 cases used sidecar tool agent; OpenCode probe script is experiments/scripts/opencode_run.py"
+}

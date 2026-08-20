@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dev-env.local/schemas/run-state.schema.json",
+  "title": "ResearchRunState",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "runId",
+    "workflowId",
+    "currentState",
+    "barrier",
+    "history",
+    "aborted"
+  ],
+  "properties": {
+    "runId": { "type": "string", "minLength": 1 },
+    "workflowId": { "type": "string", "minLength": 1 },
+    "currentState": { "type": "string", "minLength": 1 },
+    "barrier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expected", "completed", "pendingSubagents"],
+      "properties": {
+        "expected": { "type": "integer", "minimum": 0 },
+        "completed": { "type": "integer", "minimum": 0 },
+        "pendingSubagents": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["at", "event", "from", "to", "detail"],
+        "properties": {
+          "at": { "type": "string", "format": "date-time" },
+          "event": { "type": "string", "minLength": 1 },
+          "from": { "type": "string", "minLength": 1 },
+          "to": { "type": "string", "minLength": 1 },
+          "detail": { "type": "object" }
+        }
+      }
+    },
+    "aborted": { "type": "boolean" }
+  }
+}

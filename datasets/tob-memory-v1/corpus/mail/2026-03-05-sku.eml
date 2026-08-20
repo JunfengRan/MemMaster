@@ -1,0 +1,12 @@
+From: 刘芳 <liu.fang@huawei.example>
+To: 周敏 <zhou.min@lumengrid.example>
+Subject: OceanStor 选型结论
+Date: Thu, 05 Mar 2026 14:22:00 +0800
+Message-ID: <sku@lumengrid.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+【合成数据 / NOT Huawei production data】LumenGrid 星河-7 技术验证语料。
+
+结论：生产采用 Dorado 8000。Dorado 5000 方案被否决，原因是前端端口数量不足。
+请市场同事不要再推 5000 清单。

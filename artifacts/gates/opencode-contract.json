@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "pluginEntry": "apps/opencode-plugin/index.ts",
+  "opencodeVersion": "1.18.19",
+  "model": "deepseek/deepseek-v4-flash",
+  "silentDowngrade": false,
+  "hooks": [
+    "tool.memory_search"
+  ]
+}

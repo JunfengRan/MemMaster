@@ -1,0 +1,11 @@
+id: E6
+name: TimeAware
+status: locked
+methods: [hybrid, time]
+max_memory_calls: 2
+max_chunks: 8
+max_inject_tokens: 3000
+tools: [memory_search]
+push: false
+core_memory: false
+source: LongMemEval+Graphiti

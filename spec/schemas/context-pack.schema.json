@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dev-env.local/schemas/context-pack.schema.json",
+  "title": "ResearchContextPack",
+  "type": "object",
+  "required": ["schemaVersion", "metadata", "L0_constraints", "L1_session_anchor"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "metadata": {
+      "type": "object",
+      "required": ["pipeline_id", "phase_id", "context_pack_version"],
+      "properties": {
+        "pipeline_id": { "type": "string" },
+        "phase_id": { "type": "string" },
+        "context_pack_version": { "type": "integer", "minimum": 1 },
+        "run_id": { "type": "string" },
+        "slug": { "type": "string" }
+      }
+    },
+    "L0_constraints": {
+      "type": "object",
+      "required": ["researchType", "scope"],
+      "properties": {
+        "researchType": {
+          "enum": ["learning_note", "design_decision", "bug_root_cause", "selection_compare"]
+        },
+        "scope": { "type": "string" },
+        "forbiddenPaths": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "L1_session_anchor": {
+      "type": "object",
+      "required": ["currentState", "phaseGoal"],
+      "properties": {
+        "currentState": { "type": "string" },
+        "phaseGoal": { "type": "string" },
+        "gateLastResult": {
+          "type": "object",
+          "properties": {
+            "gate": { "type": "string" },
+            "result": { "enum": ["pass", "fail", "pending"] },
+            "reason": { "type": "string" }
+          }
+        }
+      }
+    },
+    "L2_dialogue_window": {
+      "type": "object",
+      "properties": {
+        "summary": { "type": "string" },
+        "recentTurns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "role": { "enum": ["user", "assistant"] },
+              "summary": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "L3_evidence_layer": {
+      "type": "object",
+      "properties": {
+        "evidenceTargets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["targetId", "repoPath", "focusPaths"],
+            "properties": {
+              "targetId": { "type": "string" },
+              "repoPath": { "type": "string" },
+              "focusPaths": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        },
+        "mergedEvidence": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/evidenceRow" }
+        }
+      }
+    },
+    "L4_knowledge_refs": {
+      "type": "object",
+      "properties": {
+        "existingNotes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "compareDimensions": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "L5_subagent_observations": {
+      "type": "object",
+      "properties": {
+        "barrier": {
+          "type": "object",
+          "properties": {
+            "expected": { "type": "integer", "minimum": 0 },
+            "completed": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/subagentObservation" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "evidenceRow": {
+      "type": "object",
+      "required": ["claim", "verdict", "filePath"],
+      "properties": {
+        "claim": { "type": "string" },
+        "verdict": { "enum": ["true", "partial", "false"] },
+        "filePath": { "type": "string" },
+        "targetId": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "subagentObservation": {
+      "type": "object",
+      "required": ["subagentId", "status"],
+      "properties": {
+        "subagentId": { "type": "string" },
+        "status": { "enum": ["pending", "completed", "failed"] },
+        "artifact": { "type": "string" },
+        "error": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+groups:
+  - id: E0
+    status: locked
+    methods: []
+    source: blank
+  - id: E1
+    status: locked
+    methods: [lexical]
+    source: BM25/FTS5
+  - id: E2
+    status: locked
+    methods: [hybrid]
+    source: BGE-M3 + FTS5 RRF
+  - id: E3
+    status: locked
+    methods: [hybrid, graph]
+    source: HippoRAG-2 PPR adapted
+  - id: E4
+    status: locked
+    methods: [hybrid, graph]
+    push: true
+    source: Proactive Memory Agent adapted
+  - id: E5
+    status: locked
+    methods: [facts]
+    source: Mem0 extractive facts adapted
+  - id: E6
+    status: locked
+    methods: [hybrid, time]
+    source: LongMemEval + Graphiti time
+  - id: E7
+    status: locked
+    methods: [hybrid]
+    core_memory: true
+    source: MemGPT/MemOS core
+  - id: E8
+    status: locked
+    methods: [dual]
+    source: MemOS MemCube dual channel
+  - id: E9
+    status: locked
+    methods: [keys]
+    source: LongMemEval keys + A-MEM links
+priority_demote: [E9, E8, E7]
+must_keep: [E0, E1, E2, E3, E4]

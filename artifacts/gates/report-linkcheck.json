@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "brokenLinks": 0,
+  "offline": true,
+  "pages": [
+    "architecture.html",
+    "dataset.html",
+    "experiments.html",
+    "index.html",
+    "recommendation.html",
+    "research.html",
+    "results.html"
+  ]
+}

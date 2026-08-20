@@ -1,0 +1,12 @@
+From: 王磊 <wang.lei@huawei.example>
+To: 陈启明 <chen.qiming@huawei.example>
+Subject: 【修订】GaussDB 生产切换窗口
+Date: Sat, 28 Mar 2026 16:40:00 +0800
+Message-ID: <gdb-amend@lumengrid.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+【合成数据 / NOT Huawei production data】LumenGrid 星河-7 技术验证语料。
+
+修订：因 LumenGrid 侧电力窗口调整，GaussDB 主集群切换改到 2026-05-06 02:00-06:00 CST。
+旧日期 2026-04-12 作废。备集群仍在 HCS 可用区 AZ-B。

@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "questionCount": 20,
+  "perSource": {
+    "mail": 5,
+    "meeting": 5,
+    "im": 5,
+    "web": 5
+  },
+  "oraclePass": true
+}

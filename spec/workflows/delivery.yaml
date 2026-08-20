@@ -1,0 +1,144 @@
+schemaVersion: 1
+workflowId: delivery
+initialState: environment
+
+states:
+  environment:
+    kind: agent
+    agent: memmaster-builder
+    outputs:
+      - artifacts/env-doctor.json
+    gate: env-doctor
+    onPass: dataset
+    onFail: environment
+
+  dataset:
+    kind: agent
+    agent: memmaster-builder
+    outputs:
+      - artifacts/dataset-integrity.json
+    gate: dataset-integrity
+    onPass: adapters
+    onFail: dataset
+
+  adapters:
+    kind: agent
+    agent: memmaster-builder
+    outputs:
+      - artifacts/adapter-contract.json
+    gate: adapter-contract
+    onPass: indexes
+    onFail: adapters
+
+  indexes:
+    kind: agent
+    agent: memmaster-builder
+    outputs:
+      - artifacts/index-consistency.json
+    gate: index-consistency
+    onPass: plugin
+    onFail: indexes
+
+  plugin:
+    kind: agent
+    agent: memmaster-builder
+    outputs:
+      - artifacts/opencode-contract.json
+    gate: opencode-contract
+    onPass: pilot
+    onFail: plugin
+
+  pilot:
+    kind: agent
+    agent: memmaster-builder
+    outputs:
+      - artifacts/pilot-budget.json
+    gate: pilot-budget
+    onPass: eval_lock
+    onFail: pilot
+
+  eval_lock:
+    kind: agent
+    agent: memmaster-builder
+    outputs:
+      - artifacts/eval-lock.json
+    gate: eval-lock
+    onPass: evaluate
+    onFail: eval_lock
+
+  evaluate:
+    kind: agent
+    agent: memmaster-builder
+    outputs:
+      - artifacts/run-complete.json
+    gate: run-complete
+    onPass: analyze
+    onFail: evaluate
+
+  analyze:
+    kind: agent
+    agent: memmaster-builder
+    outputs:
+      - artifacts/metrics.json
+    gate: metrics-reproducible
+    onPass: report
+    onFail: analyze
+
+  report:
+    kind: agent
+    agent: memmaster-builder
+    outputs:
+      - artifacts/report-linkcheck.json
+    gate: report-linkcheck
+    onPass: release
+    onFail: report
+
+  release:
+    kind: agent
+    agent: memmaster-builder
+    outputs:
+      - artifacts/release-check.json
+    gate: release-check
+    onPass: done
+    onFail: release
+
+  done:
+    kind: terminal
+
+  aborted:
+    kind: terminal
+
+transitions:
+  - from: "*"
+    event: USER_ABORT
+    to: aborted
+    hook: onAbort
+
+subagentSync:
+  mode: barrier_per_state
+  observationMerge: append_to_observations
+  parentWaitsFor: []
+
+gates:
+  env-doctor:
+    script: tooling/sdd/gates/env-doctor.mjs
+  dataset-integrity:
+    script: tooling/sdd/gates/dataset-integrity.mjs
+  adapter-contract:
+    script: tooling/sdd/gates/adapter-contract.mjs
+  index-consistency:
+    script: tooling/sdd/gates/index-consistency.mjs
+  opencode-contract:
+    script: tooling/sdd/gates/opencode-contract.mjs
+  pilot-budget:
+    script: tooling/sdd/gates/pilot-budget.mjs
+  eval-lock:
+    script: tooling/sdd/gates/eval-lock.mjs
+  run-complete:
+    script: tooling/sdd/gates/run-complete.mjs
+  metrics-reproducible:
+    script: tooling/sdd/gates/metrics-reproducible.mjs
+  report-linkcheck:
+    script: tooling/sdd/gates/report-linkcheck.mjs
+  release-check:
+    script: tooling/sdd/gates/release-check.mjs

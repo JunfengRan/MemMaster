@@ -1,0 +1,11 @@
+id: E0
+name: Blank
+status: locked
+methods: []
+max_memory_calls: 0
+max_chunks: 0
+max_inject_tokens: 0
+tools: []
+push: false
+core_memory: false
+source: none

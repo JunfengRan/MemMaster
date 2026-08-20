@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>调研 · MemMaster</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header>
+  <strong>MemMaster</strong>
+  <nav><a href="index.html">总览</a> <a href="research.html" class="active">调研</a> <a href="architecture.html">架构</a> <a href="dataset.html">数据集</a> <a href="experiments.html">实验</a> <a href="results.html">结果</a> <a href="recommendation.html">建议</a></nav>
+</header>
+<main>
+
+<h1>调研与方法拆解</h1>
+<div class="card">
+<p>证据目录见 <code>docs/research/method-catalog.json</code>。不整库接入 Mem0/MemOS/GraphRAG，只抽取可开关模块。</p>
+<ul>
+<li>Mem0：派生事实层，强制回源 span。</li>
+<li>MemOS：双通道 + provenance，不做参数记忆。</li>
+<li>Graphiti：valid/transaction time。</li>
+<li>HippoRAG 2：PPR，跳过完整 OpenIE。</li>
+<li>Proactive Memory：选择性 push，always-on 推迟。</li>
+</ul>
+</div>
+
+</main>
+<footer>MIT · 合成 ToB 数据 · 非华为生产业务</footer>
+</body>
+</html>

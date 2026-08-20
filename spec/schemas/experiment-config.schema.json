@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://memmaster.local/schemas/experiment-config.schema.json",
+  "title": "ExperimentConfig",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "status",
+    "methods",
+    "max_memory_calls",
+    "max_chunks",
+    "max_inject_tokens",
+    "tools"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^E[0-9]+$" },
+    "name": { "type": "string" },
+    "status": { "enum": ["locked", "deferred"] },
+    "methods": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "max_memory_calls": { "type": "integer", "minimum": 0, "maximum": 2 },
+    "max_chunks": { "type": "integer", "minimum": 0, "maximum": 8 },
+    "max_inject_tokens": { "type": "integer", "minimum": 0, "maximum": 3000 },
+    "tools": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "push": { "type": "boolean" },
+    "core_memory": { "type": "boolean" },
+    "source": { "type": "string" }
+  }
+}

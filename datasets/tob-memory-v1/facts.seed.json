@@ -1,0 +1,38 @@
+[
+  {
+    "fact_id": "f-po",
+    "subject": "OceanStor Dorado 8000",
+    "predicate": "purchase_order",
+    "object": "PO-XH7-20260318-044",
+    "doc_id": "mail:2026-03-18-po",
+    "chunk_id": "pending",
+    "span": [0, 0],
+    "valid_from": "2026-03-18T09:12:00+08:00",
+    "valid_to": null,
+    "superseded_by": null
+  },
+  {
+    "fact_id": "f-switch-old",
+    "subject": "GaussDB",
+    "predicate": "cutover_date",
+    "object": "2026-04-12",
+    "doc_id": "mail:2026-02-02-gaussdb-plan",
+    "chunk_id": "pending",
+    "span": [0, 0],
+    "valid_from": "2026-02-02T11:00:00+08:00",
+    "valid_to": "2026-03-28T16:40:00+08:00",
+    "superseded_by": "f-switch-new"
+  },
+  {
+    "fact_id": "f-switch-new",
+    "subject": "GaussDB",
+    "predicate": "cutover_date",
+    "object": "2026-05-06",
+    "doc_id": "mail:2026-03-28-gaussdb-amend",
+    "chunk_id": "pending",
+    "span": [0, 0],
+    "valid_from": "2026-03-28T16:40:00+08:00",
+    "valid_to": null,
+    "superseded_by": null
+  }
+]

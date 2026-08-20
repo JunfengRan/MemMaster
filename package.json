@@ -1,0 +1,28 @@
+{
+  "name": "memmaster",
+  "private": false,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "OpenCode enterprise memory plugin for Huawei ToB mock multi-source recall.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22 <27",
+    "npm": ">=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JunfengRan/MemMaster.git"
+  },
+  "scripts": {
+    "sdd": "node tooling/sdd/cli.mjs",
+    "validate:spec": "node tooling/sdd/validate-spec.mjs",
+    "test:sdd": "node tooling/sdd/test-sdd.mjs",
+    "test:gates": "node tooling/sdd/test-gates.mjs",
+    "validate": "npm run validate:spec && npm run test:sdd && npm run test:gates"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "yaml": "^2.8.0"
+  }
+}

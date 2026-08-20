@@ -1,0 +1,12 @@
+From: 王磊 <wang.lei@huawei.example>
+To: 陈启明 <chen.qiming@huawei.example>
+Subject: GaussDB 生产切换计划（初版）
+Date: Mon, 02 Feb 2026 11:00:00 +0800
+Message-ID: <gdb-plan@lumengrid.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+【合成数据 / NOT Huawei production data】LumenGrid 星河-7 技术验证语料。
+
+初版承诺 GaussDB 主集群切换窗口为 2026-04-12。
+该日期已被后续修订邮件作废，请归档不要执行。

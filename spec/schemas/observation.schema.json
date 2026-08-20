@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dev-env.local/schemas/observation.schema.json",
+  "title": "ResearchObservation",
+  "type": "object",
+  "required": ["ts", "actor", "phase", "kind", "contextPackVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "ts": { "type": "string", "format": "date-time" },
+    "actor": {
+      "type": "object",
+      "required": ["type", "id"],
+      "properties": {
+        "type": { "enum": ["agent", "subagent", "gate", "system"] },
+        "id": { "type": "string" },
+        "agent": { "type": "string" }
+      }
+    },
+    "phase": { "type": "string" },
+    "kind": {
+      "enum": [
+        "phase_start",
+        "phase_complete",
+        "evidence_row",
+        "gate_result",
+        "context_pack_bump",
+        "subagent_status",
+        "abort"
+      ]
+    },
+    "payload": { "type": "object" },
+    "contextPackVersion": { "type": "integer", "minimum": 1 }
+  }
+}

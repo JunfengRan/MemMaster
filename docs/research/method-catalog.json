@@ -1,0 +1,136 @@
+{
+  "accessedAt": "2026-08-20",
+  "methods": [
+    {
+      "method_id": "extractive_facts",
+      "source": "Mem0",
+      "paper": "https://arxiv.org/abs/2504.19413",
+      "code": "https://github.com/mem0ai/mem0",
+      "mechanism": "LLM/rule extract salient facts, optional graph; default add is accumulative.",
+      "match": ["exact", "alias"],
+      "cost": "offline extract once",
+      "extra_llm": false,
+      "decision": "adapt",
+      "experiment": "E5"
+    },
+    {
+      "method_id": "memcube_dual_channel",
+      "source": "MemOS",
+      "paper": "https://arxiv.org/abs/2507.03724",
+      "code": "https://github.com/MemTensor/MemOS",
+      "mechanism": "MemCube provenance/version; plaintext vs derived channels.",
+      "match": ["exact", "conflict", "multihop"],
+      "cost": "index metadata",
+      "extra_llm": false,
+      "decision": "adapt",
+      "experiment": "E8"
+    },
+    {
+      "method_id": "bitemporal_invalidation",
+      "source": "Graphiti/Zep",
+      "paper": "https://arxiv.org/abs/2501.13956",
+      "code": "https://github.com/getzep/graphiti",
+      "mechanism": "valid time vs transaction time; invalidate superseded facts.",
+      "match": ["conflict", "update"],
+      "cost": "graph metadata",
+      "extra_llm": false,
+      "decision": "adapt",
+      "experiment": "E6"
+    },
+    {
+      "method_id": "ppr_graph",
+      "source": "HippoRAG 2",
+      "paper": "https://proceedings.mlr.press/v267/gutierrez25a.html",
+      "code": "https://github.com/OSU-NLP-Group/HippoRAG",
+      "mechanism": "phrase+passage graph with Personalized PageRank; skip full OpenIE.",
+      "match": ["multihop"],
+      "cost": "light entity links",
+      "extra_llm": false,
+      "decision": "adapt",
+      "experiment": "E3"
+    },
+    {
+      "method_id": "time_aware_expansion",
+      "source": "LongMemEval",
+      "paper": "https://arxiv.org/abs/2410.10813",
+      "code": "https://github.com/xiaowu0162/LongMemEval",
+      "mechanism": "time-aware query expansion and knowledge-update probes.",
+      "match": ["update", "conflict"],
+      "cost": "query rewrite rules",
+      "extra_llm": false,
+      "decision": "adapt",
+      "experiment": "E6"
+    },
+    {
+      "method_id": "fact_augmented_keys",
+      "source": "LongMemEval + A-MEM",
+      "paper": "https://arxiv.org/abs/2502.12110",
+      "code": "https://github.com/WujiangXu/A-mem-sys",
+      "mechanism": "index keywords/tags/aliases; refuse LLM rewrite of ground truth.",
+      "match": ["alias", "exact"],
+      "cost": "offline keys",
+      "extra_llm": false,
+      "decision": "adapt",
+      "experiment": "E9"
+    },
+    {
+      "method_id": "core_plus_archival",
+      "source": "MemGPT/Letta + MemOS scheduling",
+      "paper": "https://arxiv.org/abs/2310.08560",
+      "code": "https://github.com/letta-ai/letta-code",
+      "mechanism": "session-start compact core memory; archival still pulled.",
+      "match": ["alias", "exact"],
+      "cost": "inject tokens",
+      "extra_llm": false,
+      "decision": "adapt",
+      "experiment": "E7"
+    },
+    {
+      "method_id": "selective_push",
+      "source": "Proactive Memory Agent",
+      "paper": "https://arxiv.org/abs/2607.08716",
+      "code": "https://github.com/yifannnwu/proactive-memory-agent",
+      "mechanism": "side observer injects memory-grounded reminder or silence.",
+      "match": ["all"],
+      "cost": "1 extra retrieve",
+      "extra_llm": false,
+      "decision": "adapt",
+      "experiment": "E4"
+    },
+    {
+      "method_id": "hybrid_dense_sparse",
+      "source": "BGE-M3",
+      "paper": "https://arxiv.org/abs/2402.03216",
+      "code": "https://huggingface.co/BAAI/bge-m3",
+      "mechanism": "dense + lexical RRF; optional native sparse.",
+      "match": ["exact", "semantic"],
+      "cost": "local embed",
+      "extra_llm": false,
+      "decision": "adapt",
+      "experiment": "E2"
+    },
+    {
+      "method_id": "full_graphrag",
+      "source": "Microsoft GraphRAG",
+      "paper": "https://arxiv.org/abs/2404.16130",
+      "code": "https://github.com/microsoft/GraphRAG",
+      "mechanism": "community reports + local/global search; high LLM index cost.",
+      "match": ["theme"],
+      "cost": "high",
+      "extra_llm": true,
+      "decision": "defer",
+      "experiment": null
+    },
+    {
+      "method_id": "always_on_push",
+      "source": "Proactive Memory Agent ablation",
+      "paper": "https://arxiv.org/abs/2607.08716",
+      "mechanism": "inject every turn; paper shows worse than selective.",
+      "match": ["all"],
+      "cost": "token noise",
+      "extra_llm": false,
+      "decision": "defer",
+      "experiment": null
+    }
+  ]
+}

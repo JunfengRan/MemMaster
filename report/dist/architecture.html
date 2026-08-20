@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>架构 · MemMaster</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header>
+  <strong>MemMaster</strong>
+  <nav><a href="index.html">总览</a> <a href="research.html">调研</a> <a href="architecture.html" class="active">架构</a> <a href="dataset.html">数据集</a> <a href="experiments.html">实验</a> <a href="results.html">结果</a> <a href="recommendation.html">建议</a></nav>
+</header>
+<main>
+
+<h1>架构</h1>
+<div class="card">
+<p>TypeScript OpenCode 插件 + FastAPI sidecar。ConnectorRegistry 热插拔。SQLite FTS5 + 向量 + Graph-lite。增量更新经 staging 后原子切换 manifest。</p>
+<p>调用链：Adapter.sync → CanonicalDocument → chunk/embed/graph → /v1/search 或 /v1/interventions → plugin tool/hook。</p>
+</div>
+
+</main>
+<footer>MIT · 合成 ToB 数据 · 非华为生产业务</footer>
+</body>
+</html>

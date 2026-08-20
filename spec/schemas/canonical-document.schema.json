@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://memmaster.local/schemas/canonical-document.schema.json",
+  "title": "CanonicalDocument",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "doc_id",
+    "source_id",
+    "external_id",
+    "uri",
+    "title",
+    "text",
+    "content_hash",
+    "version",
+    "valid_time",
+    "transaction_time",
+    "acl",
+    "metadata"
+  ],
+  "properties": {
+    "doc_id": { "type": "string", "minLength": 1 },
+    "source_id": { "enum": ["mail", "meeting", "im", "web"] },
+    "external_id": { "type": "string", "minLength": 1 },
+    "uri": { "type": "string", "minLength": 1 },
+    "title": { "type": "string" },
+    "text": { "type": "string", "minLength": 1 },
+    "content_hash": { "type": "string", "pattern": "^sha256:[a-f0-9]{64}$" },
+    "version": { "type": "integer", "minimum": 1 },
+    "valid_time": { "type": "string", "format": "date-time" },
+    "transaction_time": { "type": "string", "format": "date-time" },
+    "acl": {
+      "type": "object",
+      "required": ["groups"],
+      "additionalProperties": false,
+      "properties": {
+        "groups": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "metadata": { "type": "object" }
+  }
+}

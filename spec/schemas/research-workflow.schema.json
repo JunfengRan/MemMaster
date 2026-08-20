@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dev-env.local/schemas/research-workflow.schema.json",
+  "title": "ResearchWorkflowSpec",
+  "type": "object",
+  "required": ["schemaVersion", "workflowId", "initialState", "states", "gates"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "workflowId": { "type": "string", "minLength": 1 },
+    "initialState": { "type": "string", "minLength": 1 },
+    "states": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "$ref": "#/$defs/state" }
+    },
+    "transitions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/transition" }
+    },
+    "subagentSync": {
+      "type": "object",
+      "required": ["mode", "observationMerge", "parentWaitsFor"],
+      "properties": {
+        "mode": { "enum": ["barrier_per_state"] },
+        "observationMerge": { "enum": ["append_to_observations"] },
+        "parentWaitsFor": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "gates": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "$ref": "#/$defs/gateRef" }
+    }
+  },
+  "$defs": {
+    "state": {
+      "type": "object",
+      "required": ["kind"],
+      "properties": {
+        "kind": {
+          "enum": ["agent", "parallel_subagents", "skill", "terminal"]
+        },
+        "agent": { "type": "string" },
+        "skill": { "type": "string" },
+        "outputs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "inputs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "contextSlice": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "spawn": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["agent", "foreach", "outputs"],
+            "properties": {
+              "agent": { "type": "string" },
+              "foreach": { "type": "string" },
+              "outputs": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        },
+        "sync": { "enum": ["all_complete"] },
+        "gate": { "type": "string" },
+        "onPass": { "type": "string" },
+        "onFail": { "type": "string" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kind": { "const": "terminal" } } },
+          "then": { "not": { "required": ["gate"] } }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "agent" } } },
+          "then": { "required": ["agent", "gate", "onPass", "onFail"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "skill" } } },
+          "then": { "required": ["skill", "gate", "onPass", "onFail"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "parallel_subagents" } } },
+          "then": { "required": ["spawn", "sync", "gate", "onPass", "onFail"] }
+        }
+      ]
+    },
+    "transition": {
+      "type": "object",
+      "required": ["from", "event", "to"],
+      "properties": {
+        "from": { "type": "string" },
+        "event": { "type": "string" },
+        "to": { "type": "string" },
+        "hook": { "type": "string" }
+      }
+    },
+    "gateRef": {
+      "type": "object",
+      "required": ["script"],
+      "properties": {
+        "script": { "type": "string" }
+      }
+    }
+  }
+}

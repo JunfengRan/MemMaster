@@ -1,0 +1,121 @@
+schemaVersion: 1
+workflowId: deep-research
+initialState: brief
+
+states:
+  brief:
+    kind: agent
+    agent: deep-research
+    outputs:
+      - artifacts/research-brief.json
+    contextSlice:
+      - L0_constraints
+      - L1_session_anchor
+    gate: brief-complete
+    onPass: explore
+    onFail: brief
+
+  explore:
+    kind: agent
+    agent: deep-research
+    outputs:
+      - artifacts/explore-notes.md
+    contextSlice:
+      - L0_constraints
+      - L1_session_anchor
+      - L2_dialogue_window
+    gate: explore-min-depth
+    onPass: verify
+    onFail: explore
+
+  verify:
+    kind: parallel_subagents
+    spawn:
+      - agent: codebase-verifier
+        foreach: contextPack.L3_evidence_layer.evidenceTargets
+        outputs:
+          - "artifacts/evidence/{targetId}.json"
+    sync: all_complete
+    gate: evidence-table-valid
+    onPass: consolidate
+    onFail: verify
+
+  consolidate:
+    kind: skill
+    skill: interpret-tech-notes
+    inputs:
+      - artifacts/explore-notes.md
+      - artifacts/evidence/*.json
+    outputs:
+      - docs/knowledge/apps/{slug}-note.md
+    gate: knowledge-note-depth
+    onPass: compare
+    onFail: consolidate
+
+  compare:
+    kind: agent
+    agent: deep-research
+    outputs:
+      - artifacts/comparative-catalog.json
+    contextSlice:
+      - L0_constraints
+      - L1_session_anchor
+      - L3_evidence_layer
+      - L4_knowledge_refs
+    gate: catalog-numbered
+    onPass: crystallize
+    onFail: compare
+
+  crystallize:
+    kind: agent
+    agent: deep-research
+    outputs:
+      - artifacts/skill-delta.md
+    gate: optional
+    onPass: decide
+    onFail: crystallize
+
+  decide:
+    kind: skill
+    skill: write-idea-docs
+    inputs:
+      - artifacts/comparative-catalog.json
+    outputs:
+      - docs/design/{slug}-selection.md
+    gate: decision-doc-complete
+    onPass: done
+    onFail: decide
+
+  done:
+    kind: terminal
+
+  aborted:
+    kind: terminal
+
+transitions:
+  - from: "*"
+    event: USER_ABORT
+    to: aborted
+    hook: onAbort
+
+subagentSync:
+  mode: barrier_per_state
+  observationMerge: append_to_observations
+  parentWaitsFor:
+    - artifacts/evidence/*.json
+
+gates:
+  brief-complete:
+    script: tooling/sdd/gates/brief-complete.mjs
+  explore-min-depth:
+    script: tooling/sdd/gates/explore-min-depth.mjs
+  evidence-table-valid:
+    script: tooling/sdd/gates/evidence-table-valid.mjs
+  knowledge-note-depth:
+    script: tooling/sdd/gates/knowledge-note-depth.mjs
+  catalog-numbered:
+    script: tooling/sdd/gates/catalog-numbered.mjs
+  decision-doc-complete:
+    script: tooling/sdd/gates/decision-doc-complete.mjs
+  optional:
+    script: tooling/sdd/gates/optional.mjs
