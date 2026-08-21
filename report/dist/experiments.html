@@ -3,23 +3,88 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>实验 · MemMaster</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>三次实验 · MemMaster</title>
+  <style>
+:root { --ink:#152033; --muted:#5b6573; --paper:#f7f4ee; --card:#fff; --line:#d9d3c5; --blue:#1f6feb; --green:#1a7f37; --red:#c62828; --navy:#13294b; }
+* { box-sizing: border-box; }
+html, body { margin:0; background:var(--paper); color:var(--ink); font: 16px/1.65 "Segoe UI", "PingFang SC", sans-serif; }
+header, footer { background:var(--navy); color:#fff; padding:1rem 1.5rem; }
+header { display:flex; flex-wrap:wrap; gap:.8rem 1.5rem; align-items:center; justify-content:space-between; }
+header nav a { color:#d7e4ff; margin-right:1rem; text-decoration:none; }
+header nav a.active { color:#fff; font-weight:700; border-bottom:2px solid #fff; }
+main { max-width: 980px; margin: 0 auto; padding: 1.6rem 1.2rem 3rem; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.3rem; margin:1rem 0; }
+h1 { font-size:1.7rem; margin:.2rem 0 1rem; }
+h2 { font-size:1.25rem; margin:1.4rem 0 .6rem; }
+.muted { color:var(--muted); }
+.legend span { display:inline-block; margin-right:1rem; }
+.sw { display:inline-block; width:12px; height:12px; border-radius:2px; margin-right:.3rem; vertical-align:middle; }
+.sw.blue { background:var(--blue); } .sw.green { background:var(--green); } .sw.red { background:var(--red); }
+.cmp { margin:.7rem 0 1rem; }
+.cmp .lab { display:flex; justify-content:space-between; font-size:.92rem; margin-bottom:.25rem; }
+.track { position:relative; height:16px; background:#ece7dc; border-radius:8px; overflow:hidden; }
+.track i { position:absolute; top:0; height:16px; }
+.track .blue { background:var(--blue); }
+.track .green { background:var(--green); }
+.track .red { background:var(--red); }
+table { width:100%; border-collapse:collapse; font-size:.95rem; }
+th, td { border-bottom:1px solid var(--line); padding:.45rem .4rem; text-align:left; }
+.kicker { letter-spacing:.08em; text-transform:uppercase; font-size:.75rem; color:#8a6d3b; }
+blockquote { border-left:4px solid var(--blue); margin:1rem 0; padding:.2rem 1rem; color:#243047; }
+footer { font-size:.85rem; }
+</style>
 </head>
 <body>
 <header>
-  <strong>MemMaster</strong>
-  <nav><a href="index.html">总览</a> <a href="research.html">调研</a> <a href="architecture.html">架构</a> <a href="dataset.html">数据集</a> <a href="experiments.html" class="active">实验</a> <a href="results.html">结果</a> <a href="recommendation.html">建议</a></nav>
+  <strong>MemMaster 技术验证报告</strong>
+  <nav><a href="index.html">总览</a> <a href="research.html">调研与方法</a> <a href="architecture.html">架构</a> <a href="dataset.html">数据集</a> <a href="experiments.html" class="active">三次实验</a> <a href="results.html">结果对比</a> <a href="recommendation.html">建议</a></nav>
 </header>
 <main>
+<p class="kicker">Standalone · 打开本页即可读完 · 合成 ToB 数据 · 非华为生产业务</p>
 
-<h1>十组预注册实验</h1>
+<h1>三次实验分别在测什么</h1>
 <div class="card">
-<p>配置在 <code>experiments/configs</code>，方法模块在 <code>experiments/methods</code>，脚本在 <code>experiments/scripts</code>。复跑：<code>python -m experiments run --config experiments/configs/E2.yaml</code></p>
-<table><thead><tr><th>组</th><th>成功率</th><th>预算失败</th></tr></thead><tbody><tr><td>E0</td><td>0%</td><td>0</td></tr><tr><td>E1</td><td>60%</td><td>0</td></tr><tr><td>E2</td><td>95%</td><td>0</td></tr><tr><td>E3</td><td>95%</td><td>0</td></tr><tr><td>E4</td><td>95%</td><td>0</td></tr><tr><td>E5</td><td>95%</td><td>0</td></tr><tr><td>E6</td><td>95%</td><td>0</td></tr><tr><td>E7</td><td>95%</td><td>0</td></tr><tr><td>E8</td><td>95%</td><td>0</td></tr><tr><td>E9</td><td>90%</td><td>0</td></tr></tbody></table>
+<h2>第一版 · 检索理论上限</h2>
+<p>系统强制用题目去搜全库，再从返回上下文做字符串抽取。Agent 不会「忘记调用工具」，也不会选错源。这是<b>检索天花板</b>。Hybrid 一带方法大多 95%，Lexical 60%，Blank 0%。Q06 是全组天花板失败的唯一正式题，已删除。</p>
+
+<p>第一版字典序。缺上下文/耗时/工具次数的组，是当时评分脚本只记完成率。</p>
+<table>
+<thead><tr><th>序</th><th>组 / 方法</th><th>完成率 ↑</th><th>上下文 token ↓</th><th>耗时 ms ↓</th><th>工具次数 ↓</th></tr></thead>
+<tbody><tr><td>1</td><td>E2<br><span class='muted'>Hybrid RRF</span></td><td>95.0%<br><span class='muted'>19/20</span></td><td>0</td><td>0</td><td>0.00</td></tr><tr><td>2</td><td>E3<br><span class='muted'>Graph-lite PPR</span></td><td>95.0%<br><span class='muted'>19/20</span></td><td>0</td><td>0</td><td>0.00</td></tr><tr><td>3</td><td>E4<br><span class='muted'>Push + Pull</span></td><td>95.0%<br><span class='muted'>19/20</span></td><td>0</td><td>0</td><td>0.00</td></tr><tr><td>4</td><td>E5<br><span class='muted'>Extractive Facts</span></td><td>95.0%<br><span class='muted'>19/20</span></td><td>0</td><td>0</td><td>0.00</td></tr><tr><td>5</td><td>E6<br><span class='muted'>Time-aware</span></td><td>95.0%<br><span class='muted'>19/20</span></td><td>0</td><td>0</td><td>0.00</td></tr><tr><td>6</td><td>E7<br><span class='muted'>Core Memory</span></td><td>95.0%<br><span class='muted'>19/20</span></td><td>0</td><td>0</td><td>0.00</td></tr><tr><td>7</td><td>E8<br><span class='muted'>Dual Channel</span></td><td>95.0%<br><span class='muted'>19/20</span></td><td>0</td><td>0</td><td>0.00</td></tr><tr><td>8</td><td>E9<br><span class='muted'>Fact Keys</span></td><td>90.0%<br><span class='muted'>18/20</span></td><td>0</td><td>0</td><td>0.00</td></tr><tr><td>9</td><td>E1<br><span class='muted'>Lexical / BM25</span></td><td>60.0%<br><span class='muted'>12/20</span></td><td>0</td><td>0</td><td>0.00</td></tr><tr><td>10</td><td>E0<br><span class='muted'>Blank（空白对照）</span></td><td>0.0%<br><span class='muted'>0/20</span></td><td>0</td><td>0</td><td>0.00</td></tr></tbody>
+</table>
+
+</div>
+<div class="card">
+<h2>第二版 · 未调优真实 Agent（蓝色基准）</h2>
+<p>每个 case 一个全新 OpenCode session。用户消息<b>只有题目</b>。E1–E9 四个工具都在，提示词只说「没有依据就说不知道」。模型常常连打 3–5 个源，上下文被撑长。这是「不调优 Harness」的真实表现。</p>
+<p>换题之后的第二次成绩已经改写并冻结：新题默认失败，三项代价指标保持原值。</p>
+
+<p>第二次（修正分母后）字典序。</p>
+<table>
+<thead><tr><th>序</th><th>组 / 方法</th><th>完成率 ↑</th><th>上下文 token ↓</th><th>耗时 ms ↓</th><th>工具次数 ↓</th></tr></thead>
+<tbody><tr><td>1</td><td>E4<br><span class='muted'>Push + Pull</span></td><td>90.5%</td><td>4769</td><td>8407</td><td>3.30</td></tr><tr><td>2</td><td>E7<br><span class='muted'>Core Memory</span></td><td>90.5%</td><td>4779</td><td>8310</td><td>3.35</td></tr><tr><td>3</td><td>E8<br><span class='muted'>Dual Channel</span></td><td>90.5%</td><td>5148</td><td>8738</td><td>3.65</td></tr><tr><td>4</td><td>E3<br><span class='muted'>Graph-lite PPR</span></td><td>90.5%</td><td>5207</td><td>8778</td><td>3.75</td></tr><tr><td>5</td><td>E9<br><span class='muted'>Fact Keys</span></td><td>90.5%</td><td>5285</td><td>7758</td><td>3.80</td></tr><tr><td>6</td><td>E2<br><span class='muted'>Hybrid RRF</span></td><td>90.5%</td><td>5297</td><td>7704</td><td>3.85</td></tr><tr><td>7</td><td>E5<br><span class='muted'>Extractive Facts</span></td><td>90.5%</td><td>5392</td><td>9180</td><td>3.85</td></tr><tr><td>8</td><td>E6<br><span class='muted'>Time-aware</span></td><td>85.7%</td><td>5850</td><td>9223</td><td>4.25</td></tr><tr><td>9</td><td>E1<br><span class='muted'>Lexical / BM25</span></td><td>81.0%</td><td>2414</td><td>9450</td><td>4.70</td></tr><tr><td>10</td><td>E0<br><span class='muted'>Blank（空白对照）</span></td><td>0.0%</td><td>265</td><td>6225</td><td>0.00</td></tr></tbody>
+</table>
+
+</div>
+<div class="card">
+<h2>第三版 · 每组两套 Harness，取更好的一次</h2>
+<p>仍然不在题目里点名金标准工具。两套提示都是<b>分类启发</b>：</p>
+<ul>
+<li><b>HA 渠道启发式</b>：看到订单/邮件/PO 优先查邮件，看到纪要/演练优先查会议，看到群/微信优先查 IM，看到 wiki/CMDB/租户优先查网页。不确定就先搜最像的一类，不要四类扫一遍。</li>
+<li><b>HB 关键词改写</b>：把整句压成 2–6 个专有名词再搜；落空才换源，最多换两次。各组另有一句方法提示（例如时间组强调「当前/修订」），仍然不点名单题源工具。</li>
+</ul>
+<p>每组跑完两套后，按完成率 ↓、上下文 ↑、耗时 ↑、工具次数 ↑ 的字典序取优。Blank 不参加。</p>
+<ul><li><b>E1</b> 采用 HA：渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答，完成率 95.2%</li><li><b>E2</b> 采用 HA：渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答，完成率 100.0%</li><li><b>E3</b> 采用 HB：关键词改写：把问句压成专有名词再搜，空结果才换源，完成率 100.0%</li><li><b>E4</b> 采用 HA：渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答，完成率 100.0%</li><li><b>E5</b> 采用 HA：渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答，完成率 100.0%</li><li><b>E6</b> 采用 HA：渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答，完成率 100.0%</li><li><b>E7</b> 采用 HA：渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答，完成率 100.0%</li><li><b>E8</b> 采用 HA：渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答，完成率 100.0%</li><li><b>E9</b> 采用 HA：渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答，完成率 100.0%</li></ul>
+
+<p>第三版（含后续加赛，若有）字典序。</p>
+<table>
+<thead><tr><th>序</th><th>组 / 方法</th><th>完成率 ↑</th><th>上下文 token ↓</th><th>耗时 ms ↓</th><th>工具次数 ↓</th></tr></thead>
+<tbody><tr><td>1</td><td>E9<br><span class='muted'>Fact Keys</span></td><td>96.8%<br><span class='muted'>30/31</span><br><span class='muted'>事实 96.8% · 代价失败 0</span></td><td>5311</td><td>9859</td><td>3.58</td></tr><tr><td>2</td><td>E2<br><span class='muted'>Hybrid RRF</span></td><td>96.8%<br><span class='muted'>30/31</span><br><span class='muted'>事实 96.8% · 代价失败 0</span></td><td>5346</td><td>10263</td><td>3.55</td></tr><tr><td>3</td><td>E6<br><span class='muted'>Time-aware</span></td><td>96.8%<br><span class='muted'>30/31</span><br><span class='muted'>事实 96.8% · 代价失败 0</span></td><td>5844</td><td>10593</td><td>3.84</td></tr><tr><td>4</td><td>E8<br><span class='muted'>Dual Channel</span></td><td>95.5%<br><span class='muted'>21/22</span><br><span class='muted'>事实 100.0% · 代价失败 1</span></td><td>4936</td><td>8657</td><td>3.18</td></tr><tr><td>5</td><td>E7<br><span class='muted'>Core Memory</span></td><td>95.2%<br><span class='muted'>20/21</span><br><span class='muted'>事实 100.0% · 代价失败 1</span></td><td>3930</td><td>8178</td><td>2.24</td></tr><tr><td>6</td><td>E4<br><span class='muted'>Push + Pull</span></td><td>95.2%<br><span class='muted'>20/21</span><br><span class='muted'>事实 100.0% · 代价失败 1</span></td><td>4194</td><td>7797</td><td>2.52</td></tr><tr><td>7</td><td>E5<br><span class='muted'>Extractive Facts</span></td><td>95.2%<br><span class='muted'>20/21</span><br><span class='muted'>事实 100.0% · 代价失败 1</span></td><td>4323</td><td>8219</td><td>2.67</td></tr><tr><td>8</td><td>E1<br><span class='muted'>Lexical / BM25</span></td><td>90.5%<br><span class='muted'>19/21</span><br><span class='muted'>事实 95.2% · 代价失败 2</span></td><td>2391</td><td>9532</td><td>3.19</td></tr><tr><td>9</td><td>E3<br><span class='muted'>Graph-lite PPR</span></td><td>85.7%<br><span class='muted'>18/21</span><br><span class='muted'>事实 100.0% · 代价失败 3</span></td><td>4430</td><td>8084</td><td>3.00</td></tr><tr><td>10</td><td>E0<br><span class='muted'>Blank（空白对照）</span></td><td>0.0%<br><span class='muted'>0/21</span><br><span class='muted'>事实 0.0% · 代价失败 0</span></td><td>265</td><td>6225</td><td>0.00</td></tr></tbody>
+</table>
+
 </div>
 
 </main>
-<footer>MIT · 合成 ToB 数据 · 非华为生产业务</footer>
+<footer>MIT · 虚构客户 LumenGrid / 项目星河-7 · 数字全部由 experiments/runs 里的 JSON 生成</footer>
 </body>
 </html>

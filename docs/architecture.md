@@ -11,7 +11,7 @@ mock mail/meeting/im/web
         │
  FastAPI /v1/search  /v1/interventions  /v1/memory/{id}
         │
- OpenCode plugin tools + optional push hook
+ OpenCode plugin tools: `search_mail` / `search_meeting` / `search_im` / `search_web` plus optional push hook. The eval user message does not name a tool.
 ```
 
 Ground truth is always the raw text snapshot. Derived facts, graph edges and core memory must cite `doc_id`/`chunk_id`/span and never overwrite snapshots.

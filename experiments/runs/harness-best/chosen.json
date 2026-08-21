@@ -1,0 +1,101 @@
+{
+  "E1": {
+    "harness": "ha",
+    "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+    "n": 21,
+    "task_success": 0.9523809523809523,
+    "avg_context_tokens": 2391.2380952380954,
+    "avg_duration_ms": 9531.666666666666,
+    "avg_tool_calls": 3.1904761904761907,
+    "constraint_fail": 0,
+    "infra_failure": 0
+  },
+  "E2": {
+    "harness": "ha",
+    "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+    "n": 21,
+    "task_success": 1.0,
+    "avg_context_tokens": 4087.7619047619046,
+    "avg_duration_ms": 9184.333333333334,
+    "avg_tool_calls": 2.5714285714285716,
+    "constraint_fail": 0,
+    "infra_failure": 0
+  },
+  "E3": {
+    "harness": "hb",
+    "label": "关键词改写：把问句压成专有名词再搜，空结果才换源",
+    "n": 21,
+    "task_success": 1.0,
+    "avg_context_tokens": 4430.0952380952385,
+    "avg_duration_ms": 8083.666666666667,
+    "avg_tool_calls": 3,
+    "constraint_fail": 0,
+    "infra_failure": 0
+  },
+  "E4": {
+    "harness": "ha",
+    "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+    "n": 21,
+    "task_success": 1.0,
+    "avg_context_tokens": 4194.190476190476,
+    "avg_duration_ms": 7796.952380952381,
+    "avg_tool_calls": 2.5238095238095237,
+    "constraint_fail": 0,
+    "infra_failure": 0
+  },
+  "E5": {
+    "harness": "ha",
+    "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+    "n": 21,
+    "task_success": 1.0,
+    "avg_context_tokens": 4323.0952380952385,
+    "avg_duration_ms": 8218.52380952381,
+    "avg_tool_calls": 2.6666666666666665,
+    "constraint_fail": 0,
+    "infra_failure": 0
+  },
+  "E6": {
+    "harness": "ha",
+    "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+    "n": 21,
+    "task_success": 1.0,
+    "avg_context_tokens": 4648.523809523809,
+    "avg_duration_ms": 8436.714285714286,
+    "avg_tool_calls": 2.9047619047619047,
+    "constraint_fail": 0,
+    "infra_failure": 0
+  },
+  "E7": {
+    "harness": "ha",
+    "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+    "n": 21,
+    "task_success": 1.0,
+    "avg_context_tokens": 3929.714285714286,
+    "avg_duration_ms": 8177.857142857143,
+    "avg_tool_calls": 2.238095238095238,
+    "constraint_fail": 0,
+    "infra_failure": 0
+  },
+  "E8": {
+    "harness": "ha",
+    "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+    "n": 21,
+    "task_success": 1.0,
+    "avg_context_tokens": 4762.047619047619,
+    "avg_duration_ms": 8588.809523809523,
+    "avg_tool_calls": 3.0476190476190474,
+    "constraint_fail": 0,
+    "infra_failure": 0
+  },
+  "E9": {
+    "harness": "ha",
+    "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+    "n": 21,
+    "task_success": 1.0,
+    "avg_context_tokens": 4205.9047619047615,
+    "avg_duration_ms": 8639,
+    "avg_tool_calls": 2.7142857142857144,
+    "constraint_fail": 0,
+    "infra_failure": 0
+  }
+}

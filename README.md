@@ -36,13 +36,23 @@ OpenCode 插件入口：`apps/opencode-plugin/index.ts`，评测时 workspace �
 
 ## 实验
 
-预注册最多 10 组，配置与脚本全部在 `experiments/`。默认锁定 E0–E9。空白组用于展示难度。复跑单组：
+预注册最多 10 组，配置与脚本全部在 `experiments/`。默认锁定 E0–E9。
+
+正式协议：每个问题一个全新 OpenCode session，用户消息只有题目，**不指定调用哪个工具**。E1–E9 同时提供邮件/会议/IM/网页四个可选检索工具；E0 无记忆工具。排序：完成率降序，再按平均上下文长度、完成时间、工具次数升序。
 
 ```bash
-python -m experiments run --config experiments/configs/E2.yaml
+python -m uvicorn memmaster.api:app --app-dir services/memory/src --port 8787
+python -m experiments compare --backend opencode
 ```
 
-推迟组见 `experiments/deferred/`。
+单组复跑：
+
+```bash
+python -m experiments run --config experiments/configs/E2.yaml --backend opencode
+```
+
+检索天花板（强制检索，非正式）：`--backend oracle`。推迟组见 `experiments/deferred/`。
+
 
 ## SDD
 

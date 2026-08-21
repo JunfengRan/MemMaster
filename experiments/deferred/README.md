@@ -8,7 +8,7 @@ These configs are runnable later, not part of the locked 10.
 python -m experiments run --config experiments/deferred/always_on_push.yaml
 ```
 
-Paper arXiv:2607.08716 shows selective intervention beats always-on injection.
+The first matrix used a forced `local-tool-agent` (always search, then string-extract). That protocol is invalid for agent evaluation. Official runs use OpenCode with four optional source tools and an unprompted question. Archive of the old jsonl: `experiments/runs/archive-local-tool-agent/` if present.
 
 ## full GraphRAG
 

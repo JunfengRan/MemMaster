@@ -1,0 +1,853 @@
+{
+  "summary": {
+    "E0": {
+      "n": 21,
+      "task_success": 0.0,
+      "avg_context_tokens": 265.35,
+      "avg_duration_ms": 6225.25,
+      "avg_tool_calls": 0,
+      "constraint_fail": 0,
+      "infra_failure": 0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 0.0,
+          "avg_context_tokens": 269.4,
+          "avg_duration_ms": 6395.2,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.0,
+          "avg_context_tokens": 267.2,
+          "avg_duration_ms": 6262.2,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.0,
+          "avg_context_tokens": 261,
+          "avg_duration_ms": 6183.2,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 0.0,
+          "avg_context_tokens": 263.8,
+          "avg_duration_ms": 6060.4,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
+      }
+    },
+    "E1": {
+      "n": 21,
+      "task_success": 0.8095238095238095,
+      "avg_context_tokens": 2414,
+      "avg_duration_ms": 9450.1,
+      "avg_tool_calls": 4.7,
+      "constraint_fail": 0,
+      "infra_failure": 0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 2801.4,
+          "avg_duration_ms": 10651.2,
+          "avg_tool_calls": 5.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 3035.2,
+          "avg_duration_ms": 9970.6,
+          "avg_tool_calls": 6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 1916.4,
+          "avg_duration_ms": 9618.2,
+          "avg_tool_calls": 4.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 1903,
+          "avg_duration_ms": 7560.4,
+          "avg_tool_calls": 2.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
+      }
+    },
+    "E2": {
+      "n": 21,
+      "task_success": 0.9047619047619048,
+      "avg_context_tokens": 5296.6,
+      "avg_duration_ms": 7703.95,
+      "avg_tool_calls": 3.85,
+      "constraint_fail": 0,
+      "infra_failure": 0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 6673.6,
+          "avg_duration_ms": 8615.8,
+          "avg_tool_calls": 5,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 4793,
+          "avg_duration_ms": 7339.6,
+          "avg_tool_calls": 3.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4805.4,
+          "avg_duration_ms": 7737.6,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4914.4,
+          "avg_duration_ms": 7122.8,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
+      }
+    },
+    "E3": {
+      "n": 21,
+      "task_success": 0.9047619047619048,
+      "avg_context_tokens": 5207.35,
+      "avg_duration_ms": 8778.3,
+      "avg_tool_calls": 3.75,
+      "constraint_fail": 0,
+      "infra_failure": 0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 4959.6,
+          "avg_duration_ms": 8701.2,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 6376.8,
+          "avg_duration_ms": 9525.2,
+          "avg_tool_calls": 5,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4747.6,
+          "avg_duration_ms": 8714.2,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4745.4,
+          "avg_duration_ms": 8172.6,
+          "avg_tool_calls": 3.2,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
+      }
+    },
+    "E4": {
+      "n": 21,
+      "task_success": 0.9047619047619048,
+      "avg_context_tokens": 4769.1,
+      "avg_duration_ms": 8407,
+      "avg_tool_calls": 3.3,
+      "constraint_fail": 0,
+      "infra_failure": 0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 5961.6,
+          "avg_duration_ms": 10618.4,
+          "avg_tool_calls": 4.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 4927,
+          "avg_duration_ms": 7995,
+          "avg_tool_calls": 3.2,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 5386.8,
+          "avg_duration_ms": 8758.6,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 2801,
+          "avg_duration_ms": 6256,
+          "avg_tool_calls": 1.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
+      }
+    },
+    "E5": {
+      "n": 21,
+      "task_success": 0.9047619047619048,
+      "avg_context_tokens": 5392.05,
+      "avg_duration_ms": 9179.5,
+      "avg_tool_calls": 3.85,
+      "constraint_fail": 0,
+      "infra_failure": 0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 5357.4,
+          "avg_duration_ms": 9958.2,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 5134.4,
+          "avg_duration_ms": 8730.4,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 5785,
+          "avg_duration_ms": 9379.2,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 5291.4,
+          "avg_duration_ms": 8650.2,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
+      }
+    },
+    "E6": {
+      "n": 21,
+      "task_success": 0.8571428571428571,
+      "avg_context_tokens": 5850.45,
+      "avg_duration_ms": 9222.55,
+      "avg_tool_calls": 4.25,
+      "constraint_fail": 0,
+      "infra_failure": 0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 5912.8,
+          "avg_duration_ms": 9608.2,
+          "avg_tool_calls": 4.2,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 7203.2,
+          "avg_duration_ms": 10044.6,
+          "avg_tool_calls": 5.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 4985.4,
+          "avg_duration_ms": 8770.2,
+          "avg_tool_calls": 3.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 5300.4,
+          "avg_duration_ms": 8467.2,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
+      }
+    },
+    "E7": {
+      "n": 21,
+      "task_success": 0.9047619047619048,
+      "avg_context_tokens": 4779.15,
+      "avg_duration_ms": 8309.85,
+      "avg_tool_calls": 3.35,
+      "constraint_fail": 0,
+      "infra_failure": 0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 4699.4,
+          "avg_duration_ms": 8488,
+          "avg_tool_calls": 3.2,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 5260.6,
+          "avg_duration_ms": 8543.2,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4303.6,
+          "avg_duration_ms": 8085,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4853,
+          "avg_duration_ms": 8123.2,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
+      }
+    },
+    "E8": {
+      "n": 21,
+      "task_success": 0.9047619047619048,
+      "avg_context_tokens": 5148.4,
+      "avg_duration_ms": 8737.9,
+      "avg_tool_calls": 3.65,
+      "constraint_fail": 0,
+      "infra_failure": 0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 5187.2,
+          "avg_duration_ms": 9538.8,
+          "avg_tool_calls": 3.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 5883.2,
+          "avg_duration_ms": 9192.8,
+          "avg_tool_calls": 4.2,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4778.8,
+          "avg_duration_ms": 8646.2,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4744.4,
+          "avg_duration_ms": 7573.8,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
+      }
+    },
+    "E9": {
+      "n": 21,
+      "task_success": 0.9047619047619048,
+      "avg_context_tokens": 5284.85,
+      "avg_duration_ms": 7757.65,
+      "avg_tool_calls": 3.8,
+      "constraint_fail": 0,
+      "infra_failure": 0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 5373.6,
+          "avg_duration_ms": 7663.2,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 6067.8,
+          "avg_duration_ms": 8125.6,
+          "avg_tool_calls": 4.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4793.2,
+          "avg_duration_ms": 7759.8,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4904.8,
+          "avg_duration_ms": 7482,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
+      }
+    }
+  },
+  "recommendation": {
+    "winner": "E4",
+    "task_success": 0.9047619047619048,
+    "avg_context_tokens": 4769.1,
+    "avg_duration_ms": 8407,
+    "avg_tool_calls": 3.3,
+    "key": "task_success desc, avg_context_tokens, avg_duration_ms, avg_tool_calls",
+    "ranked": [
+      {
+        "group": "E4",
+        "task_success": 0.9047619047619048,
+        "avg_context_tokens": 4769.1,
+        "avg_duration_ms": 8407,
+        "avg_tool_calls": 3.3
+      },
+      {
+        "group": "E7",
+        "task_success": 0.9047619047619048,
+        "avg_context_tokens": 4779.15,
+        "avg_duration_ms": 8309.85,
+        "avg_tool_calls": 3.35
+      },
+      {
+        "group": "E8",
+        "task_success": 0.9047619047619048,
+        "avg_context_tokens": 5148.4,
+        "avg_duration_ms": 8737.9,
+        "avg_tool_calls": 3.65
+      },
+      {
+        "group": "E3",
+        "task_success": 0.9047619047619048,
+        "avg_context_tokens": 5207.35,
+        "avg_duration_ms": 8778.3,
+        "avg_tool_calls": 3.75
+      },
+      {
+        "group": "E9",
+        "task_success": 0.9047619047619048,
+        "avg_context_tokens": 5284.85,
+        "avg_duration_ms": 7757.65,
+        "avg_tool_calls": 3.8
+      },
+      {
+        "group": "E2",
+        "task_success": 0.9047619047619048,
+        "avg_context_tokens": 5296.6,
+        "avg_duration_ms": 7703.95,
+        "avg_tool_calls": 3.85
+      },
+      {
+        "group": "E5",
+        "task_success": 0.9047619047619048,
+        "avg_context_tokens": 5392.05,
+        "avg_duration_ms": 9179.5,
+        "avg_tool_calls": 3.85
+      },
+      {
+        "group": "E6",
+        "task_success": 0.8571428571428571,
+        "avg_context_tokens": 5850.45,
+        "avg_duration_ms": 9222.55,
+        "avg_tool_calls": 4.25
+      },
+      {
+        "group": "E1",
+        "task_success": 0.8095238095238095,
+        "avg_context_tokens": 2414,
+        "avg_duration_ms": 9450.1,
+        "avg_tool_calls": 4.7
+      },
+      {
+        "group": "E0",
+        "task_success": 0.0,
+        "avg_context_tokens": 265.35,
+        "avg_duration_ms": 6225.25,
+        "avg_tool_calls": 0
+      }
+    ],
+    "by_source": {
+      "mail": [
+        {
+          "group": "E1",
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 2801.4,
+          "avg_duration_ms": 10651.2,
+          "avg_tool_calls": 5.4
+        },
+        {
+          "group": "E7",
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 4699.4,
+          "avg_duration_ms": 8488,
+          "avg_tool_calls": 3.2
+        },
+        {
+          "group": "E3",
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 4959.6,
+          "avg_duration_ms": 8701.2,
+          "avg_tool_calls": 3.4
+        },
+        {
+          "group": "E8",
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 5187.2,
+          "avg_duration_ms": 9538.8,
+          "avg_tool_calls": 3.6
+        },
+        {
+          "group": "E5",
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 5357.4,
+          "avg_duration_ms": 9958.2,
+          "avg_tool_calls": 3.8
+        },
+        {
+          "group": "E9",
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 5373.6,
+          "avg_duration_ms": 7663.2,
+          "avg_tool_calls": 3.8
+        },
+        {
+          "group": "E6",
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 5912.8,
+          "avg_duration_ms": 9608.2,
+          "avg_tool_calls": 4.2
+        },
+        {
+          "group": "E4",
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 5961.6,
+          "avg_duration_ms": 10618.4,
+          "avg_tool_calls": 4.6
+        },
+        {
+          "group": "E2",
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 6673.6,
+          "avg_duration_ms": 8615.8,
+          "avg_tool_calls": 5
+        },
+        {
+          "group": "E0",
+          "task_success": 0.0,
+          "avg_context_tokens": 269.4,
+          "avg_duration_ms": 6395.2,
+          "avg_tool_calls": 0
+        }
+      ],
+      "meeting": [
+        {
+          "group": "E1",
+          "task_success": 0.8,
+          "avg_context_tokens": 3035.2,
+          "avg_duration_ms": 9970.6,
+          "avg_tool_calls": 6
+        },
+        {
+          "group": "E2",
+          "task_success": 0.8,
+          "avg_context_tokens": 4793,
+          "avg_duration_ms": 7339.6,
+          "avg_tool_calls": 3.6
+        },
+        {
+          "group": "E4",
+          "task_success": 0.8,
+          "avg_context_tokens": 4927,
+          "avg_duration_ms": 7995,
+          "avg_tool_calls": 3.2
+        },
+        {
+          "group": "E5",
+          "task_success": 0.8,
+          "avg_context_tokens": 5134.4,
+          "avg_duration_ms": 8730.4,
+          "avg_tool_calls": 3.8
+        },
+        {
+          "group": "E7",
+          "task_success": 0.8,
+          "avg_context_tokens": 5260.6,
+          "avg_duration_ms": 8543.2,
+          "avg_tool_calls": 3.8
+        },
+        {
+          "group": "E8",
+          "task_success": 0.8,
+          "avg_context_tokens": 5883.2,
+          "avg_duration_ms": 9192.8,
+          "avg_tool_calls": 4.2
+        },
+        {
+          "group": "E9",
+          "task_success": 0.8,
+          "avg_context_tokens": 6067.8,
+          "avg_duration_ms": 8125.6,
+          "avg_tool_calls": 4.6
+        },
+        {
+          "group": "E3",
+          "task_success": 0.8,
+          "avg_context_tokens": 6376.8,
+          "avg_duration_ms": 9525.2,
+          "avg_tool_calls": 5
+        },
+        {
+          "group": "E6",
+          "task_success": 0.8,
+          "avg_context_tokens": 7203.2,
+          "avg_duration_ms": 10044.6,
+          "avg_tool_calls": 5.4
+        },
+        {
+          "group": "E0",
+          "task_success": 0.0,
+          "avg_context_tokens": 267.2,
+          "avg_duration_ms": 6262.2,
+          "avg_tool_calls": 0
+        }
+      ],
+      "im": [
+        {
+          "group": "E7",
+          "task_success": 1.0,
+          "avg_context_tokens": 4303.6,
+          "avg_duration_ms": 8085,
+          "avg_tool_calls": 3
+        },
+        {
+          "group": "E3",
+          "task_success": 1.0,
+          "avg_context_tokens": 4747.6,
+          "avg_duration_ms": 8714.2,
+          "avg_tool_calls": 3.4
+        },
+        {
+          "group": "E8",
+          "task_success": 1.0,
+          "avg_context_tokens": 4778.8,
+          "avg_duration_ms": 8646.2,
+          "avg_tool_calls": 3.4
+        },
+        {
+          "group": "E9",
+          "task_success": 1.0,
+          "avg_context_tokens": 4793.2,
+          "avg_duration_ms": 7759.8,
+          "avg_tool_calls": 3.4
+        },
+        {
+          "group": "E2",
+          "task_success": 1.0,
+          "avg_context_tokens": 4805.4,
+          "avg_duration_ms": 7737.6,
+          "avg_tool_calls": 3.4
+        },
+        {
+          "group": "E4",
+          "task_success": 1.0,
+          "avg_context_tokens": 5386.8,
+          "avg_duration_ms": 8758.6,
+          "avg_tool_calls": 3.8
+        },
+        {
+          "group": "E5",
+          "task_success": 1.0,
+          "avg_context_tokens": 5785,
+          "avg_duration_ms": 9379.2,
+          "avg_tool_calls": 4
+        },
+        {
+          "group": "E6",
+          "task_success": 0.8,
+          "avg_context_tokens": 4985.4,
+          "avg_duration_ms": 8770.2,
+          "avg_tool_calls": 3.6
+        },
+        {
+          "group": "E1",
+          "task_success": 0.6,
+          "avg_context_tokens": 1916.4,
+          "avg_duration_ms": 9618.2,
+          "avg_tool_calls": 4.6
+        },
+        {
+          "group": "E0",
+          "task_success": 0.0,
+          "avg_context_tokens": 261,
+          "avg_duration_ms": 6183.2,
+          "avg_tool_calls": 0
+        }
+      ],
+      "web": [
+        {
+          "group": "E1",
+          "task_success": 1.0,
+          "avg_context_tokens": 1903,
+          "avg_duration_ms": 7560.4,
+          "avg_tool_calls": 2.8
+        },
+        {
+          "group": "E4",
+          "task_success": 1.0,
+          "avg_context_tokens": 2801,
+          "avg_duration_ms": 6256,
+          "avg_tool_calls": 1.6
+        },
+        {
+          "group": "E8",
+          "task_success": 1.0,
+          "avg_context_tokens": 4744.4,
+          "avg_duration_ms": 7573.8,
+          "avg_tool_calls": 3.4
+        },
+        {
+          "group": "E3",
+          "task_success": 1.0,
+          "avg_context_tokens": 4745.4,
+          "avg_duration_ms": 8172.6,
+          "avg_tool_calls": 3.2
+        },
+        {
+          "group": "E7",
+          "task_success": 1.0,
+          "avg_context_tokens": 4853,
+          "avg_duration_ms": 8123.2,
+          "avg_tool_calls": 3.4
+        },
+        {
+          "group": "E9",
+          "task_success": 1.0,
+          "avg_context_tokens": 4904.8,
+          "avg_duration_ms": 7482,
+          "avg_tool_calls": 3.4
+        },
+        {
+          "group": "E2",
+          "task_success": 1.0,
+          "avg_context_tokens": 4914.4,
+          "avg_duration_ms": 7122.8,
+          "avg_tool_calls": 3.4
+        },
+        {
+          "group": "E5",
+          "task_success": 1.0,
+          "avg_context_tokens": 5291.4,
+          "avg_duration_ms": 8650.2,
+          "avg_tool_calls": 3.8
+        },
+        {
+          "group": "E6",
+          "task_success": 1.0,
+          "avg_context_tokens": 5300.4,
+          "avg_duration_ms": 8467.2,
+          "avg_tool_calls": 3.8
+        },
+        {
+          "group": "E0",
+          "task_success": 0.0,
+          "avg_context_tokens": 263.8,
+          "avg_duration_ms": 6060.4,
+          "avg_tool_calls": 0
+        }
+      ]
+    }
+  },
+  "protocol": "exp2-untuned-adjusted",
+  "note": "Q06 因第一版天花全失败已删除；Q21/Q22 为替换/新增，第二次实验记失败。三项代价指标沿用原 20 题均值。",
+  "dropped": [
+    "Q06"
+  ],
+  "added_as_fail": [
+    "Q21",
+    "Q22"
+  ]
+}

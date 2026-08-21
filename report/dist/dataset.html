@@ -4,22 +4,61 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>数据集 · MemMaster</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <style>
+:root { --ink:#152033; --muted:#5b6573; --paper:#f7f4ee; --card:#fff; --line:#d9d3c5; --blue:#1f6feb; --green:#1a7f37; --red:#c62828; --navy:#13294b; }
+* { box-sizing: border-box; }
+html, body { margin:0; background:var(--paper); color:var(--ink); font: 16px/1.65 "Segoe UI", "PingFang SC", sans-serif; }
+header, footer { background:var(--navy); color:#fff; padding:1rem 1.5rem; }
+header { display:flex; flex-wrap:wrap; gap:.8rem 1.5rem; align-items:center; justify-content:space-between; }
+header nav a { color:#d7e4ff; margin-right:1rem; text-decoration:none; }
+header nav a.active { color:#fff; font-weight:700; border-bottom:2px solid #fff; }
+main { max-width: 980px; margin: 0 auto; padding: 1.6rem 1.2rem 3rem; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.3rem; margin:1rem 0; }
+h1 { font-size:1.7rem; margin:.2rem 0 1rem; }
+h2 { font-size:1.25rem; margin:1.4rem 0 .6rem; }
+.muted { color:var(--muted); }
+.legend span { display:inline-block; margin-right:1rem; }
+.sw { display:inline-block; width:12px; height:12px; border-radius:2px; margin-right:.3rem; vertical-align:middle; }
+.sw.blue { background:var(--blue); } .sw.green { background:var(--green); } .sw.red { background:var(--red); }
+.cmp { margin:.7rem 0 1rem; }
+.cmp .lab { display:flex; justify-content:space-between; font-size:.92rem; margin-bottom:.25rem; }
+.track { position:relative; height:16px; background:#ece7dc; border-radius:8px; overflow:hidden; }
+.track i { position:absolute; top:0; height:16px; }
+.track .blue { background:var(--blue); }
+.track .green { background:var(--green); }
+.track .red { background:var(--red); }
+table { width:100%; border-collapse:collapse; font-size:.95rem; }
+th, td { border-bottom:1px solid var(--line); padding:.45rem .4rem; text-align:left; }
+.kicker { letter-spacing:.08em; text-transform:uppercase; font-size:.75rem; color:#8a6d3b; }
+blockquote { border-left:4px solid var(--blue); margin:1rem 0; padding:.2rem 1rem; color:#243047; }
+footer { font-size:.85rem; }
+</style>
 </head>
 <body>
 <header>
-  <strong>MemMaster</strong>
-  <nav><a href="index.html">总览</a> <a href="research.html">调研</a> <a href="architecture.html">架构</a> <a href="dataset.html" class="active">数据集</a> <a href="experiments.html">实验</a> <a href="results.html">结果</a> <a href="recommendation.html">建议</a></nav>
+  <strong>MemMaster 技术验证报告</strong>
+  <nav><a href="index.html">总览</a> <a href="research.html">调研与方法</a> <a href="architecture.html">架构</a> <a href="dataset.html" class="active">数据集</a> <a href="experiments.html">三次实验</a> <a href="results.html">结果对比</a> <a href="recommendation.html">建议</a></nav>
 </header>
 <main>
+<p class="kicker">Standalone · 打开本页即可读完 · 合成 ToB 数据 · 非华为生产业务</p>
 
-<h1>合成数据集 tob-memory-v1</h1>
+<h1>合成数据集 tob-memory-v1：21 题，四源覆盖</h1>
 <div class="card">
-<p>虚构客户 LumenGrid、项目星河-7。公开华为产品名 + 合成工单/日期/人员。20 题，四源各 5 题。Oracle 证据可达率 100%。</p>
-<p>空白组 0 分：答案是订单号、租户 ID、变更单等，不在通用模型常识中。</p>
+<p>客户叫 LumenGrid，项目叫星河-7。产品名用公开资料里的 OceanStor / GaussDB / iMaster NCE 等，<b>工单号、租户 ID、人名关系全部虚构</b>。每题指定 evidence 文档，构建时有 oracle 门禁：标准答案必须出现在证据原文里。</p>
+<p>题型包括精确匹配、修订覆盖、别名、组合约束、干扰项、多跳。邮件约 6 题、会议/IM/网页各 5 题。</p>
+</div>
+<div class="card">
+<h2>为什么删掉了原来的 Q06</h2>
+<p>第一版「强制检索 + 从上下文抽答案」里，<b>E1–E9 全部做不出</b>「GaussDB 容灾演练 RTO 是多久」。问句是「RTO 目标是多久」，证据里写的是「15分钟」。中文 FTS 把整段汉字当成一个大词，检索天花都召不回，说明这题超出了当前检索器能力，不是模型不肯答。</p>
+<p>删掉 Q06 后补了两题，都满足：Blank 不应会；E1–E4 里至少一种方法在第一版强制检索下能抽到答案——</p>
+<ul>
+<li><b>Q21</b> 会议：WO-DR 系列容灾演练工单完整编号 <code>WO-DR-20260311-07</code></li>
+<li><b>Q22</b> 邮件：ACC-LG 系列现场验收窗口完整编号 <code>ACC-LG-202604-19</code></li>
+</ul>
+<p>第二版当时没跑过这两题，按协议<b>记失败</b>，所以第二次完成率分母变成 21、分子不加。上下文 / 耗时 / 工具次数三项代价<b>仍用原来 20 题的均值</b>，不被两条默认失败的空行拉歪。</p>
 </div>
 
 </main>
-<footer>MIT · 合成 ToB 数据 · 非华为生产业务</footer>
+<footer>MIT · 虚构客户 LumenGrid / 项目星河-7 · 数字全部由 experiments/runs 里的 JSON 生成</footer>
 </body>
 </html>

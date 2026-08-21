@@ -3,23 +3,173 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>结果 · MemMaster</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>结果对比 · MemMaster</title>
+  <style>
+:root { --ink:#152033; --muted:#5b6573; --paper:#f7f4ee; --card:#fff; --line:#d9d3c5; --blue:#1f6feb; --green:#1a7f37; --red:#c62828; --navy:#13294b; }
+* { box-sizing: border-box; }
+html, body { margin:0; background:var(--paper); color:var(--ink); font: 16px/1.65 "Segoe UI", "PingFang SC", sans-serif; }
+header, footer { background:var(--navy); color:#fff; padding:1rem 1.5rem; }
+header { display:flex; flex-wrap:wrap; gap:.8rem 1.5rem; align-items:center; justify-content:space-between; }
+header nav a { color:#d7e4ff; margin-right:1rem; text-decoration:none; }
+header nav a.active { color:#fff; font-weight:700; border-bottom:2px solid #fff; }
+main { max-width: 980px; margin: 0 auto; padding: 1.6rem 1.2rem 3rem; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.3rem; margin:1rem 0; }
+h1 { font-size:1.7rem; margin:.2rem 0 1rem; }
+h2 { font-size:1.25rem; margin:1.4rem 0 .6rem; }
+.muted { color:var(--muted); }
+.legend span { display:inline-block; margin-right:1rem; }
+.sw { display:inline-block; width:12px; height:12px; border-radius:2px; margin-right:.3rem; vertical-align:middle; }
+.sw.blue { background:var(--blue); } .sw.green { background:var(--green); } .sw.red { background:var(--red); }
+.cmp { margin:.7rem 0 1rem; }
+.cmp .lab { display:flex; justify-content:space-between; font-size:.92rem; margin-bottom:.25rem; }
+.track { position:relative; height:16px; background:#ece7dc; border-radius:8px; overflow:hidden; }
+.track i { position:absolute; top:0; height:16px; }
+.track .blue { background:var(--blue); }
+.track .green { background:var(--green); }
+.track .red { background:var(--red); }
+table { width:100%; border-collapse:collapse; font-size:.95rem; }
+th, td { border-bottom:1px solid var(--line); padding:.45rem .4rem; text-align:left; }
+.kicker { letter-spacing:.08em; text-transform:uppercase; font-size:.75rem; color:#8a6d3b; }
+blockquote { border-left:4px solid var(--blue); margin:1rem 0; padding:.2rem 1rem; color:#243047; }
+footer { font-size:.85rem; }
+</style>
 </head>
 <body>
 <header>
-  <strong>MemMaster</strong>
-  <nav><a href="index.html">总览</a> <a href="research.html">调研</a> <a href="architecture.html">架构</a> <a href="dataset.html">数据集</a> <a href="experiments.html">实验</a> <a href="results.html" class="active">结果</a> <a href="recommendation.html">建议</a></nav>
+  <strong>MemMaster 技术验证报告</strong>
+  <nav><a href="index.html">总览</a> <a href="research.html">调研与方法</a> <a href="architecture.html">架构</a> <a href="dataset.html">数据集</a> <a href="experiments.html">三次实验</a> <a href="results.html" class="active">结果对比</a> <a href="recommendation.html">建议</a></nav>
 </header>
 <main>
+<p class="kicker">Standalone · 打开本页即可读完 · 合成 ToB 数据 · 非华为生产业务</p>
 
-<h1>结果</h1>
+<h1>结果：蓝绿红对比 + 最终排行</h1>
 <div class="card">
-<p>后端：local-tool-agent（与插件相同的 search/push API 与预算）。E0=0%，E1 lexical=60%，E2 hybrid=95%。图/push/MemCube 在 20 题上未再净增 2 题，按预注册规则不证明额外复杂度。</p>
-<p>分源（E2）：邮件 100% · 会议 80% · IM 100% · 网页 100%</p>
+<p class="legend"><span><i class="sw blue"></i>未调优完成率</span><span><i class="sw green"></i>提升</span><span><i class="sw red"></i>回落</span></p>
+<p class="muted">按当前总完成率降序。本轮只比任务完成率与代价（上下文 / 耗时 / 工具次数），安全与权限隔离另开评测，不混进这张图。</p>
+
+<div class="cmp">
+  <div class="lab"><span>E9 · Fact Keys</span><span>未调优 90.5% → 调优后 96.8%（+6.3pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:90.48%"></i>
+    <i class="green" style="left:90.48%;width:6.30%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E2 · Hybrid RRF</span><span>未调优 90.5% → 调优后 96.8%（+6.3pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:90.48%"></i>
+    <i class="green" style="left:90.48%;width:6.30%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E6 · Time-aware</span><span>未调优 85.7% → 调优后 96.8%（+11.1pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:85.71%"></i>
+    <i class="green" style="left:85.71%;width:11.06%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E8 · Dual Channel</span><span>未调优 90.5% → 调优后 95.5%（+5.0pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:90.48%"></i>
+    <i class="green" style="left:90.48%;width:4.98%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E7 · Core Memory</span><span>未调优 90.5% → 调优后 95.2%（+4.8pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:90.48%"></i>
+    <i class="green" style="left:90.48%;width:4.76%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E4 · Push + Pull</span><span>未调优 90.5% → 调优后 95.2%（+4.8pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:90.48%"></i>
+    <i class="green" style="left:90.48%;width:4.76%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E5 · Extractive Facts</span><span>未调优 90.5% → 调优后 95.2%（+4.8pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:90.48%"></i>
+    <i class="green" style="left:90.48%;width:4.76%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E1 · Lexical / BM25</span><span>未调优 81.0% → 调优后 90.5%（+9.5pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:80.95%"></i>
+    <i class="green" style="left:80.95%;width:9.52%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E3 · Graph-lite PPR</span><span>未调优 90.5% → 调优后 85.7%（-4.8pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:85.71%"></i>
+    <i class="red" style="left:85.71%;width:4.76%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E0 · Blank（空白对照）</span><span>未调优 0.0% → 调优后 0.0%（+0.0pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:0.00%"></i>
+    <i class="green" style="left:0.00%;width:0.00%"></i>
+  </div>
+</div>
+</div>
+<div class="card">
+<h2>最终字典序（事实 + 代价离群，含多跳加赛）</h2>
+
+<p>完成率 = 必答事实写出且非代价离群。代价按同一题在 E1–E9 上的分布：工具次数 z≥1.5 且至少比中位多 2 次，或 token z≥1.5 且 ≥1.6×中位，或耗时 z≥2 且 ≥1.8×中位。Blank 不参与代价分布。多跳加赛只跑当时并列第一的组。</p>
+<table>
+<thead><tr><th>序</th><th>组 / 方法</th><th>完成率 ↑</th><th>上下文 token ↓</th><th>耗时 ms ↓</th><th>工具次数 ↓</th></tr></thead>
+<tbody><tr><td>1</td><td>E9<br><span class='muted'>Fact Keys</span></td><td>96.8%<br><span class='muted'>30/31</span><br><span class='muted'>事实 96.8% · 代价失败 0</span></td><td>5311</td><td>9859</td><td>3.58</td></tr><tr><td>2</td><td>E2<br><span class='muted'>Hybrid RRF</span></td><td>96.8%<br><span class='muted'>30/31</span><br><span class='muted'>事实 96.8% · 代价失败 0</span></td><td>5346</td><td>10263</td><td>3.55</td></tr><tr><td>3</td><td>E6<br><span class='muted'>Time-aware</span></td><td>96.8%<br><span class='muted'>30/31</span><br><span class='muted'>事实 96.8% · 代价失败 0</span></td><td>5844</td><td>10593</td><td>3.84</td></tr><tr><td>4</td><td>E8<br><span class='muted'>Dual Channel</span></td><td>95.5%<br><span class='muted'>21/22</span><br><span class='muted'>事实 100.0% · 代价失败 1</span></td><td>4936</td><td>8657</td><td>3.18</td></tr><tr><td>5</td><td>E7<br><span class='muted'>Core Memory</span></td><td>95.2%<br><span class='muted'>20/21</span><br><span class='muted'>事实 100.0% · 代价失败 1</span></td><td>3930</td><td>8178</td><td>2.24</td></tr><tr><td>6</td><td>E4<br><span class='muted'>Push + Pull</span></td><td>95.2%<br><span class='muted'>20/21</span><br><span class='muted'>事实 100.0% · 代价失败 1</span></td><td>4194</td><td>7797</td><td>2.52</td></tr><tr><td>7</td><td>E5<br><span class='muted'>Extractive Facts</span></td><td>95.2%<br><span class='muted'>20/21</span><br><span class='muted'>事实 100.0% · 代价失败 1</span></td><td>4323</td><td>8219</td><td>2.67</td></tr><tr><td>8</td><td>E1<br><span class='muted'>Lexical / BM25</span></td><td>90.5%<br><span class='muted'>19/21</span><br><span class='muted'>事实 95.2% · 代价失败 2</span></td><td>2391</td><td>9532</td><td>3.19</td></tr><tr><td>9</td><td>E3<br><span class='muted'>Graph-lite PPR</span></td><td>85.7%<br><span class='muted'>18/21</span><br><span class='muted'>事实 100.0% · 代价失败 3</span></td><td>4430</td><td>8084</td><td>3.00</td></tr><tr><td>10</td><td>E0<br><span class='muted'>Blank（空白对照）</span></td><td>0.0%<br><span class='muted'>0/21</span><br><span class='muted'>事实 0.0% · 代价失败 0</span></td><td>265</td><td>6225</td><td>0.00</td></tr></tbody>
+</table>
+
+<h2>邮件 分层</h2>
+<p>邮件 子集，同一字典序。分层只作诊断，主排序看总体。</p>
+<table>
+<thead><tr><th>序</th><th>组 / 方法</th><th>完成率 ↑</th><th>上下文 token ↓</th><th>耗时 ms ↓</th><th>工具次数 ↓</th></tr></thead>
+<tbody><tr><td>1</td><td>E1<br><span class='muted'>Lexical / BM25</span></td><td>100.0%</td><td>3157</td><td>9513</td><td>3.33</td></tr><tr><td>2</td><td>E7<br><span class='muted'>Core Memory</span></td><td>100.0%</td><td>5014</td><td>7807</td><td>2.33</td></tr><tr><td>3</td><td>E5<br><span class='muted'>Extractive Facts</span></td><td>100.0%</td><td>5425</td><td>8169</td><td>2.83</td></tr><tr><td>4</td><td>E4<br><span class='muted'>Push + Pull</span></td><td>100.0%</td><td>5660</td><td>8237</td><td>3.00</td></tr><tr><td>5</td><td>E9<br><span class='muted'>Fact Keys</span></td><td>100.0%</td><td>6018</td><td>9739</td><td>3.64</td></tr><tr><td>6</td><td>E6<br><span class='muted'>Time-aware</span></td><td>100.0%</td><td>6429</td><td>9556</td><td>3.64</td></tr><tr><td>7</td><td>E2<br><span class='muted'>Hybrid RRF</span></td><td>100.0%</td><td>6446</td><td>10369</td><td>4.00</td></tr><tr><td>8</td><td>E8<br><span class='muted'>Dual Channel</span></td><td>85.7%</td><td>6201</td><td>9257</td><td>3.71</td></tr><tr><td>9</td><td>E3<br><span class='muted'>Graph-lite PPR</span></td><td>83.3%</td><td>5477</td><td>8877</td><td>3.50</td></tr><tr><td>10</td><td>E0<br><span class='muted'>Blank（空白对照）</span></td><td>0.0%</td><td>224</td><td>5329</td><td>0.00</td></tr></tbody>
+</table>
+<h2>会议 分层</h2>
+<p>会议 子集，同一字典序。分层只作诊断，主排序看总体。</p>
+<table>
+<thead><tr><th>序</th><th>组 / 方法</th><th>完成率 ↑</th><th>上下文 token ↓</th><th>耗时 ms ↓</th><th>工具次数 ↓</th></tr></thead>
+<tbody><tr><td>1</td><td>E7<br><span class='muted'>Core Memory</span></td><td>100.0%</td><td>3074</td><td>8073</td><td>1.80</td></tr><tr><td>2</td><td>E2<br><span class='muted'>Hybrid RRF</span></td><td>100.0%</td><td>3442</td><td>9750</td><td>2.20</td></tr><tr><td>3</td><td>E9<br><span class='muted'>Fact Keys</span></td><td>100.0%</td><td>3723</td><td>8888</td><td>2.60</td></tr><tr><td>4</td><td>E6<br><span class='muted'>Time-aware</span></td><td>100.0%</td><td>4214</td><td>8189</td><td>3.00</td></tr><tr><td>5</td><td>E8<br><span class='muted'>Dual Channel</span></td><td>100.0%</td><td>4336</td><td>9594</td><td>3.00</td></tr><tr><td>6</td><td>E1<br><span class='muted'>Lexical / BM25</span></td><td>80.0%</td><td>1790</td><td>8789</td><td>2.60</td></tr><tr><td>7</td><td>E4<br><span class='muted'>Push + Pull</span></td><td>80.0%</td><td>3950</td><td>7714</td><td>2.60</td></tr><tr><td>8</td><td>E5<br><span class='muted'>Extractive Facts</span></td><td>80.0%</td><td>4192</td><td>8338</td><td>3.00</td></tr><tr><td>9</td><td>E3<br><span class='muted'>Graph-lite PPR</span></td><td>80.0%</td><td>4980</td><td>8637</td><td>3.40</td></tr><tr><td>10</td><td>E0<br><span class='muted'>Blank（空白对照）</span></td><td>0.0%</td><td>214</td><td>5044</td><td>0.00</td></tr></tbody>
+</table>
+<h2>IM 分层</h2>
+<p>IM 子集，同一字典序。分层只作诊断，主排序看总体。</p>
+<table>
+<thead><tr><th>序</th><th>组 / 方法</th><th>完成率 ↑</th><th>上下文 token ↓</th><th>耗时 ms ↓</th><th>工具次数 ↓</th></tr></thead>
+<tbody><tr><td>1</td><td>E3<br><span class='muted'>Graph-lite PPR</span></td><td>100.0%</td><td>4009</td><td>7811</td><td>3.00</td></tr><tr><td>2</td><td>E4<br><span class='muted'>Push + Pull</span></td><td>100.0%</td><td>4546</td><td>8966</td><td>3.00</td></tr><tr><td>3</td><td>E2<br><span class='muted'>Hybrid RRF</span></td><td>100.0%</td><td>5362</td><td>9524</td><td>3.62</td></tr><tr><td>4</td><td>E5<br><span class='muted'>Extractive Facts</span></td><td>100.0%</td><td>5363</td><td>10308</td><td>3.60</td></tr><tr><td>5</td><td>E9<br><span class='muted'>Fact Keys</span></td><td>100.0%</td><td>5656</td><td>10475</td><td>3.88</td></tr><tr><td>6</td><td>E6<br><span class='muted'>Time-aware</span></td><td>100.0%</td><td>6274</td><td>10328</td><td>4.25</td></tr><tr><td>7</td><td>E8<br><span class='muted'>Dual Channel</span></td><td>100.0%</td><td>6628</td><td>9558</td><td>4.60</td></tr><tr><td>8</td><td>E1<br><span class='muted'>Lexical / BM25</span></td><td>80.0%</td><td>2512</td><td>12913</td><td>5.20</td></tr><tr><td>9</td><td>E7<br><span class='muted'>Core Memory</span></td><td>80.0%</td><td>4860</td><td>10479</td><td>3.20</td></tr><tr><td>10</td><td>E0<br><span class='muted'>Blank（空白对照）</span></td><td>0.0%</td><td>261</td><td>6183</td><td>0.00</td></tr></tbody>
+</table>
+<h2>网页 分层</h2>
+<p>网页 子集，同一字典序。分层只作诊断，主排序看总体。</p>
+<table>
+<thead><tr><th>序</th><th>组 / 方法</th><th>完成率 ↑</th><th>上下文 token ↓</th><th>耗时 ms ↓</th><th>工具次数 ↓</th></tr></thead>
+<tbody><tr><td>1</td><td>E1<br><span class='muted'>Lexical / BM25</span></td><td>100.0%</td><td>1952</td><td>6914</td><td>1.60</td></tr><tr><td>2</td><td>E8<br><span class='muted'>Dual Channel</span></td><td>100.0%</td><td>2075</td><td>5977</td><td>1.20</td></tr><tr><td>3</td><td>E5<br><span class='muted'>Extractive Facts</span></td><td>100.0%</td><td>2091</td><td>6069</td><td>1.20</td></tr><tr><td>4</td><td>E4<br><span class='muted'>Push + Pull</span></td><td>100.0%</td><td>2328</td><td>6183</td><td>1.40</td></tr><tr><td>5</td><td>E7<br><span class='muted'>Core Memory</span></td><td>100.0%</td><td>2554</td><td>6427</td><td>1.60</td></tr><tr><td>6</td><td>E9<br><span class='muted'>Fact Keys</span></td><td>85.7%</td><td>4940</td><td>10037</td><td>3.86</td></tr><tr><td>7</td><td>E2<br><span class='muted'>Hybrid RRF</span></td><td>85.7%</td><td>4961</td><td>11307</td><td>3.71</td></tr><tr><td>8</td><td>E6<br><span class='muted'>Time-aware</span></td><td>85.7%</td><td>5598</td><td>14241</td><td>4.29</td></tr><tr><td>9</td><td>E3<br><span class='muted'>Graph-lite PPR</span></td><td>80.0%</td><td>3046</td><td>6851</td><td>2.00</td></tr><tr><td>10</td><td>E0<br><span class='muted'>Blank（空白对照）</span></td><td>0.0%</td><td>264</td><td>6060</td><td>0.00</td></tr></tbody>
+</table>
+
+</div>
+<div class="card">
+<h2>看起来「简单方法完胜」是怎么来的</h2>
+<p>第一版检索天花上，E2–E8 都在 90% 以上，说明新兴模块召回并不差。未调优 Agent 和调优后，表面上 E2 远高于 E5–E9，拆题后不是这么回事。</p>
+<ul>
+<li><b>评分把「答对后又点出作废项」判失败。</b>Q01 有效 PO、Q02 切换日、Q07 NCE 版本、Q12 容量、Q17 内核、Q20 授权组等，各组其实都写出了正确事实，只是按题目习惯写了「草稿号已作废」。这不是检索失败，更不是 Mem0/时间/Core 比 BM25 差。</li>
+<li><b>组间真正拉开的只有一两道。</b>在同一 21 题上，E1/E2/E3/E8 曾是 11/21，E4–E9 是 10/21，差在 Q09 IdeaHub、Q11 变更单是否复述了干扰编号，不是方法天花板。</li>
+<li><b>加赛改成跨源多跳 / 混合指代。</b>问句里不出现第二跳的专有名词（例如只问「批准 Ascend 配额的人的工号」，工号在邮件、批准人在纪要）。单号查找题无法分开 Hybrid 家族。</li>
+<li><b>过多工具调用 / 过长上下文 / 过长耗时算失败。</b>按每一题在各组上的均值和标准差，只把明显偏高的右尾判失败（多 1 次调用不够）。这样 E3 等「事实对了但扫了过多源」会掉完成率。</li>
+<li><b>Harness 本身偏源路由。</b>HA/HB 教模型按邮件/会议/IM/网页选工具，这对 BM25/Hybrid 最顺。E5 事实层、E6 时间、E7 Core、E9 键并没有单独的工具，优势展不开。本轮不把「没用上方法特长」写成方法无效。</li>
+</ul>
+<p>修正后的结论：在这套 ToB 事实题上，<b>各记忆方法的任务完成率接近</b>；真正稳定可分的是代价——更短上下文、更少调用。Hybrid 仍是召回上限的好默认，Lexical 往往最省 token。</p>
+</div>
+<div class="card">
+<p>完成率仍并列时，继续只给领先簇加多跳题，直到第一名唯一；代价离群已经计入完成率，不再只靠字典序里的平均值拉开。</p>
 </div>
 
 </main>
-<footer>MIT · 合成 ToB 数据 · 非华为生产业务</footer>
+<footer>MIT · 虚构客户 LumenGrid / 项目星河-7 · 数字全部由 experiments/runs 里的 JSON 生成</footer>
 </body>
 </html>

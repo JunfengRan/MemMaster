@@ -2,10 +2,10 @@ id: E7
 name: CorePlusHybrid
 status: locked
 methods: [hybrid]
-max_memory_calls: 2
+max_memory_calls: 8
 max_chunks: 8
 max_inject_tokens: 3000
-tools: [memory_search]
+tools: [search_mail, search_meeting, search_im, search_web]
 push: false
 core_memory: true
 source: MemGPT core

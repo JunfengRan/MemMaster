@@ -7,9 +7,16 @@
       "source": "mail",
       "type": "exact",
       "question": "星河-7 OceanStor Dorado 8000 有效采购订单号是什么？不要给出已作废的草稿单号。",
-      "answers": ["PO-XH7-20260318-044"],
-      "forbidden": ["PO-XH7-20260301-009", "DEMO-0001"],
-      "evidence_docs": ["mail:2026-03-18-po"],
+      "answers": [
+        "PO-XH7-20260318-044"
+      ],
+      "forbidden": [
+        "PO-XH7-20260301-009",
+        "DEMO-0001"
+      ],
+      "evidence_docs": [
+        "mail:2026-03-18-po"
+      ],
       "must_cite": true
     },
     {
@@ -17,9 +24,15 @@
       "source": "mail",
       "type": "update",
       "question": "GaussDB 主集群当前生效的生产切换日期是哪一天？如果存在被作废的旧日期请不要当作答案。",
-      "answers": ["2026-05-06"],
-      "forbidden": ["2026-04-12"],
-      "evidence_docs": ["mail:2026-03-28-gaussdb-amend"],
+      "answers": [
+        "2026-05-06"
+      ],
+      "forbidden": [
+        "2026-04-12"
+      ],
+      "evidence_docs": [
+        "mail:2026-03-28-gaussdb-amend"
+      ],
       "must_cite": true
     },
     {
@@ -27,9 +40,15 @@
       "source": "mail",
       "type": "alias",
       "question": "现场微信群里的“老陈”对应哪位华为侧项目经理？给出姓名。",
-      "answers": ["陈启明"],
-      "forbidden": ["李娜"],
-      "evidence_docs": ["mail:2026-03-22-alias"],
+      "answers": [
+        "陈启明"
+      ],
+      "forbidden": [
+        "李娜"
+      ],
+      "evidence_docs": [
+        "mail:2026-03-22-alias"
+      ],
       "must_cite": true
     },
     {
@@ -37,9 +56,14 @@
       "source": "mail",
       "type": "combo",
       "question": "OceanStor 相对有效 PO 延误时，宽限期几天，从第几天开始按日计罚？",
-      "answers": ["3", "4"],
+      "answers": [
+        "3",
+        "4"
+      ],
       "forbidden": [],
-      "evidence_docs": ["mail:2026-03-20-penalty"],
+      "evidence_docs": [
+        "mail:2026-03-20-penalty"
+      ],
       "must_cite": true
     },
     {
@@ -47,19 +71,13 @@
       "source": "mail",
       "type": "distractor",
       "question": "OceanStor 选型中被否决、不得再推销的型号是什么？",
-      "answers": ["Dorado 5000"],
+      "answers": [
+        "Dorado 5000"
+      ],
       "forbidden": [],
-      "evidence_docs": ["mail:2026-03-05-sku"],
-      "must_cite": true
-    },
-    {
-      "id": "Q06",
-      "source": "meeting",
-      "type": "exact",
-      "question": "星河-7 生产 GaussDB 容灾演练确定的 RTO 目标是多久？",
-      "answers": ["15分钟"],
-      "forbidden": ["1小时", "1 小时"],
-      "evidence_docs": ["meeting:2026-03-11-dr"],
+      "evidence_docs": [
+        "mail:2026-03-05-sku"
+      ],
       "must_cite": true
     },
     {
@@ -67,9 +85,15 @@
       "source": "meeting",
       "type": "update",
       "question": "星河-7 承载网 iMaster NCE-IP 当前终审版本是什么？",
-      "answers": ["V100R024C10"],
-      "forbidden": ["V100R024C00"],
-      "evidence_docs": ["meeting:2026-04-09-nce-new"],
+      "answers": [
+        "V100R024C10"
+      ],
+      "forbidden": [
+        "V100R024C00"
+      ],
+      "evidence_docs": [
+        "meeting:2026-04-09-nce-new"
+      ],
       "must_cite": true
     },
     {
@@ -77,9 +101,16 @@
       "source": "meeting",
       "type": "multihop",
       "question": "Kunpeng 服务器配额由谁申请？Ascend 推理节点配额由谁提出？",
-      "answers": ["赵宇", "王磊"],
-      "forbidden": ["刘芳"],
-      "evidence_docs": ["meeting:2026-03-25-compute"],
+      "answers": [
+        "赵宇",
+        "王磊"
+      ],
+      "forbidden": [
+        "刘芳"
+      ],
+      "evidence_docs": [
+        "meeting:2026-03-25-compute"
+      ],
       "must_cite": true
     },
     {
@@ -87,9 +118,15 @@
       "source": "meeting",
       "type": "alias",
       "question": "LumenGrid 总部会议室 A 用于星河-7 日站会的 IdeaHub 资产编号是什么？",
-      "answers": ["IH-LG-A-0881"],
-      "forbidden": ["IH-LG-B-0012"],
-      "evidence_docs": ["meeting:2026-03-08-ideahub"],
+      "answers": [
+        "IH-LG-A-0881"
+      ],
+      "forbidden": [
+        "IH-LG-B-0012"
+      ],
+      "evidence_docs": [
+        "meeting:2026-03-08-ideahub"
+      ],
       "must_cite": true
     },
     {
@@ -97,9 +134,13 @@
       "source": "meeting",
       "type": "distractor",
       "question": "SQL 慢查询监控走哪套系统，而不是 eSight？",
-      "answers": ["GaussDB"],
+      "answers": [
+        "GaussDB"
+      ],
       "forbidden": [],
-      "evidence_docs": ["meeting:2026-03-19-monitor"],
+      "evidence_docs": [
+        "meeting:2026-03-19-monitor"
+      ],
       "must_cite": true
     },
     {
@@ -107,9 +148,15 @@
       "source": "im",
       "type": "exact",
       "question": "生产 OceanStor 缓存池扩容对应的变更单号是什么？",
-      "answers": ["CHG-8821"],
-      "forbidden": ["CHG-0000"],
-      "evidence_docs": ["im:im-002"],
+      "answers": [
+        "CHG-8821"
+      ],
+      "forbidden": [
+        "CHG-0000"
+      ],
+      "evidence_docs": [
+        "im:im-002"
+      ],
       "must_cite": true
     },
     {
@@ -117,9 +164,16 @@
       "source": "im",
       "type": "update",
       "question": "生产缓存池最终容量是多少 TB？不要回答测试池容量。",
-      "answers": ["64TB"],
-      "forbidden": ["40TB", "40 TB"],
-      "evidence_docs": ["im:im-002"],
+      "answers": [
+        "64TB"
+      ],
+      "forbidden": [
+        "40TB",
+        "40 TB"
+      ],
+      "evidence_docs": [
+        "im:im-002"
+      ],
       "must_cite": true
     },
     {
@@ -127,9 +181,16 @@
       "source": "im",
       "type": "exact",
       "question": "GaussDB 账户密码轮换在每周几的几点执行？",
-      "answers": ["周二", "23:30"],
-      "forbidden": ["周六"],
-      "evidence_docs": ["im:im-003"],
+      "answers": [
+        "周二",
+        "23:30"
+      ],
+      "forbidden": [
+        "周六"
+      ],
+      "evidence_docs": [
+        "im:im-003"
+      ],
       "must_cite": true
     },
     {
@@ -137,9 +198,14 @@
       "source": "im",
       "type": "alias",
       "question": "群里的“小刘”是谁？请给出姓名。",
-      "answers": ["刘芳"],
+      "answers": [
+        "刘芳"
+      ],
       "forbidden": [],
-      "evidence_docs": ["im:im-001", "im:im-002"],
+      "evidence_docs": [
+        "im:im-001",
+        "im:im-002"
+      ],
       "must_cite": true
     },
     {
@@ -147,9 +213,14 @@
       "source": "im",
       "type": "combo",
       "question": "核心交换机正式维护窗口是哪一天几点？不要把玩笑话当承诺。",
-      "answers": ["2026-05-09", "01:00"],
+      "answers": [
+        "2026-05-09",
+        "01:00"
+      ],
       "forbidden": [],
-      "evidence_docs": ["im:im-006"],
+      "evidence_docs": [
+        "im:im-006"
+      ],
       "must_cite": true
     },
     {
@@ -157,9 +228,15 @@
       "source": "web",
       "type": "exact",
       "question": "星河-7 在 Huawei Cloud Stack 管理面的租户 ID 是什么？",
-      "answers": ["tn-lg-xh7-20481"],
-      "forbidden": ["tn-demo-000"],
-      "evidence_docs": ["web:tenant"],
+      "answers": [
+        "tn-lg-xh7-20481"
+      ],
+      "forbidden": [
+        "tn-demo-000"
+      ],
+      "evidence_docs": [
+        "web:tenant"
+      ],
       "must_cite": true
     },
     {
@@ -167,9 +244,15 @@
       "source": "web",
       "type": "update",
       "question": "当前生产 GaussDB 内核版本是什么？",
-      "answers": ["505.2.0.B023"],
-      "forbidden": ["505.1.0.B010"],
-      "evidence_docs": ["web:gaussdb"],
+      "answers": [
+        "505.2.0.B023"
+      ],
+      "forbidden": [
+        "505.1.0.B010"
+      ],
+      "evidence_docs": [
+        "web:gaussdb"
+      ],
       "must_cite": true
     },
     {
@@ -177,9 +260,15 @@
       "source": "web",
       "type": "multihop",
       "question": "序列号 2102350BHB10XH7001 的 OceanStor 对应的 CMDB CI 编号是什么？",
-      "answers": ["CI-STOR-77821"],
-      "forbidden": ["CI-STOR-00011"],
-      "evidence_docs": ["web:cmdb"],
+      "answers": [
+        "CI-STOR-77821"
+      ],
+      "forbidden": [
+        "CI-STOR-00011"
+      ],
+      "evidence_docs": [
+        "web:cmdb"
+      ],
       "must_cite": true
     },
     {
@@ -187,9 +276,13 @@
       "source": "web",
       "type": "alias",
       "question": "对外名称星河-7 对应的内部项目编码是什么？",
-      "answers": ["XH-7"],
+      "answers": [
+        "XH-7"
+      ],
       "forbidden": [],
-      "evidence_docs": ["web:project"],
+      "evidence_docs": [
+        "web:project"
+      ],
       "must_cite": true
     },
     {
@@ -197,9 +290,654 @@
       "source": "web",
       "type": "combo",
       "question": "谁可以看见 GaussDB 备份控制台？给出授权组名。",
-      "answers": ["grp-xh7-dba"],
-      "forbidden": ["grp-xh7-guest"],
-      "evidence_docs": ["web:acl"],
+      "answers": [
+        "grp-xh7-dba"
+      ],
+      "forbidden": [
+        "grp-xh7-guest"
+      ],
+      "evidence_docs": [
+        "web:acl"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "Q21",
+      "source": "meeting",
+      "type": "exact",
+      "question": "WO-DR 系列容灾演练工单完整编号是什么？",
+      "answers": [
+        "WO-DR-20260311-07"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "meeting:2026-03-11-dr"
+      ],
+      "must_cite": true,
+      "added_after_exp1": true,
+      "replaces": "Q06"
+    },
+    {
+      "id": "Q22",
+      "source": "mail",
+      "type": "exact",
+      "question": "ACC-LG 系列现场验收窗口完整编号是什么？不要给出演示窗口。",
+      "answers": [
+        "ACC-LG-202604-19"
+      ],
+      "forbidden": [
+        "ACC-DEMO-000"
+      ],
+      "evidence_docs": [
+        "mail:2026-04-08-accept"
+      ],
+      "must_cite": true,
+      "added_after_exp1": true
+    }
+  ],
+  "removed_items": [
+    {
+      "id": "Q06",
+      "reason": "exp1-ceiling-unsolvable",
+      "question": "星河-7 生产 GaussDB 容灾演练确定的 RTO 目标是多久？",
+      "note": "第一版强制检索天花下 E1–E9 全部失败，检索问句无法召回“15分钟”跨词事实。"
+    }
+  ],
+  "tiebreak_pool": [
+    {
+      "id": "T40",
+      "source": "mail",
+      "type": "multihop",
+      "question": "批准 Ascend 推理节点配额的那个人，工号是多少？",
+      "answers": [
+        "HW-PM-7712"
+      ],
+      "forbidden": [
+        "李娜"
+      ],
+      "evidence_docs": [
+        "meeting:2026-03-25-compute",
+        "mail:2026-03-22-alias"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T41",
+      "source": "im",
+      "type": "multihop",
+      "question": "申请鲲鹏服务器配额的同事，他正式承诺的核心交换机维护时刻是哪天几点？不要把玩笑当承诺。",
+      "answers": [
+        "2026-05-09",
+        "01:00"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "meeting:2026-03-25-compute",
+        "im:im-006"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T42",
+      "source": "mail",
+      "type": "multihop",
+      "question": "群里被要求把缓存变更抄送给客户的那位，她否决过、不得再推销的阵列型号是什么？",
+      "answers": [
+        "Dorado 5000"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "im:im-004",
+        "mail:2026-03-05-sku"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T43",
+      "source": "im",
+      "type": "multihop",
+      "question": "花名叫宇的人承诺的维护窗口，比主集群后来改定的切换日晚几天？请写成「N天」。",
+      "answers": [
+        "3天"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "im:im-006",
+        "mail:2026-03-28-gaussdb-amend"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T44",
+      "source": "mail",
+      "type": "multihop",
+      "question": "申请鲲鹏服务器配额的同事，他报备的网络作业单号是哪一张？不要演示单。",
+      "answers": [
+        "NET-WO-4401"
+      ],
+      "forbidden": [
+        "NET-WO-000"
+      ],
+      "evidence_docs": [
+        "meeting:2026-03-25-compute",
+        "mail:2026-04-02-netwo"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T45",
+      "source": "im",
+      "type": "alias",
+      "question": "批准 Ascend 推理配额的人，现场群里怎么称呼他？给出花名。",
+      "answers": [
+        "老陈"
+      ],
+      "forbidden": [
+        "李娜"
+      ],
+      "evidence_docs": [
+        "meeting:2026-03-25-compute",
+        "mail:2026-03-22-alias"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T46",
+      "source": "web",
+      "type": "multihop",
+      "question": "被抄送了生产缓存变更单的那位客户，工牌号是多少？不要演示工牌。",
+      "answers": [
+        "BADGE-LG-204"
+      ],
+      "forbidden": [
+        "BADGE-000"
+      ],
+      "evidence_docs": [
+        "im:im-004",
+        "web:customer"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T47",
+      "source": "mail",
+      "type": "multihop",
+      "question": "现场群里的老陈，他工号对应的接口人批准的 Ascend 配额是谁提出的？给出姓名。",
+      "answers": [
+        "王磊"
+      ],
+      "forbidden": [
+        "刘芳"
+      ],
+      "evidence_docs": [
+        "mail:2026-03-22-alias",
+        "meeting:2026-03-25-compute"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T49",
+      "source": "web",
+      "type": "multihop",
+      "question": "被抄送生产缓存变更的那位客户的工牌，以及把变更抄出去的那位否决过的阵列型号，分别是什么？不要演示工牌。",
+      "answers": [
+        "BADGE-LG-204",
+        "Dorado 5000"
+      ],
+      "forbidden": [
+        "BADGE-000"
+      ],
+      "evidence_docs": [
+        "im:im-004",
+        "web:customer",
+        "mail:2026-03-05-sku"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T48",
+      "source": "mail",
+      "type": "multihop",
+      "question": "批准 Ascend 推理配额的人的工号，以及申请鲲鹏配额的同事报备的网络作业单，分别是哪两个编号？不要演示单。",
+      "answers": [
+        "HW-PM-7712",
+        "NET-WO-4401"
+      ],
+      "forbidden": [
+        "NET-WO-000",
+        "李娜"
+      ],
+      "evidence_docs": [
+        "meeting:2026-03-25-compute",
+        "mail:2026-03-22-alias",
+        "mail:2026-04-02-netwo"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T20",
+      "source": "im",
+      "type": "exact",
+      "question": "算力会上有没有记下跳纤窗口的批文号？纪要里如果没有，会后补的那张也算。",
+      "answers": [
+        "JF-XH7-08"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "im:im-010"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T21",
+      "source": "web",
+      "type": "update",
+      "question": "现在生产 VPN 远程拨入口令是什么？不要用已经停用的历史码。",
+      "answers": [
+        "VPN-NOW-88"
+      ],
+      "forbidden": [
+        "VPN-OLD-11"
+      ],
+      "evidence_docs": [
+        "web:vpn"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T22",
+      "source": "mail",
+      "type": "exact",
+      "question": "亦庄机房临时进门用的通行证编号是哪一张？不要前台作废的纸质条。",
+      "answers": [
+        "PASS-XH7-62"
+      ],
+      "forbidden": [
+        "PASS-000"
+      ],
+      "evidence_docs": [
+        "mail:2026-04-14-pass"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T23",
+      "source": "mail",
+      "type": "exact",
+      "question": "星河-7 财务内部结算编码是什么？不要对客合同里的示例单号。",
+      "answers": [
+        "SETTLE-XH7-77"
+      ],
+      "forbidden": [
+        "DEMO-0001"
+      ],
+      "evidence_docs": [
+        "mail:2026-01-09-noise"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T24",
+      "source": "web",
+      "type": "distractor",
+      "question": "实验室那台非生产阵列在 CMDB 里登记的 CI 是哪一条？",
+      "answers": [
+        "CI-STOR-00011"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "web:cmdb"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T25",
+      "source": "im",
+      "type": "exact",
+      "question": "GaussDB 备份窗口编号是哪一张？不要到备份控制台权限页里找。",
+      "answers": [
+        "BK-XH7-14"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "im:im-011"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T26",
+      "source": "mail",
+      "type": "update",
+      "question": "主集群切换窗口后来改到哪一天？初版计划里那个被电力窗口冲掉的日期不要当答案。",
+      "answers": [
+        "2026-05-06"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "mail:2026-03-28-gaussdb-amend"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T27",
+      "source": "mail",
+      "type": "exact",
+      "question": "亦庄机房现场验收窗口编号是哪一个？不要演示窗口。",
+      "answers": [
+        "ACC-LG-202604-19"
+      ],
+      "forbidden": [
+        "ACC-DEMO-000"
+      ],
+      "evidence_docs": [
+        "mail:2026-04-08-accept"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T28",
+      "source": "web",
+      "type": "exact",
+      "question": "审计日志那只生产桶叫什么？演示桶不要。",
+      "answers": [
+        "obs-xh7-audit-07"
+      ],
+      "forbidden": [
+        "obs-demo-000"
+      ],
+      "evidence_docs": [
+        "web:acl"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T29",
+      "source": "im",
+      "type": "exact",
+      "question": "值班交接那张今晚建的单是哪一张？演示单作废。",
+      "answers": [
+        "HANDOFF-XH7-33"
+      ],
+      "forbidden": [
+        "HANDOFF-000"
+      ],
+      "evidence_docs": [
+        "im:im-009"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T30",
+      "source": "meeting",
+      "type": "multihop",
+      "question": "申请 Kunpeng 配额的人和提出 Ascend 配额的人，各自是谁？不要记到商务侧。",
+      "answers": [
+        "赵宇",
+        "王磊"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "meeting:2026-03-25-compute"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T31",
+      "source": "web",
+      "type": "exact",
+      "question": "管理面给这个项目开的 tn-lg 那串编号全称是什么？演示租户不要。",
+      "answers": [
+        "tn-lg-xh7-20481"
+      ],
+      "forbidden": [
+        "tn-demo-000"
+      ],
+      "evidence_docs": [
+        "web:tenant"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T32",
+      "source": "web",
+      "type": "update",
+      "question": "wiki 里那条过期安装记录先别管，当前生产 GaussDB 内核到底是哪个？",
+      "answers": [
+        "505.2.0.B023"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "web:gaussdb"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T33",
+      "source": "meeting",
+      "type": "distractor",
+      "question": "SQL 慢查询到底进哪套监控？不要回答服务器硬件告警那套。",
+      "answers": [
+        "GaussDB 自带监控"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "meeting:2026-03-19-monitor"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T34",
+      "source": "meeting",
+      "type": "multihop",
+      "question": "算力会上申请鲲鹏服务器配额的人是谁？不要记到刘芳名下。",
+      "answers": [
+        "赵宇"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "meeting:2026-03-25-compute"
+      ],
+      "must_cite": true,
+      "retired": true
+    },
+    {
+      "id": "T01",
+      "retired": true,
+      "source": "mail",
+      "type": "exact",
+      "question": "EXT-XH7 值班热线分机完整是多少？不要演示分机。",
+      "answers": [
+        "EXT-XH7-3608"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "mail:2026-04-11-hotline"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T02",
+      "retired": true,
+      "source": "meeting",
+      "type": "exact",
+      "question": "DH-A 系列总部会议室 A 门禁码完整是什么？",
+      "answers": [
+        "DH-A-5521"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "meeting:2026-03-19-monitor"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T03",
+      "retired": true,
+      "source": "im",
+      "type": "exact",
+      "question": "BRIDGE-XH7 应急语音桥接号完整是什么？",
+      "answers": [
+        "BRIDGE-XH7-19"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "im:im-008"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T04",
+      "retired": true,
+      "source": "web",
+      "type": "exact",
+      "question": "obs-xh7 审计日志桶完整名称是什么？",
+      "answers": [
+        "obs-xh7-audit-07"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "web:acl"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T05",
+      "retired": true,
+      "source": "mail",
+      "type": "exact",
+      "question": "值班热线 EXT-XH7 分机不要写成演示号，完整编号？",
+      "answers": [
+        "EXT-XH7-3608"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "mail:2026-04-11-hotline"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T06",
+      "retired": true,
+      "source": "im",
+      "type": "exact",
+      "question": "磊哥在群里定的 BRIDGE-XH7 桥接号？",
+      "answers": [
+        "BRIDGE-XH7-19"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "im:im-008"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T07",
+      "retired": true,
+      "source": "meeting",
+      "type": "exact",
+      "question": "星河-7 日站会配套的投影终端编号是什么？",
+      "answers": [
+        "PJ-LG-A-17"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "meeting:2026-03-08-ideahub"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T08",
+      "retired": true,
+      "source": "im",
+      "type": "exact",
+      "question": "今晚值班交接单号是什么？不要演示单。",
+      "answers": [
+        "HANDOFF-XH7-33"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "im:im-009"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T09",
+      "retired": true,
+      "source": "web",
+      "type": "exact",
+      "question": "生产监控空间编号是什么？",
+      "answers": [
+        "mon-xh7-prod-4"
+      ],
+      "forbidden": [],
+      "evidence_docs": [
+        "web:acl"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T10",
+      "retired": true,
+      "source": "web",
+      "type": "exact",
+      "question": "HCS 管理面给星河-7 开的租户 ID 是哪一个？",
+      "answers": [
+        "tn-lg-xh7-20481"
+      ],
+      "forbidden": [
+        "tn-demo-000"
+      ],
+      "evidence_docs": [
+        "web:tenant"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T11",
+      "retired": true,
+      "source": "meeting",
+      "type": "exact",
+      "question": "会议室 A 日站会用的 IdeaHub 资产编号是什么？",
+      "answers": [
+        "IH-LG-A-0881"
+      ],
+      "forbidden": [
+        "IH-LG-B-0012"
+      ],
+      "evidence_docs": [
+        "meeting:2026-03-08-ideahub"
+      ],
+      "must_cite": true
+    },
+    {
+      "id": "T12",
+      "retired": true,
+      "source": "im",
+      "type": "exact",
+      "question": "生产缓存扩容变更单号是哪一张？",
+      "answers": [
+        "CHG-8821"
+      ],
+      "forbidden": [
+        "CHG-0000"
+      ],
+      "evidence_docs": [
+        "im:im-002"
+      ],
       "must_cite": true
     }
   ],
@@ -209,9 +947,13 @@
       "source": "mail",
       "type": "exact",
       "question": "作废的草稿采购单号是什么？",
-      "answers": ["PO-XH7-20260301-009"],
+      "answers": [
+        "PO-XH7-20260301-009"
+      ],
       "forbidden": [],
-      "evidence_docs": ["mail:2026-03-18-po"],
+      "evidence_docs": [
+        "mail:2026-03-18-po"
+      ],
       "must_cite": true
     },
     {
@@ -219,9 +961,13 @@
       "source": "meeting",
       "type": "exact",
       "question": "RPO 目标是多久？",
-      "answers": ["2分钟"],
+      "answers": [
+        "2分钟"
+      ],
       "forbidden": [],
-      "evidence_docs": ["meeting:2026-03-11-dr"],
+      "evidence_docs": [
+        "meeting:2026-03-11-dr"
+      ],
       "must_cite": true
     },
     {
@@ -229,9 +975,13 @@
       "source": "im",
       "type": "exact",
       "question": "测试池缓存容量是多少？",
-      "answers": ["40TB"],
+      "answers": [
+        "40TB"
+      ],
       "forbidden": [],
-      "evidence_docs": ["im:im-002"],
+      "evidence_docs": [
+        "im:im-002"
+      ],
       "must_cite": true
     },
     {
@@ -239,9 +989,13 @@
       "source": "web",
       "type": "exact",
       "question": "HCS 管理面 region 路径是什么？",
-      "answers": ["/console/regions/cn-xh7-1"],
+      "answers": [
+        "/console/regions/cn-xh7-1"
+      ],
       "forbidden": [],
-      "evidence_docs": ["web:tenant"],
+      "evidence_docs": [
+        "web:tenant"
+      ],
       "must_cite": true
     }
   ]

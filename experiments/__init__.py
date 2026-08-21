@@ -16,8 +16,14 @@ def load_catalog() -> dict:
 
 
 def load_questions(dev: bool = False) -> list[dict]:
-    data = yaml.safe_load  # noqa - keep yaml imported for configs
     import json
 
     payload = json.loads((ROOT / "datasets" / "tob-memory-v1" / "questions.json").read_text(encoding="utf-8"))
     return payload["dev_items"] if dev else payload["items"]
+
+
+def load_tiebreak_pool() -> list[dict]:
+    import json
+
+    payload = json.loads((ROOT / "datasets" / "tob-memory-v1" / "questions.json").read_text(encoding="utf-8"))
+    return payload.get("tiebreak_pool") or []

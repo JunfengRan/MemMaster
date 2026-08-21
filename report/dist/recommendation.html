@@ -4,22 +4,59 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>建议 · MemMaster</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <style>
+:root { --ink:#152033; --muted:#5b6573; --paper:#f7f4ee; --card:#fff; --line:#d9d3c5; --blue:#1f6feb; --green:#1a7f37; --red:#c62828; --navy:#13294b; }
+* { box-sizing: border-box; }
+html, body { margin:0; background:var(--paper); color:var(--ink); font: 16px/1.65 "Segoe UI", "PingFang SC", sans-serif; }
+header, footer { background:var(--navy); color:#fff; padding:1rem 1.5rem; }
+header { display:flex; flex-wrap:wrap; gap:.8rem 1.5rem; align-items:center; justify-content:space-between; }
+header nav a { color:#d7e4ff; margin-right:1rem; text-decoration:none; }
+header nav a.active { color:#fff; font-weight:700; border-bottom:2px solid #fff; }
+main { max-width: 980px; margin: 0 auto; padding: 1.6rem 1.2rem 3rem; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.3rem; margin:1rem 0; }
+h1 { font-size:1.7rem; margin:.2rem 0 1rem; }
+h2 { font-size:1.25rem; margin:1.4rem 0 .6rem; }
+.muted { color:var(--muted); }
+.legend span { display:inline-block; margin-right:1rem; }
+.sw { display:inline-block; width:12px; height:12px; border-radius:2px; margin-right:.3rem; vertical-align:middle; }
+.sw.blue { background:var(--blue); } .sw.green { background:var(--green); } .sw.red { background:var(--red); }
+.cmp { margin:.7rem 0 1rem; }
+.cmp .lab { display:flex; justify-content:space-between; font-size:.92rem; margin-bottom:.25rem; }
+.track { position:relative; height:16px; background:#ece7dc; border-radius:8px; overflow:hidden; }
+.track i { position:absolute; top:0; height:16px; }
+.track .blue { background:var(--blue); }
+.track .green { background:var(--green); }
+.track .red { background:var(--red); }
+table { width:100%; border-collapse:collapse; font-size:.95rem; }
+th, td { border-bottom:1px solid var(--line); padding:.45rem .4rem; text-align:left; }
+.kicker { letter-spacing:.08em; text-transform:uppercase; font-size:.75rem; color:#8a6d3b; }
+blockquote { border-left:4px solid var(--blue); margin:1rem 0; padding:.2rem 1rem; color:#243047; }
+footer { font-size:.85rem; }
+</style>
 </head>
 <body>
 <header>
-  <strong>MemMaster</strong>
-  <nav><a href="index.html">总览</a> <a href="research.html">调研</a> <a href="architecture.html">架构</a> <a href="dataset.html">数据集</a> <a href="experiments.html">实验</a> <a href="results.html">结果</a> <a href="recommendation.html" class="active">建议</a></nav>
+  <strong>MemMaster 技术验证报告</strong>
+  <nav><a href="index.html">总览</a> <a href="research.html">调研与方法</a> <a href="architecture.html">架构</a> <a href="dataset.html">数据集</a> <a href="experiments.html">三次实验</a> <a href="results.html">结果对比</a> <a href="recommendation.html" class="active">建议</a></nav>
 </header>
 <main>
+<p class="kicker">Standalone · 打开本页即可读完 · 合成 ToB 数据 · 非华为生产业务</p>
 
-<h1>最终建议</h1>
+<h1>建议怎么上：先 Hybrid，再按痛点加模块</h1>
 <div class="card">
-<p>推荐 <b>E2</b>：BM25 + 向量 RRF 混合拉取。保留 Graph-lite、时间过滤、派生事实与选择性 push 作为可热插拔开关，待更长多跳语料再启用。</p>
-<p>排序：E2 95%, E3 95%, E4 95%, E5 95%, E6 95%, E7 95%, E8 95%, E9 90%, E1 60%, E0 0%</p>
+<p>当前综合第一名是 <b>E9</b>。完成率同时看必答事实和代价离群（同题同伴里工具/token/耗时明显偏高算失败）。加赛是跨源多跳，分母可以不同。Blank 必须保持 0%。ACL / 权限隔离不进入本轮对比。</p>
+<p>工程建议：</p>
+<ol>
+<li>默认检索用 <b>Hybrid</b>（E2）。第一版天花和第二版裸 Agent 都支持这一点。</li>
+<li>Agent 侧加<b>渠道启发式</b>，不要默认四源全扫。这是第三版 HA 要验证的效率假设。</li>
+<li>修订题多再开时间通道（E6）；花名多再开 keys/core（E9/E7）；需要提醒时用选择性 push（E4），不要 always-on。</li>
+<li>不要把「强制检索抽答案」当成线上体验。真实用户只会发题目。</li>
+</ol>
+<p>本报告所有数字来自 <code>experiments/runs/exp2-adjusted</code> 与 <code>experiments/runs/harness-best</code>，重新生成：<code>python experiments/scripts/generate_report.py</code>。</p>
 </div>
+<div class='card'><h2>E0 · Blank（空白对照）</h2><p><b>一句话：</b>无记忆插件、无四个源工具。测模型会不会靠常识蒙对合成事实。</p><p>OpenCode 以 --pure 启动，禁止 search_mail/search_meeting/search_im/search_web。题目里的订单号、租户 ID、工单号都是虚构的，训练数据里不应存在。若 Blank 完成率不是 0，说明题面泄密或评测串题。本轮不对 Blank 调 Harness。</p></div><div class='card'><h2>E1 · Lexical / BM25</h2><p><b>一句话：</b>SQLite FTS5 关键词检索，对单号、型号最稳，对改写和别名弱。</p><p>把四个源各自做成全文索引，按 BM25 打分。问句里出现 PO、CHG、租户 ID 这类精确字符串时召回最好。中文整段分词偏粗，像「RTO 目标是多久」对不上「15分钟」时会全军覆没，所以第一版天花里 E1 只有 60%。</p></div><div class='card'><h2>E2 · Hybrid RRF</h2><p><b>一句话：</b>BM25 + 稠密向量倒数排名融合，精确匹配和语义改写都照顾。</p><p>同一查询走词法检索和哈希向量检索，再用 Reciprocal Rank Fusion 合并。第一版强制检索天花 95%，未调优真实 Agent 也是十组里完成率最高的。代价是上下文比纯 BM25 长。</p></div><div class='card'><h2>E3 · Graph-lite PPR</h2><p><b>一句话：</b>在 Hybrid 之上用共现图做一跳个性化 PageRank，适合人名-资产多跳。</p><p>改编 HippoRAG 2 的 PPR，不做完整 OpenIE。图边来自实体共现。多跳题（谁申请 Kunpeng、谁提 Ascend）理论上更有优势；噪声边也可能把无关片段挤进 top-k，未调优时完成率反而低于 E2。</p></div><div class='card'><h2>E4 · Push + Pull</h2><p><b>一句话：</b>Hybrid/Graph 检索，外加 sidecar 判断要不要塞一条短提醒。</p><p>改编 Proactive Memory：不是每轮都灌记忆，而是按当前问题决定是否 intervention。提醒走 system.transform，不能在 chat.message 里插残缺 part（OpenCode 会 UnknownError）。提醒只给线索，不点名单题该用哪个源工具。</p></div><div class='card'><h2>E5 · Extractive Facts</h2><p><b>一句话：</b>Mem0 风格：先命中派生事实，再回源到原文 span。</p><p>正则+种子事实层独立于原文。查询打到事实后必须带回证据片段，禁止只抛脱离上下文的三元组。对「当前生效日期/最终容量」这类修订题有帮助，但事实抽错会连带回源一起错。</p></div><div class='card'><h2>E6 · Time-aware</h2><p><b>一句话：</b>LongMemEval + Graphiti：valid time 上把「当前/修订」压过旧草稿。</p><p>文档带 valid_time / transaction_time。问「当前版本」「最终容量」时提高新文档权重。对 GaussDB 切换日、NCE 版本、内核版本这类 update 题是对口方法。</p></div><div class='card'><h2>E7 · Core Memory</h2><p><b>一句话：</b>把项目术语表常驻 system，再做 Hybrid 检索。</p><p>改编 MemGPT/MemOS 的 core：LumenGrid、星河-7、OceanStor、GaussDB 等稳定别名始终可见，减少「老陈是谁」这类别名题的迷路。Core 不能替代单号检索，订单号仍要拉原文。</p></div><div class='card'><h2>E8 · Dual Channel</h2><p><b>一句话：</b>MemOS MemCube 双通道：语义通道 + 关键词通道，带 provenance。</p><p>不做参数记忆。两个通道分别召回再合并，结果带来源文档 ID。和 Hybrid 相近，但通道切分与计分不同，上下文往往略长。</p></div><div class='card'><h2>E9 · Fact Keys</h2><p><b>一句话：</b>LongMemEval 键 + 有限别名链接（老陈→陈启明）。</p><p>为高频实体建 key，别名边数量封顶，避免把整库连成一团。对 IM/邮件里的花名有效；对纯单号题退化为普通检索。</p></div>
 
 </main>
-<footer>MIT · 合成 ToB 数据 · 非华为生产业务</footer>
+<footer>MIT · 虚构客户 LumenGrid / 项目星河-7 · 数字全部由 experiments/runs 里的 JSON 生成</footer>
 </body>
 </html>

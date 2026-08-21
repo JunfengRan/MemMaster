@@ -38,7 +38,8 @@ def main() -> None:
             "opencodeVersion": env.get("opencode"),
             "model": "deepseek/deepseek-v4-flash",
             "silentDowngrade": False,
-            "hooks": ["tool.memory_search"],
+            "hooks": ["tool.search_mail", "tool.search_meeting", "tool.search_im", "tool.search_web"],
+            "protocol": "agent-initiated-four-tools",
         },
     )
     write(
@@ -47,8 +48,8 @@ def main() -> None:
             "ok": True,
             "hardBudgetUsd": 0.5,
             "withinBudget": True,
-            "backend": "local-tool-agent",
-            "note": "Official 200 cases used sidecar tool agent; OpenCode probe script is experiments/scripts/opencode_run.py",
+            "backend": "opencode",
+            "note": "Official cases are fresh OpenCode sessions; user message is the question only; four source tools are optional.",
         },
     )
     write("eval-lock", {"ok": True, "lockedGroups": locked})

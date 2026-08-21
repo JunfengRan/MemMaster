@@ -18,9 +18,11 @@ def main() -> None:
     run.add_argument("--config", required=True)
     run.add_argument("--dataset", default=str(ROOT / "datasets" / "tob-memory-v1"))
     run.add_argument("--dev", action="store_true")
+    run.add_argument("--backend", default="opencode", choices=["opencode", "oracle"])
     compare = sub.add_parser("compare")
     compare.add_argument("--dev", action="store_true")
     compare.add_argument("--groups", default="")
+    compare.add_argument("--backend", default="opencode", choices=["opencode", "oracle"])
     args = parser.parse_args()
     if args.cmd == "run":
         from experiments.scripts import run_eval
@@ -31,6 +33,8 @@ def main() -> None:
             args.config,
             "--dataset",
             args.dataset,
+            "--backend",
+            args.backend,
         ]
         if args.dev:
             sys.argv.append("--dev")
@@ -38,7 +42,7 @@ def main() -> None:
     elif args.cmd == "compare":
         from experiments.scripts import compare
 
-        sys.argv = ["compare"]
+        sys.argv = ["compare", "--backend", args.backend]
         if args.dev:
             sys.argv.append("--dev")
         if args.groups:

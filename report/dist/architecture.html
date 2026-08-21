@@ -4,22 +4,64 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>架构 · MemMaster</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <style>
+:root { --ink:#152033; --muted:#5b6573; --paper:#f7f4ee; --card:#fff; --line:#d9d3c5; --blue:#1f6feb; --green:#1a7f37; --red:#c62828; --navy:#13294b; }
+* { box-sizing: border-box; }
+html, body { margin:0; background:var(--paper); color:var(--ink); font: 16px/1.65 "Segoe UI", "PingFang SC", sans-serif; }
+header, footer { background:var(--navy); color:#fff; padding:1rem 1.5rem; }
+header { display:flex; flex-wrap:wrap; gap:.8rem 1.5rem; align-items:center; justify-content:space-between; }
+header nav a { color:#d7e4ff; margin-right:1rem; text-decoration:none; }
+header nav a.active { color:#fff; font-weight:700; border-bottom:2px solid #fff; }
+main { max-width: 980px; margin: 0 auto; padding: 1.6rem 1.2rem 3rem; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.3rem; margin:1rem 0; }
+h1 { font-size:1.7rem; margin:.2rem 0 1rem; }
+h2 { font-size:1.25rem; margin:1.4rem 0 .6rem; }
+.muted { color:var(--muted); }
+.legend span { display:inline-block; margin-right:1rem; }
+.sw { display:inline-block; width:12px; height:12px; border-radius:2px; margin-right:.3rem; vertical-align:middle; }
+.sw.blue { background:var(--blue); } .sw.green { background:var(--green); } .sw.red { background:var(--red); }
+.cmp { margin:.7rem 0 1rem; }
+.cmp .lab { display:flex; justify-content:space-between; font-size:.92rem; margin-bottom:.25rem; }
+.track { position:relative; height:16px; background:#ece7dc; border-radius:8px; overflow:hidden; }
+.track i { position:absolute; top:0; height:16px; }
+.track .blue { background:var(--blue); }
+.track .green { background:var(--green); }
+.track .red { background:var(--red); }
+table { width:100%; border-collapse:collapse; font-size:.95rem; }
+th, td { border-bottom:1px solid var(--line); padding:.45rem .4rem; text-align:left; }
+.kicker { letter-spacing:.08em; text-transform:uppercase; font-size:.75rem; color:#8a6d3b; }
+blockquote { border-left:4px solid var(--blue); margin:1rem 0; padding:.2rem 1rem; color:#243047; }
+footer { font-size:.85rem; }
+</style>
 </head>
 <body>
 <header>
-  <strong>MemMaster</strong>
-  <nav><a href="index.html">总览</a> <a href="research.html">调研</a> <a href="architecture.html" class="active">架构</a> <a href="dataset.html">数据集</a> <a href="experiments.html">实验</a> <a href="results.html">结果</a> <a href="recommendation.html">建议</a></nav>
+  <strong>MemMaster 技术验证报告</strong>
+  <nav><a href="index.html">总览</a> <a href="research.html">调研与方法</a> <a href="architecture.html" class="active">架构</a> <a href="dataset.html">数据集</a> <a href="experiments.html">三次实验</a> <a href="results.html">结果对比</a> <a href="recommendation.html">建议</a></nav>
 </header>
 <main>
+<p class="kicker">Standalone · 打开本页即可读完 · 合成 ToB 数据 · 非华为生产业务</p>
 
-<h1>架构</h1>
+<h1>架构：插件只负责工具，检索在本机 sidecar</h1>
 <div class="card">
-<p>TypeScript OpenCode 插件 + FastAPI sidecar。ConnectorRegistry 热插拔。SQLite FTS5 + 向量 + Graph-lite。增量更新经 staging 后原子切换 manifest。</p>
-<p>调用链：Adapter.sync → CanonicalDocument → chunk/embed/graph → /v1/search 或 /v1/interventions → plugin tool/hook。</p>
+<p>运行时只有两块进程。OpenCode 里的 TypeScript 插件暴露四个工具；Python FastAPI sidecar 管索引、检索、干预。它们只走 localhost HTTP，语料不出机器。</p>
+<blockquote>search_mail / search_meeting / search_im / search_web 各自带 source_id 过滤。没有统一的 memory_search。Agent 必须自己判断去哪个渠道。</blockquote>
+<p>索引是 SQLite：FTS5 词法、哈希向量、Graph-lite 共现图。文档带 ACL 字段，但这是后续权限隔离评测用的，<b>本轮方法对比不启用 ACL 过滤，也不把约束失败踢出排行榜</b>。增量更新先写 staging，再原子切换 manifest，避免读到半截索引。</p>
+<p>评测 session 在空沙箱里跑：禁止 read / glob / bash / web，避免 Agent 去仓库里翻题库或原文。全局 OpenCode 插件（例如会提供 ls 的环境插件）也会被隔离配置关掉，否则模型会去列目录而不是调记忆工具。</p>
+</div>
+<div class="card">
+<h2>一次问答实际发生什么</h2>
+<ol>
+<li>用户只发题目，例如「有效采购订单号是什么」。</li>
+<li>Agent（可选地）按 Harness 启发选择 1–2 个源工具，写入查询词。</li>
+<li>Sidecar 按当前组的 methods 检索（lexical / hybrid / graph / facts / dual / keys / time）。</li>
+<li>命中片段回到对话，Agent 抽原子事实作答。</li>
+<li>评分只看必答事实有没有写全（任务完成率），以及上下文 token、耗时、工具次数。答案里顺带提到「已作废的草稿号」不再判失败。权限/ACL、约束失败不进本轮排序。</li>
+</ol>
+<p>E4 的 push 若触发，会多一条 system 提醒，仍然不点名单题金标准工具。</p>
 </div>
 
 </main>
-<footer>MIT · 合成 ToB 数据 · 非华为生产业务</footer>
+<footer>MIT · 虚构客户 LumenGrid / 项目星河-7 · 数字全部由 experiments/runs 里的 JSON 生成</footer>
 </body>
 </html>

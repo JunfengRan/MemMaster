@@ -6,4 +6,7 @@
   <url><loc>https://hcs.lumengrid.example/portal/project.html</loc></url>
   <url><loc>https://hcs.lumengrid.example/portal/acl.html</loc></url>
   <url><loc>https://hcs.lumengrid.example/portal/old-wiki.html</loc></url>
+  <url><loc>https://hcs.lumengrid.example/portal/vpn.html</loc></url>
+  <url><loc>https://hcs.lumengrid.example/portal/vpn-old.html</loc></url>
+  <url><loc>https://hcs.lumengrid.example/portal/customer.html</loc></url>
 </urlset>

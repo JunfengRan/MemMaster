@@ -3,3431 +3,1403 @@
     "E0": {
       "n": 20,
       "task_success": 0.0,
+      "avg_context_tokens": 265.35,
+      "avg_duration_ms": 6225.25,
+      "avg_tool_calls": 0,
       "constraint_fail": 0,
-      "evidence_in_context": 0.0,
+      "infra_failure": 0,
       "by_source": {
-        "mail": 0.0,
-        "meeting": 0.0,
-        "im": 0.0,
-        "web": 0.0
+        "mail": {
+          "n": 5,
+          "task_success": 0.0,
+          "avg_context_tokens": 269.4,
+          "avg_duration_ms": 6395.2,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.0,
+          "avg_context_tokens": 267.2,
+          "avg_duration_ms": 6262.2,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.0,
+          "avg_context_tokens": 261,
+          "avg_duration_ms": 6183.2,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 0.0,
+          "avg_context_tokens": 263.8,
+          "avg_duration_ms": 6060.4,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       },
       "by_type": {
-        "exact": 0.0,
-        "update": 0.0,
-        "alias": 0.0,
-        "combo": 0.0,
-        "distractor": 0.0,
-        "multihop": 0.0
+        "alias": {
+          "n": 4,
+          "task_success": 0.0,
+          "avg_context_tokens": 262.75,
+          "avg_duration_ms": 6396.75,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 0.0,
+          "avg_context_tokens": 265,
+          "avg_duration_ms": 6344.333333333333,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 0.0,
+          "avg_context_tokens": 263.5,
+          "avg_duration_ms": 6078,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "exact": {
+          "n": 5,
+          "task_success": 0.0,
+          "avg_context_tokens": 266.4,
+          "avg_duration_ms": 6181.8,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 0.0,
+          "avg_context_tokens": 272,
+          "avg_duration_ms": 6171.5,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 0.0,
+          "avg_context_tokens": 264.5,
+          "avg_duration_ms": 6119.25,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       }
     },
     "E1": {
       "n": 20,
-      "task_success": 0.6,
+      "task_success": 0.45,
+      "avg_context_tokens": 2414,
+      "avg_duration_ms": 9450.1,
+      "avg_tool_calls": 4.7,
       "constraint_fail": 0,
-      "evidence_in_context": 0.6,
+      "infra_failure": 0,
       "by_source": {
-        "mail": 0.8,
-        "meeting": 0.6,
-        "im": 0.4,
-        "web": 0.6
+        "mail": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 2801.4,
+          "avg_duration_ms": 10651.2,
+          "avg_tool_calls": 5.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 3035.2,
+          "avg_duration_ms": 9970.6,
+          "avg_tool_calls": 6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.4,
+          "avg_context_tokens": 1916.4,
+          "avg_duration_ms": 9618.2,
+          "avg_tool_calls": 4.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 1903,
+          "avg_duration_ms": 7560.4,
+          "avg_tool_calls": 2.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       },
       "by_type": {
-        "exact": 0.6,
-        "update": 0.5,
-        "alias": 0.5,
-        "combo": 0.3333333333333333,
-        "distractor": 1.0,
-        "multihop": 1.0
+        "alias": {
+          "n": 4,
+          "task_success": 0.75,
+          "avg_context_tokens": 2671.5,
+          "avg_duration_ms": 10311.5,
+          "avg_tool_calls": 4.75,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 0.6666666666666666,
+          "avg_context_tokens": 1829,
+          "avg_duration_ms": 7970,
+          "avg_tool_calls": 3.3333333333333335,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 2046,
+          "avg_duration_ms": 10132,
+          "avg_tool_calls": 6.5,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "exact": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 3072.2,
+          "avg_duration_ms": 10122.2,
+          "avg_tool_calls": 5.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 0.5,
+          "avg_context_tokens": 1469,
+          "avg_duration_ms": 7871.5,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 0.0,
+          "avg_context_tokens": 2429,
+          "avg_duration_ms": 9307,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       }
     },
     "E2": {
       "n": 20,
-      "task_success": 0.95,
+      "task_success": 0.5,
+      "avg_context_tokens": 5296.6,
+      "avg_duration_ms": 7703.95,
+      "avg_tool_calls": 3.85,
       "constraint_fail": 0,
-      "evidence_in_context": 0.9,
+      "infra_failure": 0,
       "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
+        "mail": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 6673.6,
+          "avg_duration_ms": 8615.8,
+          "avg_tool_calls": 5,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.4,
+          "avg_context_tokens": 4793,
+          "avg_duration_ms": 7339.6,
+          "avg_tool_calls": 3.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 4805.4,
+          "avg_duration_ms": 7737.6,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 0.4,
+          "avg_context_tokens": 4914.4,
+          "avg_duration_ms": 7122.8,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       },
       "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
+        "alias": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 4648.25,
+          "avg_duration_ms": 7950.5,
+          "avg_tool_calls": 3.5,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 0.6666666666666666,
+          "avg_context_tokens": 5146.666666666667,
+          "avg_duration_ms": 7740.666666666667,
+          "avg_tool_calls": 3.6666666666666665,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 4591.5,
+          "avg_duration_ms": 7175,
+          "avg_tool_calls": 3.5,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "exact": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 5331.4,
+          "avg_duration_ms": 7767.6,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 0.5,
+          "avg_context_tokens": 5541.5,
+          "avg_duration_ms": 7056.5,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 0.0,
+          "avg_context_tokens": 6244,
+          "avg_duration_ms": 7938.5,
+          "avg_tool_calls": 4.5,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       }
     },
     "E3": {
       "n": 20,
-      "task_success": 0.95,
+      "task_success": 0.4,
+      "avg_context_tokens": 5207.35,
+      "avg_duration_ms": 8778.3,
+      "avg_tool_calls": 3.75,
       "constraint_fail": 0,
-      "evidence_in_context": 0.9,
+      "infra_failure": 0,
       "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
+        "mail": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 4959.6,
+          "avg_duration_ms": 8701.2,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 6376.8,
+          "avg_duration_ms": 9525.2,
+          "avg_tool_calls": 5,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 4747.6,
+          "avg_duration_ms": 8714.2,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 4745.4,
+          "avg_duration_ms": 8172.6,
+          "avg_tool_calls": 3.2,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       },
       "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
+        "alias": {
+          "n": 4,
+          "task_success": 0.75,
+          "avg_context_tokens": 3667.25,
+          "avg_duration_ms": 8264,
+          "avg_tool_calls": 2.5,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 0.6666666666666666,
+          "avg_context_tokens": 5466.666666666667,
+          "avg_duration_ms": 9760.333333333334,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 5526.5,
+          "avg_duration_ms": 8511,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "exact": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 4949,
+          "avg_duration_ms": 8231.2,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 0.0,
+          "avg_context_tokens": 7750.5,
+          "avg_duration_ms": 10019.5,
+          "avg_tool_calls": 6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 0.0,
+          "avg_context_tokens": 5444.75,
+          "avg_duration_ms": 8753,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       }
     },
     "E4": {
       "n": 20,
-      "task_success": 0.95,
+      "task_success": 0.45,
+      "avg_context_tokens": 4769.1,
+      "avg_duration_ms": 8407,
+      "avg_tool_calls": 3.3,
       "constraint_fail": 0,
-      "evidence_in_context": 0.9,
+      "infra_failure": 0,
       "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
+        "mail": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 5961.6,
+          "avg_duration_ms": 10618.4,
+          "avg_tool_calls": 4.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 4927,
+          "avg_duration_ms": 7995,
+          "avg_tool_calls": 3.2,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 5386.8,
+          "avg_duration_ms": 8758.6,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 0.4,
+          "avg_context_tokens": 2801,
+          "avg_duration_ms": 6256,
+          "avg_tool_calls": 1.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       },
       "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
+        "alias": {
+          "n": 4,
+          "task_success": 0.75,
+          "avg_context_tokens": 4802.25,
+          "avg_duration_ms": 10318.5,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 0.6666666666666666,
+          "avg_context_tokens": 5580.666666666667,
+          "avg_duration_ms": 8667.666666666666,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 3265,
+          "avg_duration_ms": 7190,
+          "avg_tool_calls": 2,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "exact": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 5509.8,
+          "avg_duration_ms": 8247.2,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 0.5,
+          "avg_context_tokens": 3773,
+          "avg_duration_ms": 6911.5,
+          "avg_tool_calls": 2,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 0.0,
+          "avg_context_tokens": 4451.5,
+          "avg_duration_ms": 7856,
+          "avg_tool_calls": 2.75,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       }
     },
     "E5": {
       "n": 20,
-      "task_success": 0.95,
+      "task_success": 0.45,
+      "avg_context_tokens": 5392.05,
+      "avg_duration_ms": 9179.5,
+      "avg_tool_calls": 3.85,
       "constraint_fail": 0,
-      "evidence_in_context": 0.9,
+      "infra_failure": 0,
       "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
+        "mail": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 5357.4,
+          "avg_duration_ms": 9958.2,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 5134.4,
+          "avg_duration_ms": 8730.4,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 5785,
+          "avg_duration_ms": 9379.2,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 0.4,
+          "avg_context_tokens": 5291.4,
+          "avg_duration_ms": 8650.2,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       },
       "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
+        "alias": {
+          "n": 4,
+          "task_success": 0.75,
+          "avg_context_tokens": 4824.25,
+          "avg_duration_ms": 9069.5,
+          "avg_tool_calls": 3.5,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 0.6666666666666666,
+          "avg_context_tokens": 5922.666666666667,
+          "avg_duration_ms": 9983.333333333334,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 5525.5,
+          "avg_duration_ms": 9653.5,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "exact": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 5302.8,
+          "avg_duration_ms": 8891,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 0.5,
+          "avg_context_tokens": 5557.5,
+          "avg_duration_ms": 9309.5,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 0.0,
+          "avg_context_tokens": 5524,
+          "avg_duration_ms": 8745.25,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       }
     },
     "E6": {
       "n": 20,
-      "task_success": 0.95,
+      "task_success": 0.45,
+      "avg_context_tokens": 5850.45,
+      "avg_duration_ms": 9222.55,
+      "avg_tool_calls": 4.25,
       "constraint_fail": 0,
-      "evidence_in_context": 0.9,
+      "infra_failure": 0,
       "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
+        "mail": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 5912.8,
+          "avg_duration_ms": 9608.2,
+          "avg_tool_calls": 4.2,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 7203.2,
+          "avg_duration_ms": 10044.6,
+          "avg_tool_calls": 5.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 4985.4,
+          "avg_duration_ms": 8770.2,
+          "avg_tool_calls": 3.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 0.4,
+          "avg_context_tokens": 5300.4,
+          "avg_duration_ms": 8467.2,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       },
       "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
+        "alias": {
+          "n": 4,
+          "task_success": 0.75,
+          "avg_context_tokens": 5788.5,
+          "avg_duration_ms": 9369,
+          "avg_tool_calls": 4.25,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 0.6666666666666666,
+          "avg_context_tokens": 5151,
+          "avg_duration_ms": 8729.333333333334,
+          "avg_tool_calls": 3.6666666666666665,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 5511.5,
+          "avg_duration_ms": 8989.5,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "exact": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 5343.4,
+          "avg_duration_ms": 8952.8,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 0.5,
+          "avg_context_tokens": 7849.5,
+          "avg_duration_ms": 9875,
+          "avg_tool_calls": 6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 0.0,
+          "avg_context_tokens": 6240.75,
+          "avg_duration_ms": 9573.5,
+          "avg_tool_calls": 4.5,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       }
     },
     "E7": {
       "n": 20,
-      "task_success": 0.95,
+      "task_success": 0.45,
+      "avg_context_tokens": 4779.15,
+      "avg_duration_ms": 8309.85,
+      "avg_tool_calls": 3.35,
       "constraint_fail": 0,
-      "evidence_in_context": 0.9,
+      "infra_failure": 0,
       "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
+        "mail": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 4699.4,
+          "avg_duration_ms": 8488,
+          "avg_tool_calls": 3.2,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 5260.6,
+          "avg_duration_ms": 8543.2,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 4303.6,
+          "avg_duration_ms": 8085,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 0.4,
+          "avg_context_tokens": 4853,
+          "avg_duration_ms": 8123.2,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       },
       "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
+        "alias": {
+          "n": 4,
+          "task_success": 0.75,
+          "avg_context_tokens": 2137,
+          "avg_duration_ms": 7249,
+          "avg_tool_calls": 1.25,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 0.6666666666666666,
+          "avg_context_tokens": 5303,
+          "avg_duration_ms": 9125.333333333334,
+          "avg_tool_calls": 3.6666666666666665,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 5628.5,
+          "avg_duration_ms": 8440,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "exact": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 5239.8,
+          "avg_duration_ms": 8473.4,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 0.5,
+          "avg_context_tokens": 5625.5,
+          "avg_duration_ms": 8572,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 0.0,
+          "avg_context_tokens": 5604.75,
+          "avg_duration_ms": 8358.5,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       }
     },
     "E8": {
       "n": 20,
-      "task_success": 0.95,
+      "task_success": 0.45,
+      "avg_context_tokens": 5148.4,
+      "avg_duration_ms": 8737.9,
+      "avg_tool_calls": 3.65,
       "constraint_fail": 0,
-      "evidence_in_context": 0.9,
+      "infra_failure": 0,
       "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
+        "mail": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 5187.2,
+          "avg_duration_ms": 9538.8,
+          "avg_tool_calls": 3.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 5883.2,
+          "avg_duration_ms": 9192.8,
+          "avg_tool_calls": 4.2,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 4778.8,
+          "avg_duration_ms": 8646.2,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 0.4,
+          "avg_context_tokens": 4744.4,
+          "avg_duration_ms": 7573.8,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       },
       "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
+        "alias": {
+          "n": 4,
+          "task_success": 0.75,
+          "avg_context_tokens": 3915.5,
+          "avg_duration_ms": 8081,
+          "avg_tool_calls": 2.75,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 0.6666666666666666,
+          "avg_context_tokens": 5205.666666666667,
+          "avg_duration_ms": 8930.666666666666,
+          "avg_tool_calls": 3.6666666666666665,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 5508,
+          "avg_duration_ms": 8963.5,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "exact": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 5141.6,
+          "avg_duration_ms": 9211.2,
+          "avg_tool_calls": 3.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 0.5,
+          "avg_context_tokens": 5544,
+          "avg_duration_ms": 7788.5,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 0.0,
+          "avg_context_tokens": 5969.25,
+          "avg_duration_ms": 9020.5,
+          "avg_tool_calls": 4.25,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       }
     },
     "E9": {
       "n": 20,
-      "task_success": 0.9,
+      "task_success": 0.45,
+      "avg_context_tokens": 5284.85,
+      "avg_duration_ms": 7757.65,
+      "avg_tool_calls": 3.8,
       "constraint_fail": 0,
-      "evidence_in_context": 0.85,
+      "infra_failure": 0,
       "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 0.8
+        "mail": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 5373.6,
+          "avg_duration_ms": 7663.2,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 6067.8,
+          "avg_duration_ms": 8125.6,
+          "avg_tool_calls": 4.6,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.6,
+          "avg_context_tokens": 4793.2,
+          "avg_duration_ms": 7759.8,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 0.4,
+          "avg_context_tokens": 4904.8,
+          "avg_duration_ms": 7482,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       },
       "by_type": {
-        "exact": 0.6,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
+        "alias": {
+          "n": 4,
+          "task_success": 0.75,
+          "avg_context_tokens": 4653.5,
+          "avg_duration_ms": 7423,
+          "avg_tool_calls": 3.25,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 0.6666666666666666,
+          "avg_context_tokens": 5198,
+          "avg_duration_ms": 7845,
+          "avg_tool_calls": 3.6666666666666665,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 6814.5,
+          "avg_duration_ms": 8718,
+          "avg_tool_calls": 5.5,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "exact": {
+          "n": 5,
+          "task_success": 0.2,
+          "avg_context_tokens": 5314.6,
+          "avg_duration_ms": 7426.2,
+          "avg_tool_calls": 3.8,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 0.5,
+          "avg_context_tokens": 5557.5,
+          "avg_duration_ms": 7775,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 0.0,
+          "avg_context_tokens": 5043,
+          "avg_duration_ms": 7952.25,
+          "avg_tool_calls": 3.5,
+          "constraint_fail": 0,
+          "infra_failure": 0
+        }
       }
     }
   },
   "recommendation": {
     "winner": "E2",
-    "task_success": 0.95,
+    "task_success": 0.5,
+    "avg_context_tokens": 5296.6,
+    "avg_duration_ms": 7703.95,
+    "avg_tool_calls": 3.85,
+    "key": "task_success desc, avg_context_tokens, avg_duration_ms, avg_tool_calls",
     "ranked": [
-      [
-        "E2",
-        0.95
-      ],
-      [
-        "E3",
-        0.95
-      ],
-      [
-        "E4",
-        0.95
-      ],
-      [
-        "E5",
-        0.95
-      ],
-      [
-        "E6",
-        0.95
-      ],
-      [
-        "E7",
-        0.95
-      ],
-      [
-        "E8",
-        0.95
-      ],
-      [
-        "E9",
-        0.9
-      ],
-      [
-        "E1",
-        0.6
-      ],
-      [
-        "E0",
-        0.0
-      ]
-    ]
-  },
-  "detail": {
-    "E0": {
-      "n": 20,
-      "task_success": 0.0,
-      "constraint_fail": 0,
-      "evidence_in_context": 0.0,
-      "by_source": {
-        "mail": 0.0,
-        "meeting": 0.0,
-        "im": 0.0,
-        "web": 0.0
+      {
+        "group": "E2",
+        "task_success": 0.5,
+        "avg_context_tokens": 5296.6,
+        "avg_duration_ms": 7703.95,
+        "avg_tool_calls": 3.85
       },
-      "by_type": {
-        "exact": 0.0,
-        "update": 0.0,
-        "alias": 0.0,
-        "combo": 0.0,
-        "distractor": 0.0,
-        "multihop": 0.0
+      {
+        "group": "E1",
+        "task_success": 0.45,
+        "avg_context_tokens": 2414,
+        "avg_duration_ms": 9450.1,
+        "avg_tool_calls": 4.7
       },
-      "rows": [
+      {
+        "group": "E4",
+        "task_success": 0.45,
+        "avg_context_tokens": 4769.1,
+        "avg_duration_ms": 8407,
+        "avg_tool_calls": 3.3
+      },
+      {
+        "group": "E7",
+        "task_success": 0.45,
+        "avg_context_tokens": 4779.15,
+        "avg_duration_ms": 8309.85,
+        "avg_tool_calls": 3.35
+      },
+      {
+        "group": "E8",
+        "task_success": 0.45,
+        "avg_context_tokens": 5148.4,
+        "avg_duration_ms": 8737.9,
+        "avg_tool_calls": 3.65
+      },
+      {
+        "group": "E9",
+        "task_success": 0.45,
+        "avg_context_tokens": 5284.85,
+        "avg_duration_ms": 7757.65,
+        "avg_tool_calls": 3.8
+      },
+      {
+        "group": "E5",
+        "task_success": 0.45,
+        "avg_context_tokens": 5392.05,
+        "avg_duration_ms": 9179.5,
+        "avg_tool_calls": 3.85
+      },
+      {
+        "group": "E6",
+        "task_success": 0.45,
+        "avg_context_tokens": 5850.45,
+        "avg_duration_ms": 9222.55,
+        "avg_tool_calls": 4.25
+      },
+      {
+        "group": "E3",
+        "task_success": 0.4,
+        "avg_context_tokens": 5207.35,
+        "avg_duration_ms": 8778.3,
+        "avg_tool_calls": 3.75
+      },
+      {
+        "group": "E0",
+        "task_success": 0.0,
+        "avg_context_tokens": 265.35,
+        "avg_duration_ms": 6225.25,
+        "avg_tool_calls": 0
+      }
+    ],
+    "by_source": {
+      "mail": [
         {
-          "question_id": "Q01",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "mail",
-          "type": "exact"
+          "group": "E1",
+          "task_success": 0.6,
+          "avg_context_tokens": 2801.4,
+          "avg_duration_ms": 10651.2,
+          "avg_tool_calls": 5.4
         },
         {
-          "question_id": "Q02",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "mail",
-          "type": "update"
+          "group": "E7",
+          "task_success": 0.6,
+          "avg_context_tokens": 4699.4,
+          "avg_duration_ms": 8488,
+          "avg_tool_calls": 3.2
         },
         {
-          "question_id": "Q03",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "mail",
-          "type": "alias"
+          "group": "E3",
+          "task_success": 0.6,
+          "avg_context_tokens": 4959.6,
+          "avg_duration_ms": 8701.2,
+          "avg_tool_calls": 3.4
         },
         {
-          "question_id": "Q04",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "mail",
-          "type": "combo"
+          "group": "E8",
+          "task_success": 0.6,
+          "avg_context_tokens": 5187.2,
+          "avg_duration_ms": 9538.8,
+          "avg_tool_calls": 3.6
         },
         {
-          "question_id": "Q05",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "mail",
-          "type": "distractor"
+          "group": "E5",
+          "task_success": 0.6,
+          "avg_context_tokens": 5357.4,
+          "avg_duration_ms": 9958.2,
+          "avg_tool_calls": 3.8
         },
         {
-          "question_id": "Q06",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "meeting",
-          "type": "exact"
+          "group": "E9",
+          "task_success": 0.6,
+          "avg_context_tokens": 5373.6,
+          "avg_duration_ms": 7663.2,
+          "avg_tool_calls": 3.8
         },
         {
-          "question_id": "Q07",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "meeting",
-          "type": "update"
+          "group": "E6",
+          "task_success": 0.6,
+          "avg_context_tokens": 5912.8,
+          "avg_duration_ms": 9608.2,
+          "avg_tool_calls": 4.2
         },
         {
-          "question_id": "Q08",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "meeting",
-          "type": "multihop"
+          "group": "E4",
+          "task_success": 0.6,
+          "avg_context_tokens": 5961.6,
+          "avg_duration_ms": 10618.4,
+          "avg_tool_calls": 4.6
         },
         {
-          "question_id": "Q09",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "meeting",
-          "type": "alias"
+          "group": "E2",
+          "task_success": 0.6,
+          "avg_context_tokens": 6673.6,
+          "avg_duration_ms": 8615.8,
+          "avg_tool_calls": 5
         },
         {
-          "question_id": "Q10",
           "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "meeting",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q11",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q12",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "im",
-          "type": "update"
-        },
-        {
-          "question_id": "Q13",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q14",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "im",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q15",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "im",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q16",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "web",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q17",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "web",
-          "type": "update"
-        },
-        {
-          "question_id": "Q18",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "web",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q19",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "web",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q20",
-          "group": "E0",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 0,
-          "source": "web",
-          "type": "combo"
+          "task_success": 0.0,
+          "avg_context_tokens": 269.4,
+          "avg_duration_ms": 6395.2,
+          "avg_tool_calls": 0
         }
-      ]
-    },
-    "E1": {
-      "n": 20,
-      "task_success": 0.6,
-      "constraint_fail": 0,
-      "evidence_in_context": 0.6,
-      "by_source": {
-        "mail": 0.8,
-        "meeting": 0.6,
-        "im": 0.4,
-        "web": 0.6
-      },
-      "by_type": {
-        "exact": 0.6,
-        "update": 0.5,
-        "alias": 0.5,
-        "combo": 0.3333333333333333,
-        "distractor": 1.0,
-        "multihop": 1.0
-      },
-      "rows": [
+      ],
+      "meeting": [
         {
-          "question_id": "Q01",
-          "group": "E1",
-          "success": true,
-          "required_hits": [
-            "PO-XH7-20260318-044"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "exact"
+          "group": "E2",
+          "task_success": 0.4,
+          "avg_context_tokens": 4793,
+          "avg_duration_ms": 7339.6,
+          "avg_tool_calls": 3.6
         },
         {
-          "question_id": "Q02",
           "group": "E1",
-          "success": true,
-          "required_hits": [
-            "2026-05-06"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "update"
+          "task_success": 0.2,
+          "avg_context_tokens": 3035.2,
+          "avg_duration_ms": 9970.6,
+          "avg_tool_calls": 6
         },
         {
-          "question_id": "Q03",
-          "group": "E1",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": false,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "alias"
+          "group": "E4",
+          "task_success": 0.2,
+          "avg_context_tokens": 4927,
+          "avg_duration_ms": 7995,
+          "avg_tool_calls": 3.2
         },
         {
-          "question_id": "Q04",
-          "group": "E1",
-          "success": true,
-          "required_hits": [
-            "3",
-            "4"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "combo"
+          "group": "E5",
+          "task_success": 0.2,
+          "avg_context_tokens": 5134.4,
+          "avg_duration_ms": 8730.4,
+          "avg_tool_calls": 3.8
         },
         {
-          "question_id": "Q05",
-          "group": "E1",
-          "success": true,
-          "required_hits": [
-            "Dorado 5000"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "distractor"
+          "group": "E7",
+          "task_success": 0.2,
+          "avg_context_tokens": 5260.6,
+          "avg_duration_ms": 8543.2,
+          "avg_tool_calls": 3.8
         },
         {
-          "question_id": "Q06",
-          "group": "E1",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "exact"
+          "group": "E8",
+          "task_success": 0.2,
+          "avg_context_tokens": 5883.2,
+          "avg_duration_ms": 9192.8,
+          "avg_tool_calls": 4.2
         },
         {
-          "question_id": "Q07",
-          "group": "E1",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "update"
+          "group": "E9",
+          "task_success": 0.2,
+          "avg_context_tokens": 6067.8,
+          "avg_duration_ms": 8125.6,
+          "avg_tool_calls": 4.6
         },
         {
-          "question_id": "Q08",
-          "group": "E1",
-          "success": true,
-          "required_hits": [
-            "赵宇",
-            "王磊"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "multihop"
+          "group": "E3",
+          "task_success": 0.2,
+          "avg_context_tokens": 6376.8,
+          "avg_duration_ms": 9525.2,
+          "avg_tool_calls": 5
         },
         {
-          "question_id": "Q09",
-          "group": "E1",
-          "success": true,
-          "required_hits": [
-            "IH-LG-A-0881"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "alias"
+          "group": "E6",
+          "task_success": 0.2,
+          "avg_context_tokens": 7203.2,
+          "avg_duration_ms": 10044.6,
+          "avg_tool_calls": 5.4
         },
         {
-          "question_id": "Q10",
-          "group": "E1",
-          "success": true,
-          "required_hits": [
-            "GaussDB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q11",
-          "group": "E1",
-          "success": true,
-          "required_hits": [
-            "CHG-8821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q12",
-          "group": "E1",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": false,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "update"
-        },
-        {
-          "question_id": "Q13",
-          "group": "E1",
-          "success": true,
-          "required_hits": [
-            "周二",
-            "23:30"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q14",
-          "group": "E1",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": false,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q15",
-          "group": "E1",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": false,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q16",
-          "group": "E1",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q17",
-          "group": "E1",
-          "success": true,
-          "required_hits": [
-            "505.2.0.B023"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "update"
-        },
-        {
-          "question_id": "Q18",
-          "group": "E1",
-          "success": true,
-          "required_hits": [
-            "CI-STOR-77821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q19",
-          "group": "E1",
-          "success": true,
-          "required_hits": [
-            "XH-7"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q20",
-          "group": "E1",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": false,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "combo"
+          "group": "E0",
+          "task_success": 0.0,
+          "avg_context_tokens": 267.2,
+          "avg_duration_ms": 6262.2,
+          "avg_tool_calls": 0
         }
-      ]
-    },
-    "E2": {
-      "n": 20,
-      "task_success": 0.95,
-      "constraint_fail": 0,
-      "evidence_in_context": 0.9,
-      "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
-      },
-      "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
-      },
-      "rows": [
+      ],
+      "im": [
         {
-          "question_id": "Q01",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "PO-XH7-20260318-044"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "exact"
+          "group": "E7",
+          "task_success": 0.6,
+          "avg_context_tokens": 4303.6,
+          "avg_duration_ms": 8085,
+          "avg_tool_calls": 3
         },
         {
-          "question_id": "Q02",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "2026-05-06"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "update"
+          "group": "E3",
+          "task_success": 0.6,
+          "avg_context_tokens": 4747.6,
+          "avg_duration_ms": 8714.2,
+          "avg_tool_calls": 3.4
         },
         {
-          "question_id": "Q03",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "陈启明"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "alias"
+          "group": "E8",
+          "task_success": 0.6,
+          "avg_context_tokens": 4778.8,
+          "avg_duration_ms": 8646.2,
+          "avg_tool_calls": 3.4
         },
         {
-          "question_id": "Q04",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "3",
-            "4"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "combo"
+          "group": "E9",
+          "task_success": 0.6,
+          "avg_context_tokens": 4793.2,
+          "avg_duration_ms": 7759.8,
+          "avg_tool_calls": 3.4
         },
         {
-          "question_id": "Q05",
           "group": "E2",
-          "success": true,
-          "required_hits": [
-            "Dorado 5000"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "distractor"
+          "task_success": 0.6,
+          "avg_context_tokens": 4805.4,
+          "avg_duration_ms": 7737.6,
+          "avg_tool_calls": 3.4
         },
         {
-          "question_id": "Q06",
-          "group": "E2",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "exact"
+          "group": "E6",
+          "task_success": 0.6,
+          "avg_context_tokens": 4985.4,
+          "avg_duration_ms": 8770.2,
+          "avg_tool_calls": 3.6
         },
         {
-          "question_id": "Q07",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "V100R024C10"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "update"
+          "group": "E4",
+          "task_success": 0.6,
+          "avg_context_tokens": 5386.8,
+          "avg_duration_ms": 8758.6,
+          "avg_tool_calls": 3.8
         },
         {
-          "question_id": "Q08",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "赵宇",
-            "王磊"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "multihop"
+          "group": "E5",
+          "task_success": 0.6,
+          "avg_context_tokens": 5785,
+          "avg_duration_ms": 9379.2,
+          "avg_tool_calls": 4
         },
         {
-          "question_id": "Q09",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "IH-LG-A-0881"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "alias"
+          "group": "E1",
+          "task_success": 0.4,
+          "avg_context_tokens": 1916.4,
+          "avg_duration_ms": 9618.2,
+          "avg_tool_calls": 4.6
         },
         {
-          "question_id": "Q10",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "GaussDB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q11",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "CHG-8821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q12",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "64TB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "update"
-        },
-        {
-          "question_id": "Q13",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "周二",
-            "23:30"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q14",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "刘芳"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q15",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "2026-05-09",
-            "01:00"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q16",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "tn-lg-xh7-20481"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q17",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "505.2.0.B023"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "update"
-        },
-        {
-          "question_id": "Q18",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "CI-STOR-77821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q19",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "XH-7"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q20",
-          "group": "E2",
-          "success": true,
-          "required_hits": [
-            "grp-xh7-dba"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "combo"
+          "group": "E0",
+          "task_success": 0.0,
+          "avg_context_tokens": 261,
+          "avg_duration_ms": 6183.2,
+          "avg_tool_calls": 0
         }
-      ]
-    },
-    "E3": {
-      "n": 20,
-      "task_success": 0.95,
-      "constraint_fail": 0,
-      "evidence_in_context": 0.9,
-      "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
-      },
-      "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
-      },
-      "rows": [
+      ],
+      "web": [
         {
-          "question_id": "Q01",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "PO-XH7-20260318-044"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "exact"
+          "group": "E1",
+          "task_success": 0.6,
+          "avg_context_tokens": 1903,
+          "avg_duration_ms": 7560.4,
+          "avg_tool_calls": 2.8
         },
         {
-          "question_id": "Q02",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "2026-05-06"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "update"
-        },
-        {
-          "question_id": "Q03",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "陈启明"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q04",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "3",
-            "4"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q05",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "Dorado 5000"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q06",
-          "group": "E3",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q07",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "V100R024C10"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "update"
-        },
-        {
-          "question_id": "Q08",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "赵宇",
-            "王磊"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q09",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "IH-LG-A-0881"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q10",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "GaussDB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q11",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "CHG-8821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q12",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "64TB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "update"
-        },
-        {
-          "question_id": "Q13",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "周二",
-            "23:30"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q14",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "刘芳"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q15",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "2026-05-09",
-            "01:00"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q16",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "tn-lg-xh7-20481"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q17",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "505.2.0.B023"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "update"
-        },
-        {
-          "question_id": "Q18",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "CI-STOR-77821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q19",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "XH-7"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q20",
-          "group": "E3",
-          "success": true,
-          "required_hits": [
-            "grp-xh7-dba"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "combo"
-        }
-      ]
-    },
-    "E4": {
-      "n": 20,
-      "task_success": 0.95,
-      "constraint_fail": 0,
-      "evidence_in_context": 0.9,
-      "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
-      },
-      "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
-      },
-      "rows": [
-        {
-          "question_id": "Q01",
           "group": "E4",
-          "success": true,
-          "required_hits": [
-            "PO-XH7-20260318-044"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "mail",
-          "type": "exact"
+          "task_success": 0.4,
+          "avg_context_tokens": 2801,
+          "avg_duration_ms": 6256,
+          "avg_tool_calls": 1.6
         },
         {
-          "question_id": "Q02",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "2026-05-06"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "mail",
-          "type": "update"
-        },
-        {
-          "question_id": "Q03",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "陈启明"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q04",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "3",
-            "4"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "mail",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q05",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "Dorado 5000"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "mail",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q06",
-          "group": "E4",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "meeting",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q07",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "V100R024C10"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "meeting",
-          "type": "update"
-        },
-        {
-          "question_id": "Q08",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "赵宇",
-            "王磊"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "meeting",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q09",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "IH-LG-A-0881"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "meeting",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q10",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "GaussDB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "meeting",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q11",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "CHG-8821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q12",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "64TB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "update"
-        },
-        {
-          "question_id": "Q13",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "周二",
-            "23:30"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q14",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "刘芳"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q15",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "2026-05-09",
-            "01:00"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q16",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "tn-lg-xh7-20481"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "web",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q17",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "505.2.0.B023"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "web",
-          "type": "update"
-        },
-        {
-          "question_id": "Q18",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "CI-STOR-77821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "web",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q19",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "XH-7"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 2,
-          "source": "web",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q20",
-          "group": "E4",
-          "success": true,
-          "required_hits": [
-            "grp-xh7-dba"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "combo"
-        }
-      ]
-    },
-    "E5": {
-      "n": 20,
-      "task_success": 0.95,
-      "constraint_fail": 0,
-      "evidence_in_context": 0.9,
-      "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
-      },
-      "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
-      },
-      "rows": [
-        {
-          "question_id": "Q01",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "PO-XH7-20260318-044"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q02",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "2026-05-06"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "update"
-        },
-        {
-          "question_id": "Q03",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "陈启明"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q04",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "3",
-            "4"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q05",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "Dorado 5000"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q06",
-          "group": "E5",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q07",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "V100R024C10"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "update"
-        },
-        {
-          "question_id": "Q08",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "赵宇",
-            "王磊"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q09",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "IH-LG-A-0881"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q10",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "GaussDB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q11",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "CHG-8821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q12",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "64TB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "update"
-        },
-        {
-          "question_id": "Q13",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "周二",
-            "23:30"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q14",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "刘芳"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q15",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "2026-05-09",
-            "01:00"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q16",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "tn-lg-xh7-20481"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q17",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "505.2.0.B023"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "update"
-        },
-        {
-          "question_id": "Q18",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "CI-STOR-77821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q19",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "XH-7"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q20",
-          "group": "E5",
-          "success": true,
-          "required_hits": [
-            "grp-xh7-dba"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "combo"
-        }
-      ]
-    },
-    "E6": {
-      "n": 20,
-      "task_success": 0.95,
-      "constraint_fail": 0,
-      "evidence_in_context": 0.9,
-      "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
-      },
-      "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
-      },
-      "rows": [
-        {
-          "question_id": "Q01",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "PO-XH7-20260318-044"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q02",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "2026-05-06"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "update"
-        },
-        {
-          "question_id": "Q03",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "陈启明"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q04",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "3",
-            "4"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q05",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "Dorado 5000"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q06",
-          "group": "E6",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q07",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "V100R024C10"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "update"
-        },
-        {
-          "question_id": "Q08",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "赵宇",
-            "王磊"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q09",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "IH-LG-A-0881"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q10",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "GaussDB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q11",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "CHG-8821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q12",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "64TB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "update"
-        },
-        {
-          "question_id": "Q13",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "周二",
-            "23:30"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q14",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "刘芳"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q15",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "2026-05-09",
-            "01:00"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q16",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "tn-lg-xh7-20481"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q17",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "505.2.0.B023"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "update"
-        },
-        {
-          "question_id": "Q18",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "CI-STOR-77821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q19",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "XH-7"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q20",
-          "group": "E6",
-          "success": true,
-          "required_hits": [
-            "grp-xh7-dba"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "combo"
-        }
-      ]
-    },
-    "E7": {
-      "n": 20,
-      "task_success": 0.95,
-      "constraint_fail": 0,
-      "evidence_in_context": 0.9,
-      "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
-      },
-      "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
-      },
-      "rows": [
-        {
-          "question_id": "Q01",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "PO-XH7-20260318-044"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q02",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "2026-05-06"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "update"
-        },
-        {
-          "question_id": "Q03",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "陈启明"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q04",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "3",
-            "4"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q05",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "Dorado 5000"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q06",
-          "group": "E7",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q07",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "V100R024C10"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "update"
-        },
-        {
-          "question_id": "Q08",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "赵宇",
-            "王磊"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q09",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "IH-LG-A-0881"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q10",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "GaussDB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q11",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "CHG-8821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q12",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "64TB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "update"
-        },
-        {
-          "question_id": "Q13",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "周二",
-            "23:30"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q14",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "刘芳"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q15",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "2026-05-09",
-            "01:00"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q16",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "tn-lg-xh7-20481"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q17",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "505.2.0.B023"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "update"
-        },
-        {
-          "question_id": "Q18",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "CI-STOR-77821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q19",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "XH-7"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q20",
-          "group": "E7",
-          "success": true,
-          "required_hits": [
-            "grp-xh7-dba"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "combo"
-        }
-      ]
-    },
-    "E8": {
-      "n": 20,
-      "task_success": 0.95,
-      "constraint_fail": 0,
-      "evidence_in_context": 0.9,
-      "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 1.0
-      },
-      "by_type": {
-        "exact": 0.8,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
-      },
-      "rows": [
-        {
-          "question_id": "Q01",
           "group": "E8",
-          "success": true,
-          "required_hits": [
-            "PO-XH7-20260318-044"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "exact"
+          "task_success": 0.4,
+          "avg_context_tokens": 4744.4,
+          "avg_duration_ms": 7573.8,
+          "avg_tool_calls": 3.4
         },
         {
-          "question_id": "Q02",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "2026-05-06"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "update"
+          "group": "E7",
+          "task_success": 0.4,
+          "avg_context_tokens": 4853,
+          "avg_duration_ms": 8123.2,
+          "avg_tool_calls": 3.4
         },
         {
-          "question_id": "Q03",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "陈启明"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q04",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "3",
-            "4"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q05",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "Dorado 5000"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q06",
-          "group": "E8",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q07",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "V100R024C10"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "update"
-        },
-        {
-          "question_id": "Q08",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "赵宇",
-            "王磊"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q09",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "IH-LG-A-0881"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q10",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "GaussDB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q11",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "CHG-8821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q12",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "64TB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "update"
-        },
-        {
-          "question_id": "Q13",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "周二",
-            "23:30"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q14",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "刘芳"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q15",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "2026-05-09",
-            "01:00"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q16",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "tn-lg-xh7-20481"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q17",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "505.2.0.B023"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "update"
-        },
-        {
-          "question_id": "Q18",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "CI-STOR-77821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q19",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "XH-7"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q20",
-          "group": "E8",
-          "success": true,
-          "required_hits": [
-            "grp-xh7-dba"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "combo"
-        }
-      ]
-    },
-    "E9": {
-      "n": 20,
-      "task_success": 0.9,
-      "constraint_fail": 0,
-      "evidence_in_context": 0.85,
-      "by_source": {
-        "mail": 1.0,
-        "meeting": 0.8,
-        "im": 1.0,
-        "web": 0.8
-      },
-      "by_type": {
-        "exact": 0.6,
-        "update": 1.0,
-        "alias": 1.0,
-        "combo": 1.0,
-        "distractor": 1.0,
-        "multihop": 1.0
-      },
-      "rows": [
-        {
-          "question_id": "Q01",
           "group": "E9",
-          "success": true,
-          "required_hits": [
-            "PO-XH7-20260318-044"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "exact"
+          "task_success": 0.4,
+          "avg_context_tokens": 4904.8,
+          "avg_duration_ms": 7482,
+          "avg_tool_calls": 3.4
         },
         {
-          "question_id": "Q02",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "2026-05-06"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "update"
+          "group": "E2",
+          "task_success": 0.4,
+          "avg_context_tokens": 4914.4,
+          "avg_duration_ms": 7122.8,
+          "avg_tool_calls": 3.4
         },
         {
-          "question_id": "Q03",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "陈启明"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "alias"
+          "group": "E5",
+          "task_success": 0.4,
+          "avg_context_tokens": 5291.4,
+          "avg_duration_ms": 8650.2,
+          "avg_tool_calls": 3.8
         },
         {
-          "question_id": "Q04",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "3",
-            "4"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "combo"
+          "group": "E6",
+          "task_success": 0.4,
+          "avg_context_tokens": 5300.4,
+          "avg_duration_ms": 8467.2,
+          "avg_tool_calls": 3.8
         },
         {
-          "question_id": "Q05",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "Dorado 5000"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "mail",
-          "type": "distractor"
+          "group": "E3",
+          "task_success": 0.2,
+          "avg_context_tokens": 4745.4,
+          "avg_duration_ms": 8172.6,
+          "avg_tool_calls": 3.2
         },
         {
-          "question_id": "Q06",
-          "group": "E9",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q07",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "V100R024C10"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "update"
-        },
-        {
-          "question_id": "Q08",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "赵宇",
-            "王磊"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q09",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "IH-LG-A-0881"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q10",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "GaussDB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "meeting",
-          "type": "distractor"
-        },
-        {
-          "question_id": "Q11",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "CHG-8821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q12",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "64TB"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "update"
-        },
-        {
-          "question_id": "Q13",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "周二",
-            "23:30"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q14",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "刘芳"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q15",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "2026-05-09",
-            "01:00"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "im",
-          "type": "combo"
-        },
-        {
-          "question_id": "Q16",
-          "group": "E9",
-          "success": false,
-          "required_hits": [],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": false,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "exact"
-        },
-        {
-          "question_id": "Q17",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "505.2.0.B023"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "update"
-        },
-        {
-          "question_id": "Q18",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "CI-STOR-77821"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "multihop"
-        },
-        {
-          "question_id": "Q19",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "XH-7"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "alias"
-        },
-        {
-          "question_id": "Q20",
-          "group": "E9",
-          "success": true,
-          "required_hits": [
-            "grp-xh7-dba"
-          ],
-          "forbidden_hits": [],
-          "constraint_fail": false,
-          "evidence_in_context": true,
-          "citation_ok": true,
-          "memory_calls": 1,
-          "source": "web",
-          "type": "combo"
+          "group": "E0",
+          "task_success": 0.0,
+          "avg_context_tokens": 263.8,
+          "avg_duration_ms": 6060.4,
+          "avg_tool_calls": 0
         }
       ]
     }
-  }
+  },
+  "protocol": "agent-initiated-four-tools"
 }

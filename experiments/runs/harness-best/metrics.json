@@ -1,0 +1,1951 @@
+{
+  "summary": {
+    "E0": {
+      "n": 21,
+      "task_success": 0.0,
+      "avg_context_tokens": 265.35,
+      "avg_duration_ms": 6225.25,
+      "avg_tool_calls": 0,
+      "constraint_fail": 0,
+      "cost_fail": 0,
+      "infra_failure": 0,
+      "fact_success": 0.0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 0.0,
+          "avg_context_tokens": 224.5,
+          "avg_duration_ms": 5329.333333333333,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.0,
+          "avg_context_tokens": 214,
+          "avg_duration_ms": 5044.4,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.0,
+          "avg_context_tokens": 261,
+          "avg_duration_ms": 6183.2,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 0.0,
+          "avg_context_tokens": 263.8,
+          "avg_duration_ms": 6060.4,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.0
+        }
+      },
+      "by_type": {
+        "alias": {
+          "n": 4,
+          "task_success": 0.0,
+          "avg_context_tokens": 262.75,
+          "avg_duration_ms": 6396.75,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 0.0,
+          "avg_context_tokens": 265,
+          "avg_duration_ms": 6344.333333333333,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 0.0,
+          "avg_context_tokens": 263.5,
+          "avg_duration_ms": 6078,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.0
+        },
+        "exact": {
+          "n": 6,
+          "task_success": 0.0,
+          "avg_context_tokens": 177.66666666666666,
+          "avg_duration_ms": 4136.666666666667,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 0.0,
+          "avg_context_tokens": 272,
+          "avg_duration_ms": 6171.5,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 0.0,
+          "avg_context_tokens": 264.5,
+          "avg_duration_ms": 6119.25,
+          "avg_tool_calls": 0,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.0
+        }
+      }
+    },
+    "E1": {
+      "n": 21,
+      "task_success": 0.9047619047619048,
+      "avg_context_tokens": 2391.2380952380954,
+      "avg_duration_ms": 9531.666666666666,
+      "avg_tool_calls": 3.1904761904761907,
+      "constraint_fail": 0,
+      "cost_fail": 2,
+      "infra_failure": 0,
+      "fact_success": 0.9523809523809523,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 1.0,
+          "avg_context_tokens": 3156.8333333333335,
+          "avg_duration_ms": 9513.333333333334,
+          "avg_tool_calls": 3.3333333333333335,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 1790.2,
+          "avg_duration_ms": 8789.2,
+          "avg_tool_calls": 2.6,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 2512.4,
+          "avg_duration_ms": 12913.4,
+          "avg_tool_calls": 5.2,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 0.8
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 1952.4,
+          "avg_duration_ms": 6914.4,
+          "avg_tool_calls": 1.6,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      },
+      "by_type": {
+        "alias": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 2371,
+          "avg_duration_ms": 8268.75,
+          "avg_tool_calls": 2.75,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 1.0,
+          "avg_context_tokens": 2327,
+          "avg_duration_ms": 9268.333333333334,
+          "avg_tool_calls": 3.3333333333333335,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 0.5,
+          "avg_context_tokens": 2569,
+          "avg_duration_ms": 10362,
+          "avg_tool_calls": 4.5,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "exact": {
+          "n": 6,
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 2865.1666666666665,
+          "avg_duration_ms": 10744.666666666666,
+          "avg_tool_calls": 3.6666666666666665,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 0.8333333333333334
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 1538.5,
+          "avg_duration_ms": 6900,
+          "avg_tool_calls": 2,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 2086.25,
+          "avg_duration_ms": 10073.25,
+          "avg_tool_calls": 2.75,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      }
+    },
+    "E2": {
+      "n": 31,
+      "task_success": 0.967741935483871,
+      "avg_context_tokens": 5346.193548387097,
+      "avg_duration_ms": 10262.741935483871,
+      "avg_tool_calls": 3.5483870967741935,
+      "constraint_fail": 0,
+      "cost_fail": 0,
+      "infra_failure": 0,
+      "fact_success": 0.967741935483871,
+      "by_source": {
+        "mail": {
+          "n": 11,
+          "task_success": 1.0,
+          "avg_context_tokens": 6445.636363636364,
+          "avg_duration_ms": 10368.727272727272,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 3441.6,
+          "avg_duration_ms": 9749.6,
+          "avg_tool_calls": 2.2,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "im": {
+          "n": 8,
+          "task_success": 1.0,
+          "avg_context_tokens": 5362,
+          "avg_duration_ms": 9524,
+          "avg_tool_calls": 3.625,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "web": {
+          "n": 7,
+          "task_success": 0.8571428571428571,
+          "avg_context_tokens": 4960.857142857143,
+          "avg_duration_ms": 11307,
+          "avg_tool_calls": 3.7142857142857144,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.8571428571428571
+        }
+      },
+      "by_type": {
+        "alias": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4783.4,
+          "avg_duration_ms": 9884.6,
+          "avg_tool_calls": 3.6,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 1.0,
+          "avg_context_tokens": 3520.3333333333335,
+          "avg_duration_ms": 8400.666666666666,
+          "avg_tool_calls": 1.6666666666666667,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 4609,
+          "avg_duration_ms": 9530.5,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "exact": {
+          "n": 6,
+          "task_success": 1.0,
+          "avg_context_tokens": 4124.833333333333,
+          "avg_duration_ms": 8486.833333333334,
+          "avg_tool_calls": 2.3333333333333335,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "multihop": {
+          "n": 11,
+          "task_success": 0.9090909090909091,
+          "avg_context_tokens": 7142.727272727273,
+          "avg_duration_ms": 11959.272727272728,
+          "avg_tool_calls": 5,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.9090909090909091
+        },
+        "update": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 4679.25,
+          "avg_duration_ms": 10496.5,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      }
+    },
+    "E3": {
+      "n": 21,
+      "task_success": 0.8571428571428571,
+      "avg_context_tokens": 4430.0952380952385,
+      "avg_duration_ms": 8083.666666666667,
+      "avg_tool_calls": 3,
+      "constraint_fail": 0,
+      "cost_fail": 3,
+      "infra_failure": 0,
+      "fact_success": 1.0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 5476.666666666667,
+          "avg_duration_ms": 8876.833333333334,
+          "avg_tool_calls": 3.5,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 4979.8,
+          "avg_duration_ms": 8636.8,
+          "avg_tool_calls": 3.4,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4008.6,
+          "avg_duration_ms": 7811.4,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 3046,
+          "avg_duration_ms": 6851,
+          "avg_tool_calls": 2,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      },
+      "by_type": {
+        "alias": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 3697,
+          "avg_duration_ms": 7655.25,
+          "avg_tool_calls": 2.5,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 0.3333333333333333,
+          "avg_context_tokens": 5921,
+          "avg_duration_ms": 9343.666666666666,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "cost_fail": 2,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 5473.5,
+          "avg_duration_ms": 8833.5,
+          "avg_tool_calls": 3.5,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "exact": {
+          "n": 6,
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 4050.3333333333335,
+          "avg_duration_ms": 7729.166666666667,
+          "avg_tool_calls": 2.6666666666666665,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 3410,
+          "avg_duration_ms": 7403.5,
+          "avg_tool_calls": 2.5,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 4603,
+          "avg_duration_ms": 8064,
+          "avg_tool_calls": 3.25,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      }
+    },
+    "E4": {
+      "n": 21,
+      "task_success": 0.9523809523809523,
+      "avg_context_tokens": 4194.190476190476,
+      "avg_duration_ms": 7796.952380952381,
+      "avg_tool_calls": 2.5238095238095237,
+      "constraint_fail": 0,
+      "cost_fail": 1,
+      "infra_failure": 0,
+      "fact_success": 1.0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 1.0,
+          "avg_context_tokens": 5659.833333333333,
+          "avg_duration_ms": 8236.666666666666,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 3949.6,
+          "avg_duration_ms": 7714.4,
+          "avg_tool_calls": 2.6,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4546.4,
+          "avg_duration_ms": 8966.2,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 2327.8,
+          "avg_duration_ms": 6182.6,
+          "avg_tool_calls": 1.4,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      },
+      "by_type": {
+        "alias": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 4085.5,
+          "avg_duration_ms": 7867.75,
+          "avg_tool_calls": 2.75,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 1.0,
+          "avg_context_tokens": 4067.3333333333335,
+          "avg_duration_ms": 7599,
+          "avg_tool_calls": 2.3333333333333335,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 5091,
+          "avg_duration_ms": 8637.5,
+          "avg_tool_calls": 3.5,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "exact": {
+          "n": 6,
+          "task_success": 1.0,
+          "avg_context_tokens": 3593.5,
+          "avg_duration_ms": 7343,
+          "avg_tool_calls": 1.8333333333333333,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 2663,
+          "avg_duration_ms": 6189,
+          "avg_tool_calls": 1.5,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 0.75,
+          "avg_context_tokens": 5616.25,
+          "avg_duration_ms": 8939.25,
+          "avg_tool_calls": 3.5,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      }
+    },
+    "E5": {
+      "n": 21,
+      "task_success": 0.9523809523809523,
+      "avg_context_tokens": 4323.0952380952385,
+      "avg_duration_ms": 8218.52380952381,
+      "avg_tool_calls": 2.6666666666666665,
+      "constraint_fail": 0,
+      "cost_fail": 1,
+      "infra_failure": 0,
+      "fact_success": 1.0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 1.0,
+          "avg_context_tokens": 5425.333333333333,
+          "avg_duration_ms": 8169.166666666667,
+          "avg_tool_calls": 2.8333333333333335,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 4192.2,
+          "avg_duration_ms": 8337.8,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 5363.2,
+          "avg_duration_ms": 10308.4,
+          "avg_tool_calls": 3.6,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 2091.2,
+          "avg_duration_ms": 6068.6,
+          "avg_tool_calls": 1.2,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      },
+      "by_type": {
+        "alias": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 3954.25,
+          "avg_duration_ms": 7671,
+          "avg_tool_calls": 2.75,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 1.0,
+          "avg_context_tokens": 4301.666666666667,
+          "avg_duration_ms": 7853.666666666667,
+          "avg_tool_calls": 2.6666666666666665,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 0.5,
+          "avg_context_tokens": 6692,
+          "avg_duration_ms": 11569.5,
+          "avg_tool_calls": 4.5,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "exact": {
+          "n": 6,
+          "task_success": 1.0,
+          "avg_context_tokens": 4477.166666666667,
+          "avg_duration_ms": 8330.333333333334,
+          "avg_tool_calls": 2.5,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 2515.5,
+          "avg_duration_ms": 6132.5,
+          "avg_tool_calls": 1.5,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 4196.25,
+          "avg_duration_ms": 8239.5,
+          "avg_tool_calls": 2.5,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      }
+    },
+    "E6": {
+      "n": 31,
+      "task_success": 0.967741935483871,
+      "avg_context_tokens": 5844.225806451613,
+      "avg_duration_ms": 10592.645161290322,
+      "avg_tool_calls": 3.838709677419355,
+      "constraint_fail": 0,
+      "cost_fail": 0,
+      "infra_failure": 0,
+      "fact_success": 0.967741935483871,
+      "by_source": {
+        "mail": {
+          "n": 11,
+          "task_success": 1.0,
+          "avg_context_tokens": 6428.909090909091,
+          "avg_duration_ms": 9556.363636363636,
+          "avg_tool_calls": 3.6363636363636362,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4214,
+          "avg_duration_ms": 8188.8,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "im": {
+          "n": 8,
+          "task_success": 1.0,
+          "avg_context_tokens": 6274.25,
+          "avg_duration_ms": 10327.5,
+          "avg_tool_calls": 4.25,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "web": {
+          "n": 7,
+          "task_success": 0.8571428571428571,
+          "avg_context_tokens": 5598.428571428572,
+          "avg_duration_ms": 14241.142857142857,
+          "avg_tool_calls": 4.285714285714286,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.8571428571428571
+        }
+      },
+      "by_type": {
+        "alias": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4470.4,
+          "avg_duration_ms": 8077.2,
+          "avg_tool_calls": 3.2,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 1.0,
+          "avg_context_tokens": 4840.666666666667,
+          "avg_duration_ms": 7712.333333333333,
+          "avg_tool_calls": 2.6666666666666665,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 5154,
+          "avg_duration_ms": 9417,
+          "avg_tool_calls": 3.5,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "exact": {
+          "n": 6,
+          "task_success": 1.0,
+          "avg_context_tokens": 5255.833333333333,
+          "avg_duration_ms": 8796.5,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "multihop": {
+          "n": 11,
+          "task_success": 0.9090909090909091,
+          "avg_context_tokens": 7442.727272727273,
+          "avg_duration_ms": 13862.09090909091,
+          "avg_tool_calls": 5.090909090909091,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.9090909090909091
+        },
+        "update": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 5146,
+          "avg_duration_ms": 10188.25,
+          "avg_tool_calls": 3.5,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      }
+    },
+    "E7": {
+      "n": 21,
+      "task_success": 0.9523809523809523,
+      "avg_context_tokens": 3929.714285714286,
+      "avg_duration_ms": 8177.857142857143,
+      "avg_tool_calls": 2.238095238095238,
+      "constraint_fail": 0,
+      "cost_fail": 1,
+      "infra_failure": 0,
+      "fact_success": 1.0,
+      "by_source": {
+        "mail": {
+          "n": 6,
+          "task_success": 1.0,
+          "avg_context_tokens": 5013.666666666667,
+          "avg_duration_ms": 7806.833333333333,
+          "avg_tool_calls": 2.3333333333333335,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 3074.4,
+          "avg_duration_ms": 8073,
+          "avg_tool_calls": 1.8,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 0.8,
+          "avg_context_tokens": 4860.4,
+          "avg_duration_ms": 10478.6,
+          "avg_tool_calls": 3.2,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 2553.6,
+          "avg_duration_ms": 6427.2,
+          "avg_tool_calls": 1.6,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      },
+      "by_type": {
+        "alias": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 2832.5,
+          "avg_duration_ms": 6504.5,
+          "avg_tool_calls": 1.75,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 1.0,
+          "avg_context_tokens": 4344.666666666667,
+          "avg_duration_ms": 8300.333333333334,
+          "avg_tool_calls": 2,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 4631,
+          "avg_duration_ms": 9133,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "exact": {
+          "n": 6,
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 4741.166666666667,
+          "avg_duration_ms": 8537.166666666666,
+          "avg_tool_calls": 2.6666666666666665,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "multihop": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 3018,
+          "avg_duration_ms": 6690.5,
+          "avg_tool_calls": 2,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 3603.75,
+          "avg_duration_ms": 9486.5,
+          "avg_tool_calls": 2,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      }
+    },
+    "E8": {
+      "n": 22,
+      "task_success": 0.9545454545454546,
+      "avg_context_tokens": 4936.454545454545,
+      "avg_duration_ms": 8656.545454545454,
+      "avg_tool_calls": 3.1818181818181817,
+      "constraint_fail": 0,
+      "cost_fail": 1,
+      "infra_failure": 0,
+      "fact_success": 1.0,
+      "by_source": {
+        "mail": {
+          "n": 7,
+          "task_success": 0.8571428571428571,
+          "avg_context_tokens": 6200.571428571428,
+          "avg_duration_ms": 9257.142857142857,
+          "avg_tool_calls": 3.7142857142857144,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 4336.2,
+          "avg_duration_ms": 9594,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "im": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 6628,
+          "avg_duration_ms": 9557.6,
+          "avg_tool_calls": 4.6,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "web": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 2075.4,
+          "avg_duration_ms": 5977.2,
+          "avg_tool_calls": 1.2,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      },
+      "by_type": {
+        "alias": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 3794.75,
+          "avg_duration_ms": 8450.5,
+          "avg_tool_calls": 2.75,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 1.0,
+          "avg_context_tokens": 5113.333333333333,
+          "avg_duration_ms": 8120,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 4809.5,
+          "avg_duration_ms": 9627,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "exact": {
+          "n": 6,
+          "task_success": 1.0,
+          "avg_context_tokens": 5270.166666666667,
+          "avg_duration_ms": 8474.833333333334,
+          "avg_tool_calls": 3.1666666666666665,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "multihop": {
+          "n": 3,
+          "task_success": 0.6666666666666666,
+          "avg_context_tokens": 4588,
+          "avg_duration_ms": 7771,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 1,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "update": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 5769.75,
+          "avg_duration_ms": 9716.5,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      }
+    },
+    "E9": {
+      "n": 31,
+      "task_success": 0.967741935483871,
+      "avg_context_tokens": 5311.064516129032,
+      "avg_duration_ms": 9858.774193548386,
+      "avg_tool_calls": 3.5806451612903225,
+      "constraint_fail": 0,
+      "cost_fail": 0,
+      "infra_failure": 0,
+      "fact_success": 0.967741935483871,
+      "by_source": {
+        "mail": {
+          "n": 11,
+          "task_success": 1.0,
+          "avg_context_tokens": 6018.090909090909,
+          "avg_duration_ms": 9739,
+          "avg_tool_calls": 3.6363636363636362,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "meeting": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 3722.6,
+          "avg_duration_ms": 8887.6,
+          "avg_tool_calls": 2.6,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "im": {
+          "n": 8,
+          "task_success": 1.0,
+          "avg_context_tokens": 5656.125,
+          "avg_duration_ms": 10474.625,
+          "avg_tool_calls": 3.875,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "web": {
+          "n": 7,
+          "task_success": 0.8571428571428571,
+          "avg_context_tokens": 4940.285714285715,
+          "avg_duration_ms": 10036.857142857143,
+          "avg_tool_calls": 3.857142857142857,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.8571428571428571
+        }
+      },
+      "by_type": {
+        "alias": {
+          "n": 5,
+          "task_success": 1.0,
+          "avg_context_tokens": 3224.6,
+          "avg_duration_ms": 8247,
+          "avg_tool_calls": 2.2,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "combo": {
+          "n": 3,
+          "task_success": 1.0,
+          "avg_context_tokens": 4138,
+          "avg_duration_ms": 8556.333333333334,
+          "avg_tool_calls": 2.3333333333333335,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "distractor": {
+          "n": 2,
+          "task_success": 1.0,
+          "avg_context_tokens": 4801.5,
+          "avg_duration_ms": 9732.5,
+          "avg_tool_calls": 3,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "exact": {
+          "n": 6,
+          "task_success": 1.0,
+          "avg_context_tokens": 4263.833333333333,
+          "avg_duration_ms": 8092.166666666667,
+          "avg_tool_calls": 2.5,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        },
+        "multihop": {
+          "n": 11,
+          "task_success": 0.9090909090909091,
+          "avg_context_tokens": 7147.636363636364,
+          "avg_duration_ms": 11449.181818181818,
+          "avg_tool_calls": 5.090909090909091,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 0.9090909090909091
+        },
+        "update": {
+          "n": 4,
+          "task_success": 1.0,
+          "avg_context_tokens": 5574,
+          "avg_duration_ms": 11189.75,
+          "avg_tool_calls": 4,
+          "constraint_fail": 0,
+          "cost_fail": 0,
+          "infra_failure": 0,
+          "fact_success": 1.0
+        }
+      }
+    }
+  },
+  "recommendation": {
+    "winner": "E9",
+    "task_success": 0.967741935483871,
+    "avg_context_tokens": 5311.064516129032,
+    "avg_duration_ms": 9858.774193548386,
+    "avg_tool_calls": 3.5806451612903225,
+    "key": "task_success desc, avg_context_tokens, avg_duration_ms, avg_tool_calls",
+    "ranked": [
+      {
+        "group": "E9",
+        "n": 31,
+        "task_success": 0.967741935483871,
+        "fact_success": 0.967741935483871,
+        "cost_fail": 0,
+        "avg_context_tokens": 5311.064516129032,
+        "avg_duration_ms": 9858.774193548386,
+        "avg_tool_calls": 3.5806451612903225
+      },
+      {
+        "group": "E2",
+        "n": 31,
+        "task_success": 0.967741935483871,
+        "fact_success": 0.967741935483871,
+        "cost_fail": 0,
+        "avg_context_tokens": 5346.193548387097,
+        "avg_duration_ms": 10262.741935483871,
+        "avg_tool_calls": 3.5483870967741935
+      },
+      {
+        "group": "E6",
+        "n": 31,
+        "task_success": 0.967741935483871,
+        "fact_success": 0.967741935483871,
+        "cost_fail": 0,
+        "avg_context_tokens": 5844.225806451613,
+        "avg_duration_ms": 10592.645161290322,
+        "avg_tool_calls": 3.838709677419355
+      },
+      {
+        "group": "E8",
+        "n": 22,
+        "task_success": 0.9545454545454546,
+        "fact_success": 1.0,
+        "cost_fail": 1,
+        "avg_context_tokens": 4936.454545454545,
+        "avg_duration_ms": 8656.545454545454,
+        "avg_tool_calls": 3.1818181818181817
+      },
+      {
+        "group": "E7",
+        "n": 21,
+        "task_success": 0.9523809523809523,
+        "fact_success": 1.0,
+        "cost_fail": 1,
+        "avg_context_tokens": 3929.714285714286,
+        "avg_duration_ms": 8177.857142857143,
+        "avg_tool_calls": 2.238095238095238
+      },
+      {
+        "group": "E4",
+        "n": 21,
+        "task_success": 0.9523809523809523,
+        "fact_success": 1.0,
+        "cost_fail": 1,
+        "avg_context_tokens": 4194.190476190476,
+        "avg_duration_ms": 7796.952380952381,
+        "avg_tool_calls": 2.5238095238095237
+      },
+      {
+        "group": "E5",
+        "n": 21,
+        "task_success": 0.9523809523809523,
+        "fact_success": 1.0,
+        "cost_fail": 1,
+        "avg_context_tokens": 4323.0952380952385,
+        "avg_duration_ms": 8218.52380952381,
+        "avg_tool_calls": 2.6666666666666665
+      },
+      {
+        "group": "E1",
+        "n": 21,
+        "task_success": 0.9047619047619048,
+        "fact_success": 0.9523809523809523,
+        "cost_fail": 2,
+        "avg_context_tokens": 2391.2380952380954,
+        "avg_duration_ms": 9531.666666666666,
+        "avg_tool_calls": 3.1904761904761907
+      },
+      {
+        "group": "E3",
+        "n": 21,
+        "task_success": 0.8571428571428571,
+        "fact_success": 1.0,
+        "cost_fail": 3,
+        "avg_context_tokens": 4430.0952380952385,
+        "avg_duration_ms": 8083.666666666667,
+        "avg_tool_calls": 3
+      },
+      {
+        "group": "E0",
+        "n": 21,
+        "task_success": 0.0,
+        "fact_success": 0.0,
+        "cost_fail": 0,
+        "avg_context_tokens": 265.35,
+        "avg_duration_ms": 6225.25,
+        "avg_tool_calls": 0
+      }
+    ],
+    "by_source": {
+      "mail": [
+        {
+          "group": "E1",
+          "task_success": 1.0,
+          "avg_context_tokens": 3156.8333333333335,
+          "avg_duration_ms": 9513.333333333334,
+          "avg_tool_calls": 3.3333333333333335
+        },
+        {
+          "group": "E7",
+          "task_success": 1.0,
+          "avg_context_tokens": 5013.666666666667,
+          "avg_duration_ms": 7806.833333333333,
+          "avg_tool_calls": 2.3333333333333335
+        },
+        {
+          "group": "E5",
+          "task_success": 1.0,
+          "avg_context_tokens": 5425.333333333333,
+          "avg_duration_ms": 8169.166666666667,
+          "avg_tool_calls": 2.8333333333333335
+        },
+        {
+          "group": "E4",
+          "task_success": 1.0,
+          "avg_context_tokens": 5659.833333333333,
+          "avg_duration_ms": 8236.666666666666,
+          "avg_tool_calls": 3
+        },
+        {
+          "group": "E9",
+          "task_success": 1.0,
+          "avg_context_tokens": 6018.090909090909,
+          "avg_duration_ms": 9739,
+          "avg_tool_calls": 3.6363636363636362
+        },
+        {
+          "group": "E6",
+          "task_success": 1.0,
+          "avg_context_tokens": 6428.909090909091,
+          "avg_duration_ms": 9556.363636363636,
+          "avg_tool_calls": 3.6363636363636362
+        },
+        {
+          "group": "E2",
+          "task_success": 1.0,
+          "avg_context_tokens": 6445.636363636364,
+          "avg_duration_ms": 10368.727272727272,
+          "avg_tool_calls": 4
+        },
+        {
+          "group": "E8",
+          "task_success": 0.8571428571428571,
+          "avg_context_tokens": 6200.571428571428,
+          "avg_duration_ms": 9257.142857142857,
+          "avg_tool_calls": 3.7142857142857144
+        },
+        {
+          "group": "E3",
+          "task_success": 0.8333333333333334,
+          "avg_context_tokens": 5476.666666666667,
+          "avg_duration_ms": 8876.833333333334,
+          "avg_tool_calls": 3.5
+        },
+        {
+          "group": "E0",
+          "task_success": 0.0,
+          "avg_context_tokens": 224.5,
+          "avg_duration_ms": 5329.333333333333,
+          "avg_tool_calls": 0
+        }
+      ],
+      "meeting": [
+        {
+          "group": "E7",
+          "task_success": 1.0,
+          "avg_context_tokens": 3074.4,
+          "avg_duration_ms": 8073,
+          "avg_tool_calls": 1.8
+        },
+        {
+          "group": "E2",
+          "task_success": 1.0,
+          "avg_context_tokens": 3441.6,
+          "avg_duration_ms": 9749.6,
+          "avg_tool_calls": 2.2
+        },
+        {
+          "group": "E9",
+          "task_success": 1.0,
+          "avg_context_tokens": 3722.6,
+          "avg_duration_ms": 8887.6,
+          "avg_tool_calls": 2.6
+        },
+        {
+          "group": "E6",
+          "task_success": 1.0,
+          "avg_context_tokens": 4214,
+          "avg_duration_ms": 8188.8,
+          "avg_tool_calls": 3
+        },
+        {
+          "group": "E8",
+          "task_success": 1.0,
+          "avg_context_tokens": 4336.2,
+          "avg_duration_ms": 9594,
+          "avg_tool_calls": 3
+        },
+        {
+          "group": "E1",
+          "task_success": 0.8,
+          "avg_context_tokens": 1790.2,
+          "avg_duration_ms": 8789.2,
+          "avg_tool_calls": 2.6
+        },
+        {
+          "group": "E4",
+          "task_success": 0.8,
+          "avg_context_tokens": 3949.6,
+          "avg_duration_ms": 7714.4,
+          "avg_tool_calls": 2.6
+        },
+        {
+          "group": "E5",
+          "task_success": 0.8,
+          "avg_context_tokens": 4192.2,
+          "avg_duration_ms": 8337.8,
+          "avg_tool_calls": 3
+        },
+        {
+          "group": "E3",
+          "task_success": 0.8,
+          "avg_context_tokens": 4979.8,
+          "avg_duration_ms": 8636.8,
+          "avg_tool_calls": 3.4
+        },
+        {
+          "group": "E0",
+          "task_success": 0.0,
+          "avg_context_tokens": 214,
+          "avg_duration_ms": 5044.4,
+          "avg_tool_calls": 0
+        }
+      ],
+      "im": [
+        {
+          "group": "E3",
+          "task_success": 1.0,
+          "avg_context_tokens": 4008.6,
+          "avg_duration_ms": 7811.4,
+          "avg_tool_calls": 3
+        },
+        {
+          "group": "E4",
+          "task_success": 1.0,
+          "avg_context_tokens": 4546.4,
+          "avg_duration_ms": 8966.2,
+          "avg_tool_calls": 3
+        },
+        {
+          "group": "E2",
+          "task_success": 1.0,
+          "avg_context_tokens": 5362,
+          "avg_duration_ms": 9524,
+          "avg_tool_calls": 3.625
+        },
+        {
+          "group": "E5",
+          "task_success": 1.0,
+          "avg_context_tokens": 5363.2,
+          "avg_duration_ms": 10308.4,
+          "avg_tool_calls": 3.6
+        },
+        {
+          "group": "E9",
+          "task_success": 1.0,
+          "avg_context_tokens": 5656.125,
+          "avg_duration_ms": 10474.625,
+          "avg_tool_calls": 3.875
+        },
+        {
+          "group": "E6",
+          "task_success": 1.0,
+          "avg_context_tokens": 6274.25,
+          "avg_duration_ms": 10327.5,
+          "avg_tool_calls": 4.25
+        },
+        {
+          "group": "E8",
+          "task_success": 1.0,
+          "avg_context_tokens": 6628,
+          "avg_duration_ms": 9557.6,
+          "avg_tool_calls": 4.6
+        },
+        {
+          "group": "E1",
+          "task_success": 0.8,
+          "avg_context_tokens": 2512.4,
+          "avg_duration_ms": 12913.4,
+          "avg_tool_calls": 5.2
+        },
+        {
+          "group": "E7",
+          "task_success": 0.8,
+          "avg_context_tokens": 4860.4,
+          "avg_duration_ms": 10478.6,
+          "avg_tool_calls": 3.2
+        },
+        {
+          "group": "E0",
+          "task_success": 0.0,
+          "avg_context_tokens": 261,
+          "avg_duration_ms": 6183.2,
+          "avg_tool_calls": 0
+        }
+      ],
+      "web": [
+        {
+          "group": "E1",
+          "task_success": 1.0,
+          "avg_context_tokens": 1952.4,
+          "avg_duration_ms": 6914.4,
+          "avg_tool_calls": 1.6
+        },
+        {
+          "group": "E8",
+          "task_success": 1.0,
+          "avg_context_tokens": 2075.4,
+          "avg_duration_ms": 5977.2,
+          "avg_tool_calls": 1.2
+        },
+        {
+          "group": "E5",
+          "task_success": 1.0,
+          "avg_context_tokens": 2091.2,
+          "avg_duration_ms": 6068.6,
+          "avg_tool_calls": 1.2
+        },
+        {
+          "group": "E4",
+          "task_success": 1.0,
+          "avg_context_tokens": 2327.8,
+          "avg_duration_ms": 6182.6,
+          "avg_tool_calls": 1.4
+        },
+        {
+          "group": "E7",
+          "task_success": 1.0,
+          "avg_context_tokens": 2553.6,
+          "avg_duration_ms": 6427.2,
+          "avg_tool_calls": 1.6
+        },
+        {
+          "group": "E9",
+          "task_success": 0.8571428571428571,
+          "avg_context_tokens": 4940.285714285715,
+          "avg_duration_ms": 10036.857142857143,
+          "avg_tool_calls": 3.857142857142857
+        },
+        {
+          "group": "E2",
+          "task_success": 0.8571428571428571,
+          "avg_context_tokens": 4960.857142857143,
+          "avg_duration_ms": 11307,
+          "avg_tool_calls": 3.7142857142857144
+        },
+        {
+          "group": "E6",
+          "task_success": 0.8571428571428571,
+          "avg_context_tokens": 5598.428571428572,
+          "avg_duration_ms": 14241.142857142857,
+          "avg_tool_calls": 4.285714285714286
+        },
+        {
+          "group": "E3",
+          "task_success": 0.8,
+          "avg_context_tokens": 3046,
+          "avg_duration_ms": 6851,
+          "avg_tool_calls": 2
+        },
+        {
+          "group": "E0",
+          "task_success": 0.0,
+          "avg_context_tokens": 263.8,
+          "avg_duration_ms": 6060.4,
+          "avg_tool_calls": 0
+        }
+      ]
+    }
+  },
+  "protocol": "harness-plus-tiebreak-cost-outlier",
+  "cost_rule": {
+    "peers": "same question, E1-E9 (exclude Blank)",
+    "tools": "z>=1.5 and calls >= median+2",
+    "tokens": "z>=1.5 and tokens >= 1.6 * median",
+    "duration": "z>=2.0 and ms >= 1.8 * median",
+    "success": "required facts written AND not cost outlier"
+  },
+  "tiebreak_log": [
+    {
+      "probe": "T40",
+      "group": "E2",
+      "fact_success": true,
+      "answer": "批准 Ascend 推理节点配额的是陈启明，工号 **HW-PM-7712**。\n\n依据：\n- 2026-03-25 算力分工会纪要：Ascend 推理节点配额由王磊提出，批准人仍是陈启明（不要把配额记到刘芳名下）。\n- 2026-03-22 邮件：陈启明工号 HW-PM-7712。"
+    },
+    {
+      "probe": "T40",
+      "group": "E6",
+      "fact_success": true,
+      "answer": "批准 Ascend 推理节点配额的人是陈启明，工号为 **HW-PM-7712**。\n\n依据：算力分工会纪要（2026-03-25）明确 Ascend 推理节点配额由王磊提出、批准人仍是陈启明；陈启明在 3 月 22 日邮件中确认自己的工号为 HW-PM-7712。"
+    },
+    {
+      "probe": "T40",
+      "group": "E8",
+      "fact_success": true,
+      "answer": "批准 Ascend 推理节点配额的是**陈启明**，工号 **HW-PM-7712**。\n\n依据：算力分工会纪要（2026-03-25）明确\"Ascend 推理节点配额由王磊提出，批准人仍是陈启明\"；邮件\"现场接口人确认\"（2026-03-22，陈启明发件）写明其工号为 HW-PM-7712。"
+    },
+    {
+      "probe": "T40",
+      "group": "E9",
+      "fact_success": true,
+      "answer": "批准 Ascend 推理节点配额的人是陈启明，工号 **HW-PM-7712**。\n\n依据：\n- 3月25日算力分工会纪要明确「Ascend 推理节点配额由王磊提出，批准人仍是陈启明（勿记到刘芳名下）」。\n- 陈启明本人邮件（3月22日）写明工号 HW-PM-7712。"
+    },
+    {
+      "probe": "T41",
+      "group": "E2",
+      "fact_success": true,
+      "answer": "赵宇（负责申请 Kunpeng 服务器配额）。他在 IM（2026-03-14 08:04）明确更正：「刚才是玩笑。正式承诺：核心交换机维护窗口是 **2026-05-09 01:00**，已报备。」"
+    },
+    {
+      "probe": "T41",
+      "group": "E6",
+      "fact_success": true,
+      "answer": "申请鲲鹏服务器配额的是赵宇（网络与基础设施）。他在 WeLink 上正式承诺：核心交换机维护窗口为 **2026-05-09 01:00**，并已报备（此前一条是玩笑，不算承诺）。"
+    },
+    {
+      "probe": "T41",
+      "group": "E9",
+      "fact_success": true,
+      "answer": "赵宇（申请鲲鹏服务器配额的人）正式承诺的核心交换机维护时刻是 **2026-05-09 01:00**（已报备）。他在 IM 里明确更正过：\"刚才是玩笑。正式承诺：核心交换机维护窗口是 2026-05-09 01:00，已报备。\"（此前\"明天重启生产交换机\"那句是玩笑，不算承诺。）"
+    },
+    {
+      "probe": "T42",
+      "group": "E2",
+      "fact_success": true,
+      "answer": "她否决且不得再推销的阵列型号是 **OceanStor Dorado 5000**。\n\n依据：刘芳（小刘）在群里被老陈要求把缓存变更 CHG-8821 抄送给客户张衡（im-004）；而她 3 月 5 日发出的《OceanStor 选型结论》邮件明确：生产采用 Dorado 8000，**Dorado 5000 因前端端口数量不足被否决，请市场同事不要再推 5000 清单**。"
+    },
+    {
+      "probe": "T42",
+      "group": "E6",
+      "fact_success": true,
+      "answer": "她否决的是 **OceanStor Dorado 5000**。\n\n依据：刘芳在 2026-03-05 的《OceanStor 选型结论》邮件中写明，生产采用 Dorado 8000，Dorado 5000 方案因前端端口数量不足被否决，并要求市场同事不要再推 5000 清单。而\"群里被要求把缓存变更抄送给客户\"的正是刘芳（陈启明让她把 CHG-8821 抄送给客户张衡）。"
+    },
+    {
+      "probe": "T42",
+      "group": "E9",
+      "fact_success": true,
+      "answer": "她否决、并要求不再推销的阵列型号是 **OceanStor Dorado 5000**。\n\n依据：小刘（刘芳）在《OceanStor 选型结论》邮件（2026-03-05）中明确生产采用 Dorado 8000，Dorado 5000 方案因前端端口数量不足被否决，并请市场同事不要再推 5000 清单。"
+    },
+    {
+      "probe": "T43",
+      "group": "E2",
+      "fact_success": true,
+      "answer": "**3天**\n\n依据：\n- 赵宇（宇）在 IM 中正式承诺：核心交换机维护窗口为 **2026-05-09 01:00**（im-006）。\n- 主集群（GaussDB）切换窗口经修订邮件改为 **2026-05-06 02:00-06:00**（2026-03-28 修订邮件）。\n\n05-09 比 05-06 晚 **3天**。"
+    },
+    {
+      "probe": "T43",
+      "group": "E6",
+      "fact_success": true,
+      "answer": "3天。\n\n依据：\n- 赵宇（花名\"宇\"）承诺核心交换机维护窗口为 **2026-05-09 01:00**（IM 记录 2026-03-14）。\n- GaussDB 主集群切换后改定为 **2026-05-06 02:00-06:00**（修订邮件 2026-03-28，旧日期 2026-04-12 作废）。\n\n05-09 比 05-06 晚 **3天**。"
+    },
+    {
+      "probe": "T43",
+      "group": "E9",
+      "fact_success": true,
+      "answer": "**3天**\n\n- 赵宇（宇）正式承诺：核心交换机维护窗口 **2026-05-09 01:00**（IM，2026-03-14）\n- 主集群（GaussDB）切换经修订改定：**2026-05-06 02:00-06:00 CST**（邮件，2026-03-28）\n\n05-09 比 05-06 晚 3 天。"
+    },
+    {
+      "probe": "T44",
+      "group": "E2",
+      "fact_success": true,
+      "answer": "申请鲲鹏服务器配额的是**赵宇**（网络与基础设施，见 2026-03-25 算力分工会议纪要）。\n\n他报备的网络作业单号是 **NET-WO-4401**（2026-04-02 邮件《鲲鹏上架网络作业报备》）；演示单 **NET-WO-000** 不要用。"
+    },
+    {
+      "probe": "T44",
+      "group": "E6",
+      "fact_success": true,
+      "answer": "申请鲲鹏服务器配额的同事是赵宇（网络与基础设施）。他在 2026-04-02 的邮件《鲲鹏上架网络作业报备》中确认，报备的网络作业单号是 **NET-WO-4401**（邮件明确说明不要用演示单 NET-WO-000）。"
+    },
+    {
+      "probe": "T44",
+      "group": "E9",
+      "fact_success": true,
+      "answer": "赵宇报备的网络作业单号是 **NET-WO-4401**（演示单 NET-WO-000 不要用）。来源：赵宇 2026-04-02 邮件《鲲鹏上架网络作业报备》，且会议纪要确认鲲鹏服务器配额由赵宇负责申请。"
+    },
+    {
+      "probe": "T45",
+      "group": "E2",
+      "fact_success": true,
+      "answer": "批准 Ascend 推理配额的是**陈启明**（算力分工会纪要：Ascend 推理节点配额批准人仍是陈启明）。他在现场微信群里自称花名**\"老陈\"**（邮件：现场微信群里叫我\"老陈\"即可，工号 HW-PM-7712）。\n\n**花名：老陈**"
+    },
+    {
+      "probe": "T45",
+      "group": "E6",
+      "fact_success": true,
+      "answer": "批准 Ascend 推理配额的人是**陈启明**（算力分工会纪要明确：批准人仍是陈启明）。\n\n他在现场群（星河-7 群）的花名是**\"老陈\"**（IM 群名片：陈启明 (老陈)）。"
+    },
+    {
+      "probe": "T45",
+      "group": "E9",
+      "fact_success": true,
+      "answer": "批准 Ascend 推理配额的人是**陈启明**，现场（WeLink 星河-7 群）里大家称呼他的花名是**\"老陈\"**（见 IM 记录\"陈启明 (老陈)\"，如 CHG-8821 抄送消息）。\n\n依据：\n- 会议纪要（2026-03-25 算力分工会）：Ascend 推理节点配额由王磊提出，**批准人仍是陈启明**（勿记到刘芳名下）。\n- 现场群消息：陈启明在群内署名花名为**老陈**。"
+    },
+    {
+      "probe": "T46",
+      "group": "E2",
+      "fact_success": true,
+      "answer": "客户是 LumenGrid 现场代表**张衡**，工牌号 **BADGE-LG-204**（非演示工牌 BADGE-000）。\n\n依据：刘芳在群里确认生产缓存变更单 CHG-8821 已提单，陈启明随后指示\"小刘你把 CHG-8821 抄送给客户张衡\"；客户页登记张衡工牌为 BADGE-LG-204。"
+    },
+    {
+      "probe": "T46",
+      "group": "E6",
+      "fact_success": true,
+      "answer": "被抄送生产缓存变更单 CHG-8821 的客户是 LumenGrid 现场代表张衡，其工牌号为 **BADGE-LG-204**（演示工牌 BADGE-000 无效）。"
+    },
+    {
+      "probe": "T46",
+      "group": "E9",
+      "fact_success": true,
+      "answer": "被抄送生产缓存变更单（CHG-8821）的客户是 LumenGrid 现场代表张衡，其工牌号为 **BADGE-LG-204**（演示工牌 BADGE-000 无效）。"
+    },
+    {
+      "probe": "T47",
+      "group": "E2",
+      "fact_success": true,
+      "answer": "Ascend 推理节点配额由**王磊**提出。\n\n依据：算力分工会纪要（2026-03-25）明确记载——\"Ascend 推理节点配额由王磊按 GaussDB 侧 AI 质检需求提出，批准人仍是陈启明（老陈）\"。"
+    },
+    {
+      "probe": "T47",
+      "group": "E6",
+      "fact_success": true,
+      "answer": "**王磊**提出的。\n\n依据：\n- 邮件《现场接口人确认》（2026-03-22）：现场微信群里的\"老陈\"即陈启明，工号 **HW-PM-7712**，是华为侧项目经理接口人。\n- 会议纪要《算力分工会》（2026-03-25）：**Ascend 推理节点配额由王磊按 GaussDB 侧 AI 质检需求提出，批准人仍是陈启明**（且明确不要把 Ascend 配额记到刘芳名下）。\n\n所以陈启明（老陈，HW-PM-7712）批准的 Ascend 配额提出人是**王磊**。"
+    },
+    {
+      "probe": "T47",
+      "group": "E9",
+      "fact_success": true,
+      "answer": "根据算力分工会议纪要（2026-03-25）：Ascend 推理节点配额由**王磊**按 GaussDB 侧 AI 质检需求提出，批准人是陈启明（老陈）。不要把配额记到刘芳名下。\n\n**答案：王磊**"
+    },
+    {
+      "probe": "T49",
+      "group": "E2",
+      "fact_success": false,
+      "answer": "已达到本任务允许的最大步数，工具已停止调用。以下是当前进展与未完成事项：\n\n**已完成：**\n\n1. **被抄送客户的工牌** — 已确认：被抄送生产缓存变更（CHG-8821）的客户是 **LumenGrid 现场代表张衡**，其真实工牌为 **BADGE-LG-204**（来源：内部客户页 \"客户现场代表\"）。按你的要求未给出演示工牌 BADGE-000（该演示牌已明确标注无效）。\n\n2. **变更抄送链路** — 已在 IM 记录中确认：刘芳（小刘）于 2026-03-"
+    },
+    {
+      "probe": "T49",
+      "group": "E6",
+      "fact_success": false,
+      "answer": "**已达到本次任务的最大步数上限，工具已被禁用，只能以文本回复。**\n\n已完成的工作与检索结果：\n\n1. **生产缓存变更定位**：IM 记录 im-002 中刘芳更正\"生产缓存池最终是 64TB，40TB 是测试池，变更单 CHG-8821 已提单\"；im-004 中陈启明指示\"小刘你把 CHG-8821 抄送给客户张衡\"。\n   - 即：被抄送生产缓存变更（CHG-8821）的客户 = **张衡**（LumenGrid 现场代表）。\n2. **客户工牌**：内部 wiki"
+    },
+    {
+      "probe": "T49",
+      "group": "E9",
+      "fact_success": false,
+      "answer": "已达本轮工具调用上限，我先汇总已确认的线索与未完成项。\n\n**已确认的事实（有检索依据）：**\n- 生产缓存变更对应变更单 **CHG-8821**（刘芳 2026-03-12 提单：生产缓存池 64TB、40TB 为测试池）。\n- 陈启明在微信群里指示刘芳\"把 CHG-8821 抄送给客户张衡\"（im-004）。\n- 因此：**被抄送生产缓存变更的客户 = 张衡**；**把变更抄出去（执行抄送）的人是刘芳**（指令来自陈启明）。\n\n**未完成的两项（尚无检索依据，不能编造）"
+    },
+    {
+      "probe": "T48",
+      "group": "E2",
+      "fact_success": true,
+      "answer": "两个编号分别是：\n\n- **批准 Ascend 推理配额的人**：陈启明（会议纪要确认批准人仍是陈启明，不要记到刘芳名下），其工号为 **HW-PM-7712**（来自陈启明 3 月 22 日现场接口人确认邮件）。\n- **鲲鹏配额同事（赵宇）报备的网络作业单**：**NET-WO-4401**（赵宇 4 月 2 日邮件报备；演示单 NET-WO-000 已明确不要用）。"
+    },
+    {
+      "probe": "T48",
+      "group": "E6",
+      "fact_success": true,
+      "answer": "两个编号如下（均来自检索到的纪要/邮件，非演示单）：\n\n1. **批准 Ascend 推理配额的人**：陈启明，**工号 HW-PM-7712**（见 3-25 算力分工会纪要「批准人仍是陈启明」+ 陈启明 3-22 邮件自述工号）。\n2. **鲲鹏配额申请同事（赵宇）报备的网络作业单**：**NET-WO-4401**（赵宇 4-02 邮件「鲲鹏服务器上架窗口已报备网络作业单 NET-WO-4401」，明确说明演示单 NET-WO-000 不要用）。"
+    },
+    {
+      "probe": "T48",
+      "group": "E9",
+      "fact_success": true,
+      "answer": "- 批准 Ascend 推理配额的人：**陈启明**，工号 **HW-PM-7712**（来源：2026-03-22 邮件确认；2026-03-25 算力分工会纪要也明确批准人是陈启明，不要记到刘芳名下）。\n- 申请鲲鹏配额的同事（赵宇）报备的网络作业单：**NET-WO-4401**（来源：赵宇 2026-04-02 邮件《鲲鹏上架网络作业报备》，演示单 NET-WO-000 不可用）。"
+    }
+  ],
+  "chosen": {
+    "E1": {
+      "harness": "ha",
+      "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+      "n": 21,
+      "task_success": 0.9523809523809523,
+      "avg_context_tokens": 2391.2380952380954,
+      "avg_duration_ms": 9531.666666666666,
+      "avg_tool_calls": 3.1904761904761907,
+      "constraint_fail": 0,
+      "infra_failure": 0
+    },
+    "E2": {
+      "harness": "ha",
+      "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+      "n": 21,
+      "task_success": 1.0,
+      "avg_context_tokens": 4087.7619047619046,
+      "avg_duration_ms": 9184.333333333334,
+      "avg_tool_calls": 2.5714285714285716,
+      "constraint_fail": 0,
+      "infra_failure": 0
+    },
+    "E3": {
+      "harness": "hb",
+      "label": "关键词改写：把问句压成专有名词再搜，空结果才换源",
+      "n": 21,
+      "task_success": 1.0,
+      "avg_context_tokens": 4430.0952380952385,
+      "avg_duration_ms": 8083.666666666667,
+      "avg_tool_calls": 3,
+      "constraint_fail": 0,
+      "infra_failure": 0
+    },
+    "E4": {
+      "harness": "ha",
+      "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+      "n": 21,
+      "task_success": 1.0,
+      "avg_context_tokens": 4194.190476190476,
+      "avg_duration_ms": 7796.952380952381,
+      "avg_tool_calls": 2.5238095238095237,
+      "constraint_fail": 0,
+      "infra_failure": 0
+    },
+    "E5": {
+      "harness": "ha",
+      "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+      "n": 21,
+      "task_success": 1.0,
+      "avg_context_tokens": 4323.0952380952385,
+      "avg_duration_ms": 8218.52380952381,
+      "avg_tool_calls": 2.6666666666666665,
+      "constraint_fail": 0,
+      "infra_failure": 0
+    },
+    "E6": {
+      "harness": "ha",
+      "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+      "n": 21,
+      "task_success": 1.0,
+      "avg_context_tokens": 4648.523809523809,
+      "avg_duration_ms": 8436.714285714286,
+      "avg_tool_calls": 2.9047619047619047,
+      "constraint_fail": 0,
+      "infra_failure": 0
+    },
+    "E7": {
+      "harness": "ha",
+      "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+      "n": 21,
+      "task_success": 1.0,
+      "avg_context_tokens": 3929.714285714286,
+      "avg_duration_ms": 8177.857142857143,
+      "avg_tool_calls": 2.238095238095238,
+      "constraint_fail": 0,
+      "infra_failure": 0
+    },
+    "E8": {
+      "harness": "ha",
+      "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+      "n": 21,
+      "task_success": 1.0,
+      "avg_context_tokens": 4762.047619047619,
+      "avg_duration_ms": 8588.809523809523,
+      "avg_tool_calls": 3.0476190476190474,
+      "constraint_fail": 0,
+      "infra_failure": 0
+    },
+    "E9": {
+      "harness": "ha",
+      "label": "渠道启发式：按问题表面词选择邮件/会议/IM/网页，先检索再答",
+      "n": 21,
+      "task_success": 1.0,
+      "avg_context_tokens": 4205.9047619047615,
+      "avg_duration_ms": 8639,
+      "avg_tool_calls": 2.7142857142857144,
+      "constraint_fail": 0,
+      "infra_failure": 0
+    }
+  }
+}

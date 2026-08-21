@@ -37,7 +37,7 @@ def oracle_check() -> dict:
         text = "\n".join(blob)
         if not all(a in text for a in item["answers"]):
             failures.append({"id": item["id"], "reason": "answers not in evidence"})
-    ok = not failures and all(v == 5 for v in per.values()) and len(items) == 20
+    ok = not failures and min(per.values()) >= 5 and len(items) >= 20
     return {"ok": ok, "questionCount": len(items), "perSource": per, "oraclePass": ok, "failures": failures}
 
 

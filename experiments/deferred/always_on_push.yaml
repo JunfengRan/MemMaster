@@ -2,10 +2,10 @@ id: E10
 name: AlwaysOnPush
 status: deferred
 methods: [hybrid, graph]
-max_memory_calls: 2
+max_memory_calls: 8
 max_chunks: 8
 max_inject_tokens: 3000
-tools: [memory_search]
+tools: [search_mail, search_meeting, search_im, search_web]
 push: true
 core_memory: false
 source: always-on push (deferred)

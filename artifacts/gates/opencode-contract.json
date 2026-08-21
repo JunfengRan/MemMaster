@@ -5,6 +5,10 @@
   "model": "deepseek/deepseek-v4-flash",
   "silentDowngrade": false,
   "hooks": [
-    "tool.memory_search"
-  ]
+    "tool.search_mail",
+    "tool.search_meeting",
+    "tool.search_im",
+    "tool.search_web"
+  ],
+  "protocol": "agent-initiated-four-tools"
 }

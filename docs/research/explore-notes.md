@@ -23,7 +23,7 @@ LoCoMo (ACL 2024) grounds dialogues on personas and temporal event graphs, then 
 
 ## Push vs pull
 
-Proactive Memory Agent (arXiv:2607.08716) runs a memory agent beside an unmodified action agent, injecting a short reminder or remaining silent. Ablations: selective > always-on > generic retrieval. OpenCode mapping: `session.created` / chat hooks + `noReply` injection + `memory_search` pull tool.
+Proactive Memory Agent (arXiv:2607.08716) runs a memory agent beside an unmodified action agent, injecting a short reminder or remaining silent. Ablations: selective > always-on > generic retrieval. OpenCode mapping: optional `search_mail` / `search_meeting` / `search_im` / `search_web` tools plus silent-or-remind injection. The eval prompt must not name a tool.
 
 ## Decision
 

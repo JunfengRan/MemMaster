@@ -25,35 +25,43 @@ class Retriever:
         self.store = store
         self.embedder = embedder or get_embedder()
 
-    def lexical(self, query: str, k: int = 20, as_of: datetime | None = None, acl: list[str] | None = None) -> list[Hit]:
+    def lexical(
+        self,
+        query: str,
+        k: int = 20,
+        as_of: datetime | None = None,
+        acl: list[str] | None = None,
+        source_id: str | None = None,
+    ) -> list[Hit]:
         tokens = tokenize(query)
         if not tokens:
             return []
         quoted = [f'"{t}"' for t in tokens[:12] if t]
         fts_query = " OR ".join(quoted)
+        src_sql, src_params = _source_clause(source_id)
         rows = []
         try:
             rows = self.store.conn.execute(
-                """SELECT c.chunk_id, c.doc_id, c.source_id, c.text, c.valid_time, c.acl_json,
+                f"""SELECT c.chunk_id, c.doc_id, c.source_id, c.text, c.valid_time, c.acl_json,
                           d.uri, d.title, bm25(chunks_fts) AS rank
                    FROM chunks_fts
                    JOIN chunks c ON c.chunk_id = chunks_fts.chunk_id
                    JOIN documents d ON d.doc_id = c.doc_id
-                   WHERE chunks_fts MATCH ? AND c.tombstone=0 AND d.tombstone=0
+                   WHERE chunks_fts MATCH ? AND c.tombstone=0 AND d.tombstone=0{src_sql}
                    ORDER BY rank LIMIT ?""",
-                (fts_query, k),
+                (fts_query, *src_params, k),
             ).fetchall()
         except Exception:
             rows = []
         if not rows:
             like = f"%{tokens[0]}%"
             rows = self.store.conn.execute(
-                """SELECT c.chunk_id, c.doc_id, c.source_id, c.text, c.valid_time, c.acl_json,
+                f"""SELECT c.chunk_id, c.doc_id, c.source_id, c.text, c.valid_time, c.acl_json,
                           d.uri, d.title, 0 AS rank
                    FROM chunks c JOIN documents d ON d.doc_id=c.doc_id
-                   WHERE c.tombstone=0 AND d.tombstone=0 AND (c.text LIKE ? OR c.text LIKE ?)
+                   WHERE c.tombstone=0 AND d.tombstone=0 AND (c.text LIKE ? OR c.text LIKE ?){src_sql}
                    LIMIT ?""",
-                (like, f"%{query[:24]}%", k),
+                (like, f"%{query[:24]}%", *src_params, k),
             ).fetchall()
         hits = []
         for row in rows:
@@ -75,13 +83,22 @@ class Retriever:
             )
         return hits
 
-    def dense(self, query: str, k: int = 20, as_of: datetime | None = None, acl: list[str] | None = None) -> list[Hit]:
+    def dense(
+        self,
+        query: str,
+        k: int = 20,
+        as_of: datetime | None = None,
+        acl: list[str] | None = None,
+        source_id: str | None = None,
+    ) -> list[Hit]:
         q = self.embedder.encode([query])[0]
+        src_sql, src_params = _source_clause(source_id)
         rows = self.store.conn.execute(
-            """SELECT c.chunk_id, c.doc_id, c.source_id, c.text, c.valid_time, c.acl_json, c.vector,
+            f"""SELECT c.chunk_id, c.doc_id, c.source_id, c.text, c.valid_time, c.acl_json, c.vector,
                       d.uri, d.title
                FROM chunks c JOIN documents d ON d.doc_id=c.doc_id
-               WHERE c.tombstone=0 AND d.tombstone=0 AND c.vector IS NOT NULL"""
+               WHERE c.tombstone=0 AND d.tombstone=0 AND c.vector IS NOT NULL{src_sql}""",
+            src_params,
         ).fetchall()
         scored: list[Hit] = []
         for row in rows:
@@ -108,9 +125,16 @@ class Retriever:
         scored.sort(key=lambda h: h.score, reverse=True)
         return scored[:k]
 
-    def hybrid(self, query: str, k: int = 8, as_of: datetime | None = None, acl: list[str] | None = None) -> list[Hit]:
-        lex = self.lexical(query, k=20, as_of=as_of, acl=acl)
-        den = self.dense(query, k=20, as_of=as_of, acl=acl)
+    def hybrid(
+        self,
+        query: str,
+        k: int = 8,
+        as_of: datetime | None = None,
+        acl: list[str] | None = None,
+        source_id: str | None = None,
+    ) -> list[Hit]:
+        lex = self.lexical(query, k=20, as_of=as_of, acl=acl, source_id=source_id)
+        den = self.dense(query, k=20, as_of=as_of, acl=acl, source_id=source_id)
         return rrf([lex, den], k=k)
 
     def graph_expand(self, seeds: list[Hit], k: int = 8) -> list[Hit]:
@@ -227,6 +251,12 @@ def rrf(lists: list[list[Hit]], k: int, k_rrf: int = 60) -> list[Hit]:
         hit = best[cid].model_copy(update={"score": score})
         out.append(hit)
     return out
+
+
+def _source_clause(source_id: str | None) -> tuple[str, tuple]:
+    if not source_id:
+        return "", ()
+    return " AND c.source_id=?", (source_id,)
 
 
 def _acl_ok(acl_json: str, groups: list[str] | None) -> bool:

@@ -81,6 +81,7 @@ class SearchRequest(BaseModel):
     as_of: datetime | None = None
     acl_groups: list[str] = Field(default_factory=lambda: ["all"])
     session_id: str | None = None
+    source_id: SourceId | None = None
 
 
 class SearchResponse(BaseModel):

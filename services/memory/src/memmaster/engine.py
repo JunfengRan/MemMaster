@@ -27,10 +27,11 @@ class MemoryEngine:
             return SearchResponse(hits=[], tokens=0, calls_charged=0)
         lexical = []
         hybrid = []
+        sid = req.source_id
         if any(m in methods for m in ("lexical", "hybrid", "graph", "time", "facts", "dual", "keys", "core")):
-            lexical = self.retriever.lexical(req.query, k=20, as_of=req.as_of, acl=req.acl_groups)
+            lexical = self.retriever.lexical(req.query, k=20, as_of=req.as_of, acl=req.acl_groups, source_id=sid)
         if any(m in methods for m in ("hybrid", "graph", "time", "dual", "keys", "core", "dense")):
-            hybrid = self.retriever.hybrid(req.query, k=12, as_of=req.as_of, acl=req.acl_groups)
+            hybrid = self.retriever.hybrid(req.query, k=12, as_of=req.as_of, acl=req.acl_groups, source_id=sid)
         if "lexical" in methods and "hybrid" not in methods:
             hits = lexical[: req.top_k]
         elif "hybrid" in methods or "dense" in methods:
@@ -40,12 +41,14 @@ class MemoryEngine:
         if "time" in methods:
             hits = self._time_filter(req.query, hits or hybrid, req.as_of)
         if "facts" in methods:
-            hits = self._facts_then_source(req.query, req.as_of, req.top_k)
+            hits = self._facts_then_source(req.query, req.as_of, req.top_k, sid)
         if "dual" in methods:
-            fact_hits = self._facts_then_source(req.query, req.as_of, req.top_k)
+            fact_hits = self._facts_then_source(req.query, req.as_of, req.top_k, sid)
             hits = rrf([hybrid or lexical, fact_hits], k=req.top_k)
         if "keys" in methods:
-            hits = self._keyed(req.query, hits or hybrid, req.top_k)
+            hits = self._keyed(req.query, hits or hybrid, req.top_k, sid)
+        if sid:
+            hits = [h for h in hits if h.source_id == sid]
         hits = self._budget(hits, req.max_tokens, req.top_k)
         tokens = sum(estimate_tokens(h.text) for h in hits)
         return SearchResponse(hits=hits, tokens=tokens, calls_charged=1)
@@ -75,7 +78,9 @@ class MemoryEngine:
             tokens=estimate_tokens(reminder),
         )
 
-    def _facts_then_source(self, query: str, as_of: datetime | None, k: int) -> list[Hit]:
+    def _facts_then_source(
+        self, query: str, as_of: datetime | None, k: int, source_id: str | None = None
+    ) -> list[Hit]:
         facts = search_facts(self.store, query, as_of=as_of)
         hits: list[Hit] = []
         seen = set()
@@ -106,11 +111,13 @@ class MemoryEngine:
             if len(hits) >= k:
                 break
         if len(hits) < k:
-            extra = self.retriever.hybrid(query, k=k, as_of=as_of)
+            extra = self.retriever.hybrid(query, k=k, as_of=as_of, source_id=source_id)
             hits = rrf([hits, extra], k=k)
+        if source_id:
+            hits = [h for h in hits if h.source_id == source_id]
         return hits
 
-    def _keyed(self, query: str, base: list[Hit], k: int) -> list[Hit]:
+    def _keyed(self, query: str, base: list[Hit], k: int, source_id: str | None = None) -> list[Hit]:
         aliases = {
             "老陈": "陈启明",
             "小刘": "刘芳",
@@ -123,7 +130,7 @@ class MemoryEngine:
         for alias, canon in aliases.items():
             if alias in query:
                 expanded = f"{query} {canon}"
-        keyed = self.retriever.lexical(expanded, k=20)
+        keyed = self.retriever.lexical(expanded, k=20, source_id=source_id)
         return rrf([base, keyed], k=k)
 
     def _time_filter(self, query: str, hits: list[Hit], as_of: datetime | None) -> list[Hit]:

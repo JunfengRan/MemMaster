@@ -113,6 +113,52 @@ OceanStor Dorado 8000 集中式全闪存用于星河-7 生产存储。采购订�
         ),
     )
     write(
+        mail / "2026-04-11-hotline.eml",
+        eml(
+            "hotline",
+            "Sat, 11 Apr 2026 09:15:00 +0800",
+            "星河-7 值班热线分机",
+            "周敏 <zhou.min@lumengrid.example>",
+            "陈启明 <chen.qiming@huawei.example>",
+            """值班热线分机 EXT-XH7-3608，演示分机 EXT-0000 不要外呼。""",
+        ),
+    )
+    write(
+        mail / "2026-04-08-accept.eml",
+        eml(
+            "accept",
+            "Wed, 08 Apr 2026 11:20:00 +0800",
+            "星河-7 现场验收窗口编号",
+            "周敏 <zhou.min@lumengrid.example>",
+            "陈启明 <chen.qiming@huawei.example>",
+            """客户现场验收窗口编号 ACC-LG-202604-19，地点 LumenGrid 亦庄机房。
+不要使用演示窗口 ACC-DEMO-000。""",
+        ),
+    )
+    write(
+        mail / "2026-04-14-pass.eml",
+        eml(
+            "pass",
+            "Tue, 14 Apr 2026 10:05:00 +0800",
+            "亦庄机房临时通行证",
+            "周敏 <zhou.min@lumengrid.example>",
+            "陈启明 <chen.qiming@huawei.example>",
+            """亦庄机房临时通行证编号 PASS-XH7-62，前台纸质条作废，不要再用 PASS-000。""",
+        ),
+    )
+    write(
+        mail / "2026-04-02-netwo.eml",
+        eml(
+            "netwo",
+            "Thu, 02 Apr 2026 14:20:00 +0800",
+            "鲲鹏上架网络作业报备",
+            "赵宇 <zhao.yu@huawei.example>",
+            "陈启明 <chen.qiming@huawei.example>",
+            """鲲鹏服务器上架窗口我已报备网络作业单 NET-WO-4401。
+演示单 NET-WO-000 不要用。""",
+        ),
+    )
+    write(
         mail / "2026-01-09-noise.eml",
         eml(
             "noise",
@@ -121,7 +167,8 @@ OceanStor Dorado 8000 集中式全闪存用于星河-7 生产存储。采购订�
             "marketing@huawei.example",
             "all@lumengrid.example",
             """新年快乐。附件是公开 Kunpeng 介绍，与星河-7 采购清单无关。
-请忽略其中的示例订单号 DEMO-0001。""",
+请忽略其中的示例订单号 DEMO-0001。
+另：财务内部结算编码 SETTLE-XH7-77，不要写进对客合同。""",
         ),
     )
 
@@ -134,6 +181,7 @@ date: "2026-03-11T15:00:00+08:00"
 ---
 参加人：陈启明、刘芳、王磊、赵宇、客户张衡。
 决议：生产 GaussDB 的 RTO 目标定为 15分钟，RPO 目标 2分钟。
+本次容灾演练工单号 WO-DR-20260311-07，已录入变更台账。
 否决了“RTO 1小时”的保守草案。eSight 仅作硬件告警，不承担该 RTO 承诺。
 """,
     )
@@ -172,6 +220,7 @@ title: "作战室设备"
 date: "2026-03-08T13:00:00+08:00"
 ---
 LumenGrid 总部会议室 A 的 IdeaHub Board 3 资产编号 IH-LG-A-0881，用于星河-7 日站会。
+日站会配套投影终端编号 PJ-LG-A-17。
 会议室 B 的 IH-LG-B-0012 不在本项目范围。
 """,
     )
@@ -182,6 +231,7 @@ title: "监控边界"
 date: "2026-03-19T11:00:00+08:00"
 ---
 eSight 负责服务器、OceanStor 硬件告警；iMaster NCE 负责 IP 网络与隧道。业务 SQL 慢查询仍走 GaussDB 自带监控，不进 eSight。
+总部会议室 A 门禁码 DH-A-5521，会议室 B 的 DH-B-0004 仅供参观。
 """,
     )
 
@@ -195,7 +245,10 @@ eSight 负责服务器、OceanStor 硬件告警；iMaster NCE 负责 IP 网络�
 {"id":"im-004","ts":"2026-03-13T10:12:00+08:00","user":"陈启明","alias":"老陈","text":"收到。小刘你把 CHG-8821 抄送给客户张衡。"}
 {"id":"im-005","ts":"2026-03-14T08:03:00+08:00","user":"赵宇","alias":"宇","text":"开玩笑：要不明天把生产交换机重启一下？"}
 {"id":"im-006","ts":"2026-03-14T08:04:00+08:00","user":"赵宇","alias":"宇","text":"刚才是玩笑。正式承诺：核心交换机维护窗口是 2026-05-09 01:00，已报备。"}
-{"id":"im-007","ts":"2026-01-20T12:00:00+08:00","user":"bot","alias":"助手","text":"欢迎加入星河-7 群。示例单号 CHG-0000 无效。"}
+{"id":"im-008","ts":"2026-03-16T19:40:00+08:00","user":"王磊","alias":"磊哥","text":"应急语音桥接号定为 BRIDGE-XH7-19，与演示号 BRIDGE-000 无关。"}
+{"id":"im-009","ts":"2026-03-16T21:05:00+08:00","user":"刘芳","alias":"小刘","text":"今晚值班交接单 HANDOFF-XH7-33 已建，演示单 HANDOFF-000 作废。"}
+{"id":"im-010","ts":"2026-03-25T16:40:00+08:00","user":"赵宇","alias":"宇","text":"算力会后补一句：跳纤窗口批文号是 JF-XH7-08，刚才会上没写进纪要。"}
+{"id":"im-011","ts":"2026-03-26T11:18:00+08:00","user":"王磊","alias":"磊哥","text":"GaussDB 备份窗口编号 BK-XH7-14，不要去备份控制台找单号。"}
 """.strip(),
     )
 
@@ -210,6 +263,9 @@ eSight 负责服务器、OceanStor 硬件告警；iMaster NCE 负责 IP 网络�
   <url><loc>https://hcs.lumengrid.example/portal/project.html</loc></url>
   <url><loc>https://hcs.lumengrid.example/portal/acl.html</loc></url>
   <url><loc>https://hcs.lumengrid.example/portal/old-wiki.html</loc></url>
+  <url><loc>https://hcs.lumengrid.example/portal/vpn.html</loc></url>
+  <url><loc>https://hcs.lumengrid.example/portal/vpn-old.html</loc></url>
+  <url><loc>https://hcs.lumengrid.example/portal/customer.html</loc></url>
 </urlset>
 """,
     )
@@ -233,6 +289,21 @@ eSight 负责服务器、OceanStor 硬件告警；iMaster NCE 负责 IP 网络�
 <body><p>GaussDB 505.1.0.B010 安装记录，仅供历史查阅。</p></body></html>""",
     )
     write(
+        web / "vpn-old.html",
+        """<html data-updated="2026-01-08T08:00:00+08:00"><head><title>过期 VPN</title></head>
+<body><p>历史 VPN 接入码 VPN-OLD-11，2026-01 已停用。</p></body></html>""",
+    )
+    write(
+        web / "vpn.html",
+        """<html data-updated="2026-04-18T08:00:00+08:00"><head><title>生产 VPN</title></head>
+<body><p>当前生产 VPN 远程拨入口令 VPN-NOW-88。历史码 VPN-OLD-11 停用。</p></body></html>""",
+    )
+    write(
+        web / "customer.html",
+        """<html data-updated="2026-03-21T08:00:00+08:00"><head><title>客户现场代表</title></head>
+<body><p>LumenGrid 现场代表张衡，工牌 BADGE-LG-204。演示工牌 BADGE-000 无效。</p></body></html>""",
+    )
+    write(
         web / "cmdb.html",
         """<html data-updated="2026-03-30T08:00:00+08:00"><head><title>CMDB</title></head>
 <body><p>OceanStor Dorado 8000 序列号 2102350BHB10XH7001 对应 CI 编号 CI-STOR-77821。</p>
@@ -246,7 +317,9 @@ eSight 负责服务器、OceanStor 硬件告警；iMaster NCE 负责 IP 网络�
     write(
         web / "acl.html",
         """<html data-updated="2026-04-02T08:00:00+08:00"><head><title>备份页权限</title></head>
-<body><p>GaussDB 备份控制台仅授权组 grp-xh7-dba 可见。grp-xh7-guest 只能看容量看板。</p></body></html>""",
+<body><p>GaussDB 备份控制台仅授权组 grp-xh7-dba 可见。grp-xh7-guest 只能看容量看板。</p>
+<p>审计日志桶 obs-xh7-audit-07，演示桶 obs-demo-000 不可用。</p>
+<p>生产监控空间编号 mon-xh7-prod-4。</p></body></html>""",
     )
 
     (ROOT / "NOTICE.txt").write_text(

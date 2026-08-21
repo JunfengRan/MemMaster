@@ -1,0 +1,3433 @@
+{
+  "summary": {
+    "E0": {
+      "n": 20,
+      "task_success": 0.0,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.0,
+      "by_source": {
+        "mail": 0.0,
+        "meeting": 0.0,
+        "im": 0.0,
+        "web": 0.0
+      },
+      "by_type": {
+        "exact": 0.0,
+        "update": 0.0,
+        "alias": 0.0,
+        "combo": 0.0,
+        "distractor": 0.0,
+        "multihop": 0.0
+      }
+    },
+    "E1": {
+      "n": 20,
+      "task_success": 0.6,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.6,
+      "by_source": {
+        "mail": 0.8,
+        "meeting": 0.6,
+        "im": 0.4,
+        "web": 0.6
+      },
+      "by_type": {
+        "exact": 0.6,
+        "update": 0.5,
+        "alias": 0.5,
+        "combo": 0.3333333333333333,
+        "distractor": 1.0,
+        "multihop": 1.0
+      }
+    },
+    "E2": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      }
+    },
+    "E3": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      }
+    },
+    "E4": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      }
+    },
+    "E5": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      }
+    },
+    "E6": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      }
+    },
+    "E7": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      }
+    },
+    "E8": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      }
+    },
+    "E9": {
+      "n": 20,
+      "task_success": 0.9,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.85,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 0.8
+      },
+      "by_type": {
+        "exact": 0.6,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      }
+    }
+  },
+  "recommendation": {
+    "winner": "E2",
+    "task_success": 0.95,
+    "ranked": [
+      [
+        "E2",
+        0.95
+      ],
+      [
+        "E3",
+        0.95
+      ],
+      [
+        "E4",
+        0.95
+      ],
+      [
+        "E5",
+        0.95
+      ],
+      [
+        "E6",
+        0.95
+      ],
+      [
+        "E7",
+        0.95
+      ],
+      [
+        "E8",
+        0.95
+      ],
+      [
+        "E9",
+        0.9
+      ],
+      [
+        "E1",
+        0.6
+      ],
+      [
+        "E0",
+        0.0
+      ]
+    ]
+  },
+  "detail": {
+    "E0": {
+      "n": 20,
+      "task_success": 0.0,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.0,
+      "by_source": {
+        "mail": 0.0,
+        "meeting": 0.0,
+        "im": 0.0,
+        "web": 0.0
+      },
+      "by_type": {
+        "exact": 0.0,
+        "update": 0.0,
+        "alias": 0.0,
+        "combo": 0.0,
+        "distractor": 0.0,
+        "multihop": 0.0
+      },
+      "rows": [
+        {
+          "question_id": "Q01",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "mail",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q02",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "mail",
+          "type": "update"
+        },
+        {
+          "question_id": "Q03",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "mail",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q04",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "mail",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q05",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "mail",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q06",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "meeting",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q07",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "meeting",
+          "type": "update"
+        },
+        {
+          "question_id": "Q08",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "meeting",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q09",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "meeting",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q10",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "meeting",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q11",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q12",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "im",
+          "type": "update"
+        },
+        {
+          "question_id": "Q13",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q14",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "im",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q15",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "im",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q16",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "web",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q17",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "web",
+          "type": "update"
+        },
+        {
+          "question_id": "Q18",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "web",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q19",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "web",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q20",
+          "group": "E0",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 0,
+          "source": "web",
+          "type": "combo"
+        }
+      ]
+    },
+    "E1": {
+      "n": 20,
+      "task_success": 0.6,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.6,
+      "by_source": {
+        "mail": 0.8,
+        "meeting": 0.6,
+        "im": 0.4,
+        "web": 0.6
+      },
+      "by_type": {
+        "exact": 0.6,
+        "update": 0.5,
+        "alias": 0.5,
+        "combo": 0.3333333333333333,
+        "distractor": 1.0,
+        "multihop": 1.0
+      },
+      "rows": [
+        {
+          "question_id": "Q01",
+          "group": "E1",
+          "success": true,
+          "required_hits": [
+            "PO-XH7-20260318-044"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q02",
+          "group": "E1",
+          "success": true,
+          "required_hits": [
+            "2026-05-06"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "update"
+        },
+        {
+          "question_id": "Q03",
+          "group": "E1",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": false,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q04",
+          "group": "E1",
+          "success": true,
+          "required_hits": [
+            "3",
+            "4"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q05",
+          "group": "E1",
+          "success": true,
+          "required_hits": [
+            "Dorado 5000"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q06",
+          "group": "E1",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q07",
+          "group": "E1",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "update"
+        },
+        {
+          "question_id": "Q08",
+          "group": "E1",
+          "success": true,
+          "required_hits": [
+            "赵宇",
+            "王磊"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q09",
+          "group": "E1",
+          "success": true,
+          "required_hits": [
+            "IH-LG-A-0881"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q10",
+          "group": "E1",
+          "success": true,
+          "required_hits": [
+            "GaussDB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q11",
+          "group": "E1",
+          "success": true,
+          "required_hits": [
+            "CHG-8821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q12",
+          "group": "E1",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": false,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "update"
+        },
+        {
+          "question_id": "Q13",
+          "group": "E1",
+          "success": true,
+          "required_hits": [
+            "周二",
+            "23:30"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q14",
+          "group": "E1",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": false,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q15",
+          "group": "E1",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": false,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q16",
+          "group": "E1",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q17",
+          "group": "E1",
+          "success": true,
+          "required_hits": [
+            "505.2.0.B023"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "update"
+        },
+        {
+          "question_id": "Q18",
+          "group": "E1",
+          "success": true,
+          "required_hits": [
+            "CI-STOR-77821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q19",
+          "group": "E1",
+          "success": true,
+          "required_hits": [
+            "XH-7"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q20",
+          "group": "E1",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": false,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "combo"
+        }
+      ]
+    },
+    "E2": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      },
+      "rows": [
+        {
+          "question_id": "Q01",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "PO-XH7-20260318-044"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q02",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "2026-05-06"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "update"
+        },
+        {
+          "question_id": "Q03",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "陈启明"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q04",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "3",
+            "4"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q05",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "Dorado 5000"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q06",
+          "group": "E2",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q07",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "V100R024C10"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "update"
+        },
+        {
+          "question_id": "Q08",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "赵宇",
+            "王磊"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q09",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "IH-LG-A-0881"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q10",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "GaussDB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q11",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "CHG-8821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q12",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "64TB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "update"
+        },
+        {
+          "question_id": "Q13",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "周二",
+            "23:30"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q14",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "刘芳"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q15",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "2026-05-09",
+            "01:00"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q16",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "tn-lg-xh7-20481"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q17",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "505.2.0.B023"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "update"
+        },
+        {
+          "question_id": "Q18",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "CI-STOR-77821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q19",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "XH-7"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q20",
+          "group": "E2",
+          "success": true,
+          "required_hits": [
+            "grp-xh7-dba"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "combo"
+        }
+      ]
+    },
+    "E3": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      },
+      "rows": [
+        {
+          "question_id": "Q01",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "PO-XH7-20260318-044"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q02",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "2026-05-06"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "update"
+        },
+        {
+          "question_id": "Q03",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "陈启明"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q04",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "3",
+            "4"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q05",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "Dorado 5000"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q06",
+          "group": "E3",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q07",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "V100R024C10"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "update"
+        },
+        {
+          "question_id": "Q08",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "赵宇",
+            "王磊"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q09",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "IH-LG-A-0881"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q10",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "GaussDB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q11",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "CHG-8821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q12",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "64TB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "update"
+        },
+        {
+          "question_id": "Q13",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "周二",
+            "23:30"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q14",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "刘芳"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q15",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "2026-05-09",
+            "01:00"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q16",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "tn-lg-xh7-20481"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q17",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "505.2.0.B023"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "update"
+        },
+        {
+          "question_id": "Q18",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "CI-STOR-77821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q19",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "XH-7"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q20",
+          "group": "E3",
+          "success": true,
+          "required_hits": [
+            "grp-xh7-dba"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "combo"
+        }
+      ]
+    },
+    "E4": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      },
+      "rows": [
+        {
+          "question_id": "Q01",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "PO-XH7-20260318-044"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "mail",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q02",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "2026-05-06"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "mail",
+          "type": "update"
+        },
+        {
+          "question_id": "Q03",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "陈启明"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q04",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "3",
+            "4"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "mail",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q05",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "Dorado 5000"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "mail",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q06",
+          "group": "E4",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "meeting",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q07",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "V100R024C10"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "meeting",
+          "type": "update"
+        },
+        {
+          "question_id": "Q08",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "赵宇",
+            "王磊"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "meeting",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q09",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "IH-LG-A-0881"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "meeting",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q10",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "GaussDB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "meeting",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q11",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "CHG-8821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q12",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "64TB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "update"
+        },
+        {
+          "question_id": "Q13",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "周二",
+            "23:30"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q14",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "刘芳"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q15",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "2026-05-09",
+            "01:00"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q16",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "tn-lg-xh7-20481"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "web",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q17",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "505.2.0.B023"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "web",
+          "type": "update"
+        },
+        {
+          "question_id": "Q18",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "CI-STOR-77821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "web",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q19",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "XH-7"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 2,
+          "source": "web",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q20",
+          "group": "E4",
+          "success": true,
+          "required_hits": [
+            "grp-xh7-dba"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "combo"
+        }
+      ]
+    },
+    "E5": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      },
+      "rows": [
+        {
+          "question_id": "Q01",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "PO-XH7-20260318-044"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q02",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "2026-05-06"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "update"
+        },
+        {
+          "question_id": "Q03",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "陈启明"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q04",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "3",
+            "4"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q05",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "Dorado 5000"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q06",
+          "group": "E5",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q07",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "V100R024C10"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "update"
+        },
+        {
+          "question_id": "Q08",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "赵宇",
+            "王磊"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q09",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "IH-LG-A-0881"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q10",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "GaussDB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q11",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "CHG-8821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q12",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "64TB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "update"
+        },
+        {
+          "question_id": "Q13",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "周二",
+            "23:30"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q14",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "刘芳"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q15",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "2026-05-09",
+            "01:00"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q16",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "tn-lg-xh7-20481"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q17",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "505.2.0.B023"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "update"
+        },
+        {
+          "question_id": "Q18",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "CI-STOR-77821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q19",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "XH-7"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q20",
+          "group": "E5",
+          "success": true,
+          "required_hits": [
+            "grp-xh7-dba"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "combo"
+        }
+      ]
+    },
+    "E6": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      },
+      "rows": [
+        {
+          "question_id": "Q01",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "PO-XH7-20260318-044"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q02",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "2026-05-06"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "update"
+        },
+        {
+          "question_id": "Q03",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "陈启明"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q04",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "3",
+            "4"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q05",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "Dorado 5000"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q06",
+          "group": "E6",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q07",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "V100R024C10"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "update"
+        },
+        {
+          "question_id": "Q08",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "赵宇",
+            "王磊"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q09",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "IH-LG-A-0881"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q10",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "GaussDB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q11",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "CHG-8821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q12",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "64TB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "update"
+        },
+        {
+          "question_id": "Q13",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "周二",
+            "23:30"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q14",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "刘芳"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q15",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "2026-05-09",
+            "01:00"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q16",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "tn-lg-xh7-20481"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q17",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "505.2.0.B023"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "update"
+        },
+        {
+          "question_id": "Q18",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "CI-STOR-77821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q19",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "XH-7"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q20",
+          "group": "E6",
+          "success": true,
+          "required_hits": [
+            "grp-xh7-dba"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "combo"
+        }
+      ]
+    },
+    "E7": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      },
+      "rows": [
+        {
+          "question_id": "Q01",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "PO-XH7-20260318-044"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q02",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "2026-05-06"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "update"
+        },
+        {
+          "question_id": "Q03",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "陈启明"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q04",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "3",
+            "4"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q05",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "Dorado 5000"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q06",
+          "group": "E7",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q07",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "V100R024C10"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "update"
+        },
+        {
+          "question_id": "Q08",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "赵宇",
+            "王磊"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q09",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "IH-LG-A-0881"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q10",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "GaussDB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q11",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "CHG-8821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q12",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "64TB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "update"
+        },
+        {
+          "question_id": "Q13",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "周二",
+            "23:30"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q14",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "刘芳"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q15",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "2026-05-09",
+            "01:00"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q16",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "tn-lg-xh7-20481"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q17",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "505.2.0.B023"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "update"
+        },
+        {
+          "question_id": "Q18",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "CI-STOR-77821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q19",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "XH-7"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q20",
+          "group": "E7",
+          "success": true,
+          "required_hits": [
+            "grp-xh7-dba"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "combo"
+        }
+      ]
+    },
+    "E8": {
+      "n": 20,
+      "task_success": 0.95,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.9,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 1.0
+      },
+      "by_type": {
+        "exact": 0.8,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      },
+      "rows": [
+        {
+          "question_id": "Q01",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "PO-XH7-20260318-044"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q02",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "2026-05-06"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "update"
+        },
+        {
+          "question_id": "Q03",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "陈启明"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q04",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "3",
+            "4"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q05",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "Dorado 5000"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q06",
+          "group": "E8",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q07",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "V100R024C10"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "update"
+        },
+        {
+          "question_id": "Q08",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "赵宇",
+            "王磊"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q09",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "IH-LG-A-0881"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q10",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "GaussDB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q11",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "CHG-8821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q12",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "64TB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "update"
+        },
+        {
+          "question_id": "Q13",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "周二",
+            "23:30"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q14",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "刘芳"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q15",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "2026-05-09",
+            "01:00"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q16",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "tn-lg-xh7-20481"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q17",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "505.2.0.B023"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "update"
+        },
+        {
+          "question_id": "Q18",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "CI-STOR-77821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q19",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "XH-7"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q20",
+          "group": "E8",
+          "success": true,
+          "required_hits": [
+            "grp-xh7-dba"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "combo"
+        }
+      ]
+    },
+    "E9": {
+      "n": 20,
+      "task_success": 0.9,
+      "constraint_fail": 0,
+      "evidence_in_context": 0.85,
+      "by_source": {
+        "mail": 1.0,
+        "meeting": 0.8,
+        "im": 1.0,
+        "web": 0.8
+      },
+      "by_type": {
+        "exact": 0.6,
+        "update": 1.0,
+        "alias": 1.0,
+        "combo": 1.0,
+        "distractor": 1.0,
+        "multihop": 1.0
+      },
+      "rows": [
+        {
+          "question_id": "Q01",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "PO-XH7-20260318-044"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q02",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "2026-05-06"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "update"
+        },
+        {
+          "question_id": "Q03",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "陈启明"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q04",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "3",
+            "4"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q05",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "Dorado 5000"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "mail",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q06",
+          "group": "E9",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q07",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "V100R024C10"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "update"
+        },
+        {
+          "question_id": "Q08",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "赵宇",
+            "王磊"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q09",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "IH-LG-A-0881"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q10",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "GaussDB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "meeting",
+          "type": "distractor"
+        },
+        {
+          "question_id": "Q11",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "CHG-8821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q12",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "64TB"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "update"
+        },
+        {
+          "question_id": "Q13",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "周二",
+            "23:30"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q14",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "刘芳"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q15",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "2026-05-09",
+            "01:00"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "im",
+          "type": "combo"
+        },
+        {
+          "question_id": "Q16",
+          "group": "E9",
+          "success": false,
+          "required_hits": [],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": false,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "exact"
+        },
+        {
+          "question_id": "Q17",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "505.2.0.B023"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "update"
+        },
+        {
+          "question_id": "Q18",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "CI-STOR-77821"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "multihop"
+        },
+        {
+          "question_id": "Q19",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "XH-7"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "alias"
+        },
+        {
+          "question_id": "Q20",
+          "group": "E9",
+          "success": true,
+          "required_hits": [
+            "grp-xh7-dba"
+          ],
+          "forbidden_hits": [],
+          "constraint_fail": false,
+          "evidence_in_context": true,
+          "citation_ok": true,
+          "memory_calls": 1,
+          "source": "web",
+          "type": "combo"
+        }
+      ]
+    }
+  }
+}

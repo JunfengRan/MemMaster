@@ -4,26 +4,142 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>总览 · MemMaster</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <style>
+:root { --ink:#152033; --muted:#5b6573; --paper:#f7f4ee; --card:#fff; --line:#d9d3c5; --blue:#1f6feb; --green:#1a7f37; --red:#c62828; --navy:#13294b; }
+* { box-sizing: border-box; }
+html, body { margin:0; background:var(--paper); color:var(--ink); font: 16px/1.65 "Segoe UI", "PingFang SC", sans-serif; }
+header, footer { background:var(--navy); color:#fff; padding:1rem 1.5rem; }
+header { display:flex; flex-wrap:wrap; gap:.8rem 1.5rem; align-items:center; justify-content:space-between; }
+header nav a { color:#d7e4ff; margin-right:1rem; text-decoration:none; }
+header nav a.active { color:#fff; font-weight:700; border-bottom:2px solid #fff; }
+main { max-width: 980px; margin: 0 auto; padding: 1.6rem 1.2rem 3rem; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.3rem; margin:1rem 0; }
+h1 { font-size:1.7rem; margin:.2rem 0 1rem; }
+h2 { font-size:1.25rem; margin:1.4rem 0 .6rem; }
+.muted { color:var(--muted); }
+.legend span { display:inline-block; margin-right:1rem; }
+.sw { display:inline-block; width:12px; height:12px; border-radius:2px; margin-right:.3rem; vertical-align:middle; }
+.sw.blue { background:var(--blue); } .sw.green { background:var(--green); } .sw.red { background:var(--red); }
+.cmp { margin:.7rem 0 1rem; }
+.cmp .lab { display:flex; justify-content:space-between; font-size:.92rem; margin-bottom:.25rem; }
+.track { position:relative; height:16px; background:#ece7dc; border-radius:8px; overflow:hidden; }
+.track i { position:absolute; top:0; height:16px; }
+.track .blue { background:var(--blue); }
+.track .green { background:var(--green); }
+.track .red { background:var(--red); }
+table { width:100%; border-collapse:collapse; font-size:.95rem; }
+th, td { border-bottom:1px solid var(--line); padding:.45rem .4rem; text-align:left; }
+.kicker { letter-spacing:.08em; text-transform:uppercase; font-size:.75rem; color:#8a6d3b; }
+blockquote { border-left:4px solid var(--blue); margin:1rem 0; padding:.2rem 1rem; color:#243047; }
+footer { font-size:.85rem; }
+</style>
 </head>
 <body>
 <header>
-  <strong>MemMaster</strong>
-  <nav><a href="index.html" class="active">总览</a> <a href="research.html">调研</a> <a href="architecture.html">架构</a> <a href="dataset.html">数据集</a> <a href="experiments.html">实验</a> <a href="results.html">结果</a> <a href="recommendation.html">建议</a></nav>
+  <strong>MemMaster 技术验证报告</strong>
+  <nav><a href="index.html" class="active">总览</a> <a href="research.html">调研与方法</a> <a href="architecture.html">架构</a> <a href="dataset.html">数据集</a> <a href="experiments.html">三次实验</a> <a href="results.html">结果对比</a> <a href="recommendation.html">建议</a></nav>
 </header>
 <main>
+<p class="kicker">Standalone · 打开本页即可读完 · 合成 ToB 数据 · 非华为生产业务</p>
 
-<h1>华为 ToB 多源记忆插件技术验证</h1>
+<h1>企业记忆插件该怎么选：三次实验说明什么</h1>
 <div class="card">
-<p>MemMaster 把邮件、会议纪要、IM、业务网页四类热插拔接口统一为不可变文本 ground truth，再用 lexical / hybrid / graph / push / Mem0-MemOS 改编方法进行对照。</p>
-<p>空白组 E0 准确率 <b>0%</b>，说明题目依赖语料而非模型常识。推荐组 <b>E2</b>，task success 95%。</p>
+<p>MemMaster 是给 OpenCode 用的本地记忆插件：邮件、会议、IM、网页四类热插拔源，经 FastAPI sidecar 做检索，再以四个可选工具交给 Agent。<b>本页是完整结论</b>，不必再去翻仓库里的 Markdown 或代码。</p>
+<p>评测模型固定为 DeepSeek V4 Flash。题库是虚构客户 LumenGrid、项目星河-7 的合成 ToB 事实，不是华为生产数据。完成率只计必答事实是否写出；顺带提到已作废编号不再判失败。</p>
 </div>
 <div class="card">
-<h2>总体准确率</h2>
-<div class="row"><span>E0</span><div class="bar"><i style="width:0.0%"></i></div><b>0.0%</b></div><div class="row"><span>E1</span><div class="bar"><i style="width:60.0%"></i></div><b>60.0%</b></div><div class="row"><span>E2</span><div class="bar"><i style="width:95.0%"></i></div><b>95.0%</b></div><div class="row"><span>E3</span><div class="bar"><i style="width:95.0%"></i></div><b>95.0%</b></div><div class="row"><span>E4</span><div class="bar"><i style="width:95.0%"></i></div><b>95.0%</b></div><div class="row"><span>E5</span><div class="bar"><i style="width:95.0%"></i></div><b>95.0%</b></div><div class="row"><span>E6</span><div class="bar"><i style="width:95.0%"></i></div><b>95.0%</b></div><div class="row"><span>E7</span><div class="bar"><i style="width:95.0%"></i></div><b>95.0%</b></div><div class="row"><span>E8</span><div class="bar"><i style="width:95.0%"></i></div><b>95.0%</b></div><div class="row"><span>E9</span><div class="bar"><i style="width:90.0%"></i></div><b>90.0%</b></div>
+<h2>三句话结论</h2>
+<ol>
+<li><b>第一版</b>强制检索再抽答案，测的是检索理论上限，不是真实员工问法。</li>
+<li><b>第二版</b>每个问题一个全新 session，用户消息只有题目，不调优提示词。这是「裸 Agent」。</li>
+<li><b>第三版</b>给 E1–E9 各试两套 Harness（渠道启发 / 关键词改写），每组取字典序更好的那次；Blank 不调。完成率以未调优为蓝条基准，绿是提升、红是回落。</li>
+</ol>
+<p>当前字典序第一名：<b>E9</b>
+，完成率 96.8%，上下文 5311 token，耗时 9859 ms，工具 3.58 次。</p>
 </div>
+<div class="card">
+<h2>完成率：未调优（蓝）vs 调优后（绿升 / 红降）</h2>
+<p class="legend"><span><i class="sw blue"></i>未调优完成率（公共部分）</span><span><i class="sw green"></i>Harness 提升</span><span><i class="sw red"></i>Harness 回落</span></p>
+
+<div class="cmp">
+  <div class="lab"><span>E9 · Fact Keys</span><span>未调优 90.5% → 调优后 96.8%（+6.3pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:90.48%"></i>
+    <i class="green" style="left:90.48%;width:6.30%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E2 · Hybrid RRF</span><span>未调优 90.5% → 调优后 96.8%（+6.3pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:90.48%"></i>
+    <i class="green" style="left:90.48%;width:6.30%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E6 · Time-aware</span><span>未调优 85.7% → 调优后 96.8%（+11.1pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:85.71%"></i>
+    <i class="green" style="left:85.71%;width:11.06%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E8 · Dual Channel</span><span>未调优 90.5% → 调优后 95.5%（+5.0pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:90.48%"></i>
+    <i class="green" style="left:90.48%;width:4.98%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E7 · Core Memory</span><span>未调优 90.5% → 调优后 95.2%（+4.8pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:90.48%"></i>
+    <i class="green" style="left:90.48%;width:4.76%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E4 · Push + Pull</span><span>未调优 90.5% → 调优后 95.2%（+4.8pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:90.48%"></i>
+    <i class="green" style="left:90.48%;width:4.76%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E5 · Extractive Facts</span><span>未调优 90.5% → 调优后 95.2%（+4.8pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:90.48%"></i>
+    <i class="green" style="left:90.48%;width:4.76%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E1 · Lexical / BM25</span><span>未调优 81.0% → 调优后 90.5%（+9.5pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:80.95%"></i>
+    <i class="green" style="left:80.95%;width:9.52%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E3 · Graph-lite PPR</span><span>未调优 90.5% → 调优后 85.7%（-4.8pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:85.71%"></i>
+    <i class="red" style="left:85.71%;width:4.76%"></i>
+  </div>
+</div>
+<div class="cmp">
+  <div class="lab"><span>E0 · Blank（空白对照）</span><span>未调优 0.0% → 调优后 0.0%（+0.0pt）</span></div>
+  <div class="track">
+    <i class="blue" style="left:0;width:0.00%"></i>
+    <i class="green" style="left:0.00%;width:0.00%"></i>
+  </div>
+</div>
+<p class="muted">条形图按当前总完成率降序。完成率 = 必答事实写出，且该题的工具次数 / 上下文 / 耗时没有相对同题同伴严重偏高。加赛只给当时并列第一的组加跨源多跳题，未参赛组保持原分母。</p>
+</div>
+<div class="card">
+<h2>十组方法（读这一段就能分清 E0–E9）</h2>
+<p>E1–E9 在第三版里<b>同时提供四个工具</b>：search_mail、search_meeting、search_im、search_web。差别只在 sidecar 检索算法和是否注入 core/push。Harness 可以启发「该去查记忆」，但<b>不会按标准答案点名某一题该用哪个源</b>。</p>
+</div>
+<div class='card'><h2>E0 · Blank（空白对照）</h2><p><b>一句话：</b>无记忆插件、无四个源工具。测模型会不会靠常识蒙对合成事实。</p><p>OpenCode 以 --pure 启动，禁止 search_mail/search_meeting/search_im/search_web。题目里的订单号、租户 ID、工单号都是虚构的，训练数据里不应存在。若 Blank 完成率不是 0，说明题面泄密或评测串题。本轮不对 Blank 调 Harness。</p></div><div class='card'><h2>E1 · Lexical / BM25</h2><p><b>一句话：</b>SQLite FTS5 关键词检索，对单号、型号最稳，对改写和别名弱。</p><p>把四个源各自做成全文索引，按 BM25 打分。问句里出现 PO、CHG、租户 ID 这类精确字符串时召回最好。中文整段分词偏粗，像「RTO 目标是多久」对不上「15分钟」时会全军覆没，所以第一版天花里 E1 只有 60%。</p></div><div class='card'><h2>E2 · Hybrid RRF</h2><p><b>一句话：</b>BM25 + 稠密向量倒数排名融合，精确匹配和语义改写都照顾。</p><p>同一查询走词法检索和哈希向量检索，再用 Reciprocal Rank Fusion 合并。第一版强制检索天花 95%，未调优真实 Agent 也是十组里完成率最高的。代价是上下文比纯 BM25 长。</p></div><div class='card'><h2>E3 · Graph-lite PPR</h2><p><b>一句话：</b>在 Hybrid 之上用共现图做一跳个性化 PageRank，适合人名-资产多跳。</p><p>改编 HippoRAG 2 的 PPR，不做完整 OpenIE。图边来自实体共现。多跳题（谁申请 Kunpeng、谁提 Ascend）理论上更有优势；噪声边也可能把无关片段挤进 top-k，未调优时完成率反而低于 E2。</p></div><div class='card'><h2>E4 · Push + Pull</h2><p><b>一句话：</b>Hybrid/Graph 检索，外加 sidecar 判断要不要塞一条短提醒。</p><p>改编 Proactive Memory：不是每轮都灌记忆，而是按当前问题决定是否 intervention。提醒走 system.transform，不能在 chat.message 里插残缺 part（OpenCode 会 UnknownError）。提醒只给线索，不点名单题该用哪个源工具。</p></div><div class='card'><h2>E5 · Extractive Facts</h2><p><b>一句话：</b>Mem0 风格：先命中派生事实，再回源到原文 span。</p><p>正则+种子事实层独立于原文。查询打到事实后必须带回证据片段，禁止只抛脱离上下文的三元组。对「当前生效日期/最终容量」这类修订题有帮助，但事实抽错会连带回源一起错。</p></div><div class='card'><h2>E6 · Time-aware</h2><p><b>一句话：</b>LongMemEval + Graphiti：valid time 上把「当前/修订」压过旧草稿。</p><p>文档带 valid_time / transaction_time。问「当前版本」「最终容量」时提高新文档权重。对 GaussDB 切换日、NCE 版本、内核版本这类 update 题是对口方法。</p></div><div class='card'><h2>E7 · Core Memory</h2><p><b>一句话：</b>把项目术语表常驻 system，再做 Hybrid 检索。</p><p>改编 MemGPT/MemOS 的 core：LumenGrid、星河-7、OceanStor、GaussDB 等稳定别名始终可见，减少「老陈是谁」这类别名题的迷路。Core 不能替代单号检索，订单号仍要拉原文。</p></div><div class='card'><h2>E8 · Dual Channel</h2><p><b>一句话：</b>MemOS MemCube 双通道：语义通道 + 关键词通道，带 provenance。</p><p>不做参数记忆。两个通道分别召回再合并，结果带来源文档 ID。和 Hybrid 相近，但通道切分与计分不同，上下文往往略长。</p></div><div class='card'><h2>E9 · Fact Keys</h2><p><b>一句话：</b>LongMemEval 键 + 有限别名链接（老陈→陈启明）。</p><p>为高频实体建 key，别名边数量封顶，避免把整库连成一团。对 IM/邮件里的花名有效；对纯单号题退化为普通检索。</p></div>
 
 </main>
-<footer>MIT · 合成 ToB 数据 · 非华为生产业务</footer>
+<footer>MIT · 虚构客户 LumenGrid / 项目星河-7 · 数字全部由 experiments/runs 里的 JSON 生成</footer>
 </body>
 </html>
